@@ -1,0 +1,12 @@
+Nest Js flows
+https://www.darraghoriordan.com/2021/11/03/nest-cheatsheet-interceptor-middleware-guard/
+
+Dynamodb
+GSI :-
+Updates to GSI are not supported as explained in the docs:
+
+Updates are not supported. The following are exceptions:
+If you update only the provisioned throughput values of global secondary indexes, you can update the table without interruption.
+You can delete or add one global secondary index without interruption. If you do both in the same update (for example, by changing the index's logical ID), the update fails.
+
+- Always add GSI PK and SK -> You can't modify the existing key in GSI

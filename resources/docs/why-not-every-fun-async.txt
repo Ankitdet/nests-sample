@@ -1,0 +1,66 @@
+Ans 1:
+
+Your code will work, but I would not recommand it for two reason :
+
+Unnecessary memory/cpu usage
+It will makes your code hard to understand. Knowing which function is asynchronous or synchronous is important to understand how a system work and what it is doing.
+
+
+## JSON Schema to Interface
+https://transform.tools/json-to-typescript
+http://json2ts.com
+
+## TS Schema to Zod and Mocker object creator
+https://transform.tools/typescript-to-zod
+npm install -D @faker-js/faker zod @anatine/zod-moc
+https://www.npmjs.com/package/@anatine/zod-mock
+-- Also used for OpenAPI definition generator
+``
+import { z } from 'zod'
+const iRoleDBSchema = z.object({
+    ADMIN: z.boolean(),
+    BUYER: z.boolean()
+})
+
+const iUserPermisionSchema = z.object({
+    home: z.boolean().optional(),
+    marketplace: z.boolean().optional(),
+    re_listing: z.boolean().optional(),
+    profile: z.boolean().optional(),
+    kyc_status: z.boolean().optional(),
+    blockchain_address: z.boolean().optional(),
+    firstname: z.boolean().optional(),
+    lastname: z.boolean().optional(),
+    password_reset: z.boolean().optional(),
+    re_detail: z.boolean().optional()
+})
+
+export const rootSchema = z.object({
+    email: z.string().optional(),
+    firstname: z.string().optional(),
+    lastname: z.string().optional(),
+    role: iRoleDBSchema.optional(),
+    user_id: z.string().optional(),
+    re_id: z.string().optional(),
+    subscriptionId: z.string().optional(),
+    subscriptionAccepted: z.boolean().optional(),
+    subscriptionTimestamp: z.string().optional(),
+    permission: iUserPermisionSchema.optional(),
+    applicantId: z.string().optional(),
+    workflowRunId: z.string().optional(),
+    kycStatus: z.string().optional(),
+    whitelistAddress: z.string().optional(),
+    ppmAgreement: z.boolean().optional(),
+    ppmAgreementTimestamp: z.string().optional(),
+    operatingAgreement: z.boolean().optional(),
+    operatingAgreementTimestamp: z.string().optional(),
+    totalNumberOfTokens: z.number().optional(),
+    tokenPrice: z.number().optional(),
+    tokensInThisOrder: z.number().optional(),
+    amount: z.number().optional(),
+    referrerCode: z.string().optional(),
+    referreCode: z.string().optional(),
+    referralLink: z.string().optional()
+})
+console.log(rootSchema)
+```

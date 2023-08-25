@@ -1,0 +1,13 @@
+# git delete your branches from locally
+git fetch -p
+git branch -vv
+git fetch -p && for branch in $(git branch -vv | grep ': gone]' | awk '{print $1}'); do git branch -D $branch; done
+
+#
+✔ Preparing lint-staged...
+✔ Running tasks for staged files...
+✖ Prevented an empty git commit!
+✔ Reverting to original state because of errors...
+✔ Cleaning up temporary files...
+
+git commit -n -m 'fix: env' --allow-empty

@@ -1,0 +1,212 @@
+useDotenv: true
+service: service-3blk-${self:provider.stage}-3blocks-serverless
+provider:
+  name: aws
+  runtime: nodejs16.x
+  region: us-east-1
+  stage: prd
+  NODE_ENV: prd
+  PR_REGION: uea1
+  PROJECT_NAME: 3blocks
+  iamRoleStatements:
+    -  Effect: "Allow"
+       Action:
+         - "dynamodb:*"
+       Resource: "arn:aws:dynamodb:*:*:table/*"
+    -  Effect: Allow
+       Action:
+         - "s3:*"
+       Resource: "arn:aws:s3:::*"
+    -  Effect: Allow
+       Action:
+         - "sqs:*"
+         - "ses:*"
+         - "cognito-identity:*"
+         - "cognito-sync:*"
+         - "cognito-idp:*"
+       Resource: "*"
+  deploymentBucket: s3-3blk-${self:provider.NODE_ENV}-${self:provider.PR_REGION}-std-${self:provider.PROJECT_NAME}-backend
+  apiGateway:
+    binaryMediaTypes:
+      - 'multipart/form-data'
+      - '*/*'
+    shouldStartNameWithService: true
+
+plugins:
+  - serverless-webpack
+  - serverless-offline
+  - serverless-deployment-bucket
+
+package:
+  include:
+    - views/**
+  exclude:
+    - .git/**
+    - e2e-tests/**
+    - nodemon.json
+    - README.md
+    - tests
+    - node_modules/aws-sdk/**
+    - node_modules/typescript/**
+    - node_modules/@types/**
+  excludeDevDependencies: true
+
+functions:
+  re-captcha:
+    handler: src/lambda.reCaptcha
+  custom-message:
+    handler: src/lambda.customMessage
+    events:
+      - cognitoUserPool:
+          pool: cup-3blk-${self:provider.stage}-uea1-3blocks-Users
+          trigger: CustomMessage
+          existing: true
+  post-confirmation:
+    handler: src/lambda.postConfirmation
+    events:
+      - cognitoUserPool:
+          pool: cup-3blk-${self:provider.stage}-uea1-3blocks-Users
+          trigger: PostConfirmation
+          existing: true
+  pre-signup:
+    handler: src/lambda.preSignUp
+    events:
+      - cognitoUserPool:
+          pool: cup-3blk-${self:provider.stage}-uea1-3blocks-Users
+          trigger: PreSignUp
+          existing: true
+  sls-functions:
+    handler: src/lambda.handler
+    timeout: 30
+    events:
+      - http:
+          path: '{proxy+}'
+          method: POST
+          cors:
+            origin: '*'
+            headers:
+              - Content-Type
+              - X-Amz-Date
+              - Authorization
+              - X-Api-Key
+              - X-Amz-Security-Token
+              - X-Amz-User-Agent
+            allowCredentials: false
+  image-processing:
+    handler: src/lambda.imageProcessing
+    timeout: 30
+    events:
+      - http:
+          path: '/ip'
+          method: POST
+          cors:
+            origin: '*'
+            headers:
+              - Content-Type
+              - X-Amz-Date
+              - Authorization
+              - X-Api-Key
+              - X-Amz-Security-Token
+              - X-Amz-User-Agent
+            allowCredentials: false
+  consumer:
+    handler: src/lambda.consumer
+    timeout: 30
+    events:
+      - sqs:
+          arn: arn:aws:sqs:us-east-1:936554142862:sqs-3blk-${self:provider.stage}-uea1-std-3blocks-orders.fifo
+          batchSize: 1
+      # - sqs:
+      #     arn: arn:aws:sqs:us-east-1:936554142862:sqs-3blk-${self:provider.stage}-uea1-std-3blocks-pandadoc.fifo
+      #     batchSize: 1
+
+custom:
+  webpack:
+    webpackConfig: './webpack.config.js'
+    packager: 'npm'
+    includeModules:
+      forceExclude:
+        - aws-sdk
+    packagerOptions:
+      scripts:
+        - rm -rf node_modules/aws-sdk/**
+        - rm -rf node_modules/typescript/**
+        - rm -rf node_modules/@types/**
+
+## The table will be remain same every deployment.
+resources:
+  Resources:
+    Backend3blocksPrdTableName:
+      Type: AWS::DynamoDB::Table
+      UpdateReplacePolicy: Retain
+      Properties:
+        AttributeDefinitions:
+          - AttributeName: pk
+            AttributeType: S
+          - AttributeName: sk
+            AttributeType: S
+          - AttributeName: gsi2_pk
+            AttributeType: S
+        KeySchema:
+          - AttributeName: pk
+            KeyType: HASH
+          - AttributeName: sk
+            KeyType: RANGE
+        GlobalSecondaryIndexes:
+          - IndexName: GSI_1
+            KeySchema:
+              - AttributeName: sk
+                KeyType: HASH
+              - AttributeName: pk
+                KeyType: RANGE
+            Projection:
+              ProjectionType: "ALL"
+          - IndexName: GSI_2
+            KeySchema:
+              - AttributeName: gsi2_pk
+                KeyType: HASH
+            Projection:
+              ProjectionType: "ALL"
+        BillingMode: PAY_PER_REQUEST
+        TableName: ddb-3blk-${self:provider.NODE_ENV,'prd'}-${self:provider.PR_REGION,'uea1'}-${self:provider.PROJECT_NAME,'3blocks'}-Backend
+    Backend3blocksPrdUserTableName:
+      Type: AWS::DynamoDB::Table
+      UpdateReplacePolicy: Retain
+      Properties:
+        AttributeDefinitions:
+          - AttributeName: pk
+            AttributeType: S
+          - AttributeName: sk
+            AttributeType: S
+          - AttributeName: gsi1_pk
+            AttributeType: S
+          - AttributeName: gsi1_sk
+            AttributeType: S
+          - AttributeName: gsi2_sk
+            AttributeType: S
+          - AttributeName: gsi2_pk
+            AttributeType: S
+        KeySchema:
+          - AttributeName: pk
+            KeyType: HASH
+          - AttributeName: sk
+            KeyType: RANGE
+        GlobalSecondaryIndexes:
+          - IndexName: GSI_1
+            KeySchema:
+              - AttributeName: gsi1_pk
+                KeyType: HASH
+              - AttributeName: gsi1_sk
+                KeyType: RANGE
+            Projection:
+              ProjectionType: "ALL"
+          - IndexName: GSI_2
+            KeySchema:
+              - AttributeName: gsi2_pk
+                KeyType: HASH
+              - AttributeName: gsi2_sk
+                KeyType: RANGE
+            Projection:
+              ProjectionType: "ALL"
+        BillingMode: PAY_PER_REQUEST
+        TableName: ddb-3blk-${self:provider.NODE_ENV,'prd'}-${self:provider.PR_REGION,'uea1'}-${self:provider.PROJECT_NAME,'3blocks'}-User-Access

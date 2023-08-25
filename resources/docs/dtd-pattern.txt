@@ -1,0 +1,21 @@
+
+Case 1: When you have more data to be input then create the input type otherwise single args.
+
+- *InputType (CreateOrderInputType)
+
+- *InputTypeInterface(CreateOrderInputTypeInterface) (extending the *InputType)
+
+- <ModuleName>DBSchema (OrderDBSchema)
+
+- *ObjectType (CreateOrderObjectType)
+
+- *ObjectTypeInteface (CreateOrderObjectTypeInterface)
+
+- dataMapperFunction (obj: <ModuleName>DBSchema) : *ObjectTypeInteface {}
+
+
+Golden point
+
+- Make powerful Schema interface type.
+
+- Think about the Object Type + Input Type.

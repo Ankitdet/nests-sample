@@ -1,0 +1,443 @@
+useDotenv: true
+service: service-3blk-${env:STAGE}-3blocks-serverless
+
+provider:
+  name: aws
+  runtime: nodejs16.x
+  region: ${env:REGION}
+  stage: dev
+  logRetentionInDays: 60
+  versionFunctions: true
+  iamRoleStatements:
+    -  Effect: "Allow"
+       Action:
+         - "dynamodb:*"
+       Resource: "arn:aws:dynamodb:*:325502665956:table/*"
+    -  Effect: Allow
+       Action:
+         - "s3:*"
+       Resource: "arn:aws:s3:::*"
+    -  Effect: Allow
+       Action:
+         - "sqs:*"
+         - "ses:*"
+         - "cognito-identity:*"
+         - "cognito-sync:*"
+         - "cognito-idp:*"
+       Resource: "*"
+  # iamRoleStatements:
+  #   - Effect: Allow
+  #     Action:
+  #       - "execute-api:ManageConnections"
+  #     Resource:  
+  #       - "arn:aws:execute-api:*:*:**/@connections/*"
+  # iam:
+  #   role:
+  #     statements:
+  #       - Effect: Allow
+  #         Action:
+  #           - dynamodb:Query
+  #           - dynamodb:Scan
+  #           - dynamodb:GetItem
+  #           - dynamodb:PutItem
+  #           - dynamodb:UpdateItem
+  #           - dynamodb:DeleteItem
+  #         Resource: "arn:aws:dynamodb:*:*:table/ddb-3blk-dev-uea1-3blocks-CustomerDetail404" 
+  #iam:
+  #  role: arn:aws:iam::325502665956:role/Developer-Role
+  # iamRoleStatements:
+  #   - Effect: Allow
+  #     Action:
+  #       - dyanmodb:DescribeTable
+  #       - dyanmodb:Query
+  #       - dyanmodb:Scan
+  #       - dyanmodb:GetItem
+  #       - dyanmodb:PutItem
+  #       - dyanmodb:UpdateItem
+  #       - dyanmodb:DeleteItem
+  #     Resource: 
+  #     - "Fn::GetAtt" : [monsTable, Arn]
+  # profile: default
+  deploymentBucket: 
+    name: s3-3blk-${env:NODE_ENV}-${env:PR_REGION}-std-${env:PROJECT_NAME}-backend-vesta
+  apiGateway:
+    binaryMediaTypes:
+      - 'multipart/form-data'
+      - '*/*'
+    shouldStartNameWithService: true
+
+plugins:
+  - serverless-webpack
+  - serverless-offline
+  - serverless-dotenv-plugin
+  - serverless-deployment-bucket
+
+package:
+  include:
+    - views/**
+  exclude:
+    - .git/**
+    - e2e-tests/**
+    - nodemon.json
+    - README.md
+    - tests
+    - node_modules/aws-sdk/**
+    - node_modules/typescript/**
+    - node_modules/@types/**
+  excludeDevDependencies: true
+
+functions:
+  migrating-db:
+    handler: src/lambda.migratingDB
+    timeout: 90
+    events:
+      - http:
+          path: '/migratingDB'
+          method: POST
+          cors: true
+  sanitize-s3-functions:
+    handler: src/lambda.sanitizatingDigitalReBucket
+    timeout: 90
+    events:
+      - http:
+          path: '/sanitizatingDigitalReBucket'
+          method: POST
+          cors: true
+  zillow-sls-functions:
+    handler: src/lambda.zillow
+    timeout: 30
+    events:
+      - http:
+          path: '{proxy+}'
+          method: POST
+          cors: true
+  syncing-bchain:
+    handler: src/lambda.syncingBlockChain
+    timeout: 600
+    events:
+      - http:
+          path: '/syncingBlockChain'
+          method: POST
+          cors: true
+  syncing-all-services:
+    handler: src/lambda.syncingAllServices
+    timeout: 600
+    events:
+      - http:
+          path: '/syncingAllServices'
+          method: POST
+          cors: true
+  market-cap:
+    handler: src/lambda.updateMarketCapitalisation
+    timeout: 600
+    events:
+      - http:
+          path: '/updateMarketCapitalisation'
+          method: POST
+          cors: true
+  historical-data:
+    handler: src/lambda.historicalData
+    timeout: 600
+    events:
+      - http:
+          path: '/historicalData'
+          method: POST
+          cors: true
+  syncing-zillow:
+    handler: src/lambda.syncingZillow
+    timeout: 300
+    events:
+      - http:
+          path: '/syncingZillow'
+          method: POST
+          cors: true
+  secret-rotation:
+    handler: src/lambda.secretRotationLambda
+  custom-message:
+    handler: src/lambda.customMessage
+    events:
+      - cognitoUserPool:
+          pool: cup-3blk-dev-uea1-3blocks-Users
+          trigger: CustomMessage
+          existing: true
+  post-confirmation:
+    handler: src/lambda.postConfirmation
+    events:
+      - cognitoUserPool:
+          pool: cup-3blk-dev-uea1-3blocks-Users
+          trigger: PostConfirmation
+          existing: true
+  pre-signup:
+    handler: src/lambda.preSignUp
+    events:
+      - cognitoUserPool:
+          pool: cup-3blk-dev-uea1-3blocks-Users
+          trigger: PreSignUp
+          existing: true
+  # sls-functions:
+  #   handler: src/lambda.handler
+  #   timeout: 30
+  #   events:
+  #     - http:
+  #         path: '{proxy+}'
+  #         method: POST
+  #         cors:
+  #           origin: '*'
+  #           headers:
+  #             - Content-Type
+  #             - X-Amz-Date
+  #             - Authorization
+  #             - X-Api-Key
+  #             - X-Amz-Security-Token
+  #             - X-Amz-User-Agent
+  #           allowCredentials: false
+  image-processing:
+    handler: src/lambda.imageProcessing
+    timeout: 30
+    events:
+      - http:
+          path: '/ip'
+          method: POST
+          cors:
+            origin: '*'
+            headers:
+              - Content-Type
+              - X-Amz-Date
+              - Authorization
+              - X-Api-Key
+              - X-Amz-Security-Token
+              - X-Amz-User-Agent
+            allowCredentials: false
+  consumer:
+    handler: src/lambda.consumer
+    timeout: 30
+    events:
+      - sqs:
+          arn: arn:aws:sqs:us-east-1:325502665956:orders-webhook-3blks.fifo
+          batchSize: 1
+      - sqs:
+          arn: arn:aws:sqs:us-east-1:325502665956:pandadoc-webhook.fifo
+          batchSize: 1
+  # websocket:
+  #   handler: src/lambda.ws
+  #   events:
+  #     - websocket:
+  #         route: $connect
+  #     - websocket:
+  #         route: $disconnect
+  #     - websocket:
+  #         route: message
+  #     - websocket: $default
+
+custom:
+  dotenv:
+    path: ./env/.env.dev
+    logging: true
+  webpack:
+    webpackConfig: './webpack.config.js'
+    packager: 'npm'
+    includeModules:
+      forceExclude:
+        - aws-sdk
+    packagerOptions:
+      scripts:
+        - rm -rf node_modules/aws-sdk/**
+        - rm -rf node_modules/typescript/**
+        - rm -rf node_modules/@types/**
+
+resources:
+  Resources:
+    Backend3blocksDigitalReTableName:
+      Type: AWS::DynamoDB::Table
+      UpdateReplacePolicy: Retain
+      Properties:
+        AttributeDefinitions:
+          - AttributeName: pk
+            AttributeType: S
+          - AttributeName: sk
+            AttributeType: S
+          - AttributeName: gsi1_pk
+            AttributeType: S
+          - AttributeName: gsi1_sk
+            AttributeType: S
+          - AttributeName: gsi2_pk
+            AttributeType: S
+          - AttributeName: gsi2_sk
+            AttributeType: S
+        KeySchema:
+          - AttributeName: pk
+            KeyType: HASH
+          - AttributeName: sk
+            KeyType: RANGE
+        GlobalSecondaryIndexes:
+          - IndexName: GSI_1
+            KeySchema:
+              - AttributeName: gsi1_pk
+                KeyType: HASH
+              - AttributeName: gsi1_sk
+                KeyType: RANGE
+            Projection:
+              ProjectionType: 'ALL'
+          - IndexName: GSI_2
+            KeySchema:
+              - AttributeName: gsi2_pk
+                KeyType: HASH
+              - AttributeName: gsi2_sk
+                KeyType: RANGE
+            Projection:
+              ProjectionType: 'ALL'
+        BillingMode: PAY_PER_REQUEST
+        TableName: ddb-3blk-${env:NODE_ENV,'dev'}-${env:PR_REGION,'uea1'}-${env:PROJECT_NAME,'3blocks'}-Digital-RE
+    Backend3blocksCompanyRETableName:
+      Type: AWS::DynamoDB::Table
+      UpdateReplacePolicy: Retain
+      Properties:
+        AttributeDefinitions:
+          - AttributeName: pk
+            AttributeType: S
+          - AttributeName: sk
+            AttributeType: S
+        KeySchema:
+          - AttributeName: pk
+            KeyType: HASH
+          - AttributeName: sk
+            KeyType: RANGE
+        BillingMode: PAY_PER_REQUEST
+        TableName: ddb-3blk-${env:NODE_ENV,'dev'}-${env:PR_REGION,'uea1'}-${env:PROJECT_NAME,'3blocks'}-Company-RE
+    # Backend3blocksDigitalReTableName:
+    #   Type: AWS::DynamoDB::Table
+    #   UpdateReplacePolicy: Retain
+    #   Properties:
+    #     AttributeDefinitions:
+    #       - AttributeName: pk
+    #         AttributeType: S
+    #       - AttributeName: sk
+    #         AttributeType: S
+    #       - AttributeName: gsi1_pk
+    #         AttributeType: S
+    #       - AttributeName: gsi1_sk
+    #         AttributeType: S  
+    #     KeySchema:
+    #       - AttributeName: pk
+    #         KeyType: HASH
+    #       - AttributeName: sk
+    #         KeyType: RANGE
+    #     GlobalSecondaryIndexes:
+    #       - IndexName: GSI_1
+    #         KeySchema:
+    #           - AttributeName: gsi1_pk
+    #             KeyType: HASH
+    #           - AttributeName: gsi1_sk
+    #             KeyType: RANGE
+    #         Projection:
+    #           ProjectionType: "ALL"
+    #     BillingMode: PAY_PER_REQUEST
+    #     TableName: ddb-3blk-${env:NODE_ENV,'dev'}-${env:PR_REGION,'uea1'}-${env:PROJECT_NAME,'3blocks'}-Digital-RE
+    # Backend3blocksMonsTableName:
+    #   Type: AWS::DynamoDB::Table
+    #   DeletionPolicy: Retain
+    #   Properties:
+    #     AttributeDefinitions:
+    #       - AttributeName: pk
+    #         AttributeType: S
+    #       - AttributeName: sk
+    #         AttributeType: S
+    #       - AttributeName: gsi2_pk
+    #         AttributeType: S
+    #     KeySchema:
+    #       - AttributeName: pk
+    #         KeyType: HASH
+    #       - AttributeName: sk
+    #         KeyType: RANGE
+    #     GlobalSecondaryIndexes:
+    #       - IndexName: GSI_1
+    #         KeySchema:
+    #           - AttributeName: sk
+    #             KeyType: HASH
+    #           - AttributeName: pk
+    #             KeyType: RANGE
+    #         Projection:
+    #           ProjectionType: "ALL"
+    #       - IndexName: GSI_2
+    #         KeySchema:
+    #           - AttributeName: gsi2_pk
+    #             KeyType: HASH
+    #         Projection:
+    #           ProjectionType: "ALL"
+    #     BillingMode: PAY_PER_REQUEST
+    #     TableName: ddb-3blk-${env:NODE_ENV,'dev'}-${env:PR_REGION,'uea1'}-${env:PROJECT_NAME,'3blocks'}-Back
+    # Backend3blocksUserAccsTableName:
+      # Type: AWS::DynamoDB::Table
+      # DeletionPolicy: Retain
+      # Properties:
+      #   AttributeDefinitions:
+      #     - AttributeName: pk
+      #       AttributeType: S
+      #     - AttributeName: sk
+      #       AttributeType: S
+      #     - AttributeName: gsi1_pk
+      #       AttributeType: S
+      #     - AttributeName: gsi1_sk
+      #       AttributeType: S
+      #       AttributeType: S
+      #     - AttributeName: gsi2_sk
+      #       AttributeType: S
+      #   KeySchema:
+      #     - AttributeName: pk
+      #       KeyType: HASH
+      #     - AttributeName: sk
+      #       KeyType: RANGE
+      #   GlobalSecondaryIndexes:
+      #     - IndexName: GSI_1
+      #       KeySchema:
+      #         - AttributeName: gsi1_pk
+      #           KeyType: HASH
+      #         - AttributeName: gsi1_sk
+      #           KeyType: RANGE
+      #       Projection:
+      #         ProjectionType: "ALL"
+      #     - IndexName: GSI_2
+      #       KeySchema: 
+      #         - AttributeName: gsi2_pk
+      #           KeyType: HASH
+      #         - AttributeName: gsi2_sk
+      #           KeyType: RANGE
+      #       Projection:
+      #         ProjectionType: "ALL"
+      #   BillingMode: PAY_PER_REQUEST
+      #   TableName: ${env:USER_DB_TABLE_NAME,'ddb-3blk-dev-uea1-3blocks-User-acs'}
+# "errorMessage": "Schema must contain uniquely named types but contains multiple types named \"c\".",
+# you can add GSI indexes one by one. you can't add in single update call.
+# The correct steps are:  #
+#  - add one GSI, sls deploy
+#  - waiting for the first GSI created and ready (active status), it takes several minutes.
+#  - add second GSI, sls deploy
+## TODO
+
+# layers:
+#   commonLibs:
+#     path: layer
+#     compatibleRuntimes: 
+#       - nodejs8.10
+
+
+# "address" : "fullAddress",
+# "totaltokens" : "blcok.totalTokens"
+#   "expectedIncome": "9.33%", ESTROI
+#   lastTradedPrice from the blockchain
+
+#   op_expense_reimburse = platform fees
+#   asset price =~
+#   totalinverstment
+
+# country = "USA"
+# city = "3851 McClellan Ave, Detroit, MI 48214" reduct from full address
+
+
+How to improve the security on API side/browser side as well.
+
+- TLS enabled on Website so only https:// can be called.
+- Authentication & Authorization
+- Oauth2 -> Client Credentials or AuthCode PKCE -> public or confidential
+- Rate Limiting
+- Sufficient Input Validation so you can avoid SQL injections or XSS attack to system

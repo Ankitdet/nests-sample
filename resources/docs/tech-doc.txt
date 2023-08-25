@@ -1,0 +1,111 @@
+// Important thing to know.
+
+Available mapped types:
+
+PartialType - returns a type (class) with all the properties of the input type set to optional (requirement: at least 1 validation decorator applied to each property)
+PickType - constructs a new type (class) by picking a set of properties from an input type
+OmitType - constructs a type by picking all properties from an input type and then removing a particular set of keys
+IntersectionType - combines two types into one new type (class)
+
+
+import { Field, InputType, Int, IntersectionType, PartialType, PickType } from "@nestjs/graphql";
+
+@InputType('CreateUserInputTest')
+export class CreateUserInput {
+    @Field()
+    email: string;
+
+    @Field()
+    password: string;
+
+    @Field()
+    firstName: string;
+}
+
+@InputType()
+export class UpdateUserInput extends PartialType(CreateUserInput) { }
+
+@InputType()
+export class UpdateUserInputNew extends PickType(CreateUserInput, ['email'] as const) { }
+
+@InputType()
+export class IntersectionPart1 {
+
+    @Field()
+    abc: string
+
+    @Field()
+    naming: string
+
+    @Field(() => Int)
+    npos: number
+
+}
+
+@InputType()
+export class IntersectionPart2 {
+
+    @Field()
+    detroja: string
+
+    @Field()
+    npos: string
+}
+
+
+// First object override always
+@InputType()
+export class IntersectionPartFinal extends IntersectionType(IntersectionPart1, IntersectionPart2) { }
+
+
+// Fetch RealEstate Basic Info
+
+city: "TAMPA"
+state: "FL"
+street_address: "15260 ANGUILLA ISLE AVE"
+userId: "a6d98d0b-6aa3-4537-b789-b8a5a15c927d"
+zip_code: 33647
+
+
+// Create Finance
+mutation {
+  createRealEstateFinance(
+    assetPrice: 100000
+    closingCost: 5000
+    expectedGrossRentPerProperty: 20000
+    expectedReserveFunds: 10000
+    insurance: 500
+  	maintenanceExpenseInPercentage: 3
+    platformFeesInPercentage: 1
+    platformListFeesInPercentage: 6
+    propertyMgtFeesInPercentage: 15
+    propertyTaxes: 5000
+    re_id: "b894113e-ad3c-4e9e-89b6-c4a62cc07173"
+    renovationCosts: 10000
+    user_id: ""
+    utilities: 3600
+  ) {
+    assetPrice
+    closingCost
+    expectedGrossRentPerProperty
+    expectedGrossRoiPerProperty
+    expectedNetRentPerProperty
+    expectedNetRoiPerProperty
+    expectedReserveFunds
+    expenses
+    insurance
+    listingPrice
+    maintenanceExpense
+    netRentPerToken
+    numberOfTokens
+    platformFees
+    platformListingFees
+    propertyMgtFees
+    propertyTaxes
+    re_id
+    renovationCosts
+    tokenPrice
+    totalInvestments
+    utilities
+  }
+}
