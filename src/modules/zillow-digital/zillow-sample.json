@@ -1,0 +1,2213 @@
+{
+  "abbreviatedAddress": "12050 Bryden St #8",
+  "address": {
+    "city": "Detroit",
+    "community": null,
+    "neighborhood": null,
+    "state": "MI",
+    "streetAddress": "12050 Bryden St #8",
+    "subdivision": null,
+    "zipcode": "48204"
+  },
+  "apartmentsForRentInZipcodeSearchUrl": {
+    "path": "/detroit-mi-48204/apartments/"
+  },
+  "attributionInfo": {
+    "agentEmail": null,
+    "agentLicenseNumber": null,
+    "agentName": null,
+    "agentPhoneNumber": null,
+    "attributionTitle": null,
+    "brokerName": null,
+    "brokerPhoneNumber": null,
+    "buyerAgentMemberStateLicense": null,
+    "buyerAgentName": null,
+    "buyerBrokerageName": null,
+    "coAgentLicenseNumber": null,
+    "coAgentName": null,
+    "coAgentNumber": null,
+    "infoList1": [
+      {
+        "infoField1": "listOffice",
+        "infoField2": null
+      }
+    ],
+    "infoList2": [],
+    "infoString1": null,
+    "infoString10": null,
+    "infoString11": null,
+    "infoString12": null,
+    "infoString13": null,
+    "infoString14": null,
+    "infoString15": null,
+    "infoString16": null,
+    "infoString17": null,
+    "infoString18": null,
+    "infoString19": null,
+    "infoString2": null,
+    "infoString20": null,
+    "infoString3": null,
+    "infoString4": null,
+    "infoString5": null,
+    "infoString6": null,
+    "infoString7": null,
+    "infoString9": null,
+    "lastChecked": null,
+    "lastUpdated": null,
+    "listingAgents": [],
+    "listingAgreement": null,
+    "listingOffices": [
+      {
+        "associatedOfficeType": "listOffice",
+        "officeName": null
+      }
+    ],
+    "mlsDisclaimer": null,
+    "mlsId": null,
+    "mlsName": null,
+    "providerLogo": null,
+    "trueStatus": null
+  },
+  "bathrooms": 1,
+  "bedrooms": 1,
+  "big": [
+    {
+      "subjectType": null,
+      "url": "https://maps.googleapis.com/maps/api/streetview?location=12050+Bryden+St%2C+Detroit%2C+MI+48204&size=550x413&key=AIzaSyARFMLB1na-BBWf7_R3-5YOQQaHqEJf6RQ&source=outdoor&&signature=wmxpyijnkCB3OjIQZFYILK6vrPE=",
+      "width": 550
+    }
+  ],
+  "boroughId": null,
+  "boroughSearchUrl": null,
+  "brokerageName": null,
+  "brokerId": null,
+  "brokerIdDimension": "Unknown Listed By",
+  "building": null,
+  "buildingId": "1004167679",
+  "city": "Detroit",
+  "cityId": 17762,
+  "citySearchUrl": {
+    "path": "/detroit-mi/",
+    "text": "Homes in Detroit"
+  },
+  "comingSoonOnMarketDate": null,
+  "communityUrl": null,
+  "comps": [],
+  "contingentListingType": null,
+  "country": "USA",
+  "county": "Wayne County",
+  "countyFIPS": null,
+  "countyId": 791,
+  "currency": "USD",
+  "datePostedString": null,
+  "datePriceChanged": null,
+  "dateSold": null,
+  "dateSoldString": null,
+  "daysOnZillow": null,
+  "description": "This 500 square foot multi family home has 1 bedrooms and 1.0 bathrooms. This home is located at 12050 Bryden St #8, Detroit, MI 48204.",
+  "desktopWebHdpImageLink": "https://maps.googleapis.com/maps/api/streetview?location=12050+Bryden+St%2C+Detroit%2C+MI+48204&size=550x413&key=AIzaSyARFMLB1na-BBWf7_R3-5YOQQaHqEJf6RQ&source=outdoor&&signature=wmxpyijnkCB3OjIQZFYILK6vrPE=",
+  "downPaymentAssistance": null,
+  "editPropertyHistorylink": null,
+  "enhancedBrokerImageUrl": null,
+  "favoriteCount": 0,
+  "featuredListingTypeDimension": "organic",
+  "floorMaps": [],
+  "foreclosingBank": null,
+  "foreclosureAmount": null,
+  "foreclosureAuctionCity": null,
+  "foreclosureAuctionDescription": null,
+  "foreclosureAuctionFilingDate": null,
+  "foreclosureAuctionLocation": null,
+  "foreclosureAuctionTime": null,
+  "foreclosureBalanceReportingDate": null,
+  "foreclosureDate": null,
+  "foreclosureDefaultFilingDate": null,
+  "foreclosureJudicialType": "Non-Judicial",
+  "foreclosureLoanAmount": null,
+  "foreclosureLoanDate": null,
+  "foreclosureLoanOriginator": null,
+  "foreclosureMoreInfo": null,
+  "foreclosurePastDueBalance": null,
+  "foreclosurePriorSaleAmount": null,
+  "foreclosurePriorSaleDate": null,
+  "foreclosureTypes": {
+    "isAnyForeclosure": false,
+    "isBankOwned": false,
+    "isForeclosedNFS": false,
+    "isPreforeclosure": false,
+    "wasDefault": null,
+    "wasForeclosed": false,
+    "wasNonRetailAuction": false,
+    "wasREO": null
+  },
+  "foreclosureUnpaidBalance": null,
+  "formattedChip": {
+    "location": [
+      {
+        "fullValue": "12050 Bryden St #8"
+      },
+      {
+        "fullValue": "Detroit, MI 48204"
+      }
+    ]
+  },
+  "hasApprovedThirdPartyVirtualTourUrl": false,
+  "hasBadGeocode": false,
+  "hasPublicVideo": false,
+  "hasVRModel": null,
+  "hdpTypeDimension": "NoZestimate",
+  "hdpUrl": "/homedetails/12050-Bryden-St-8-Detroit-MI-48204/2079002161_zpid/",
+  "hideZestimate": false,
+  "hideZMA": false,
+  "hiResImageLink": "https://maps.googleapis.com/maps/api/streetview?location=12050+Bryden+St%2C+Detroit%2C+MI+48204&size=1025x768&key=AIzaSyARFMLB1na-BBWf7_R3-5YOQQaHqEJf6RQ&source=outdoor&&signature=1kYXR3-lEeRb0zJgiJgEHmX_R2Y=",
+  "homeInsights": null,
+  "homeRecommendations": {
+    "blendedRecs": [],
+    "displayShort": null
+  },
+  "homeStatus": "OTHER",
+  "homeType": "MULTI_FAMILY",
+  "homeValues": null,
+  "housesForRentInZipcodeSearchUrl": {
+    "path": "/detroit-mi-48204/rent-houses/"
+  },
+  "hugePhotos": [
+    {
+      "caption": null,
+      "height": 768,
+      "url": "https://maps.googleapis.com/maps/api/streetview?location=12050+Bryden+St%2C+Detroit%2C+MI+48204&size=1025x768&key=AIzaSyARFMLB1na-BBWf7_R3-5YOQQaHqEJf6RQ&source=outdoor&&signature=1kYXR3-lEeRb0zJgiJgEHmX_R2Y=",
+      "width": 1025
+    }
+  ],
+  "isCamo": null,
+  "isCommunityPillar": null,
+  "isCurrentSignedInAgentResponsible": false,
+  "isCurrentSignedInUserVerifiedOwner": false,
+  "isFeatured": false,
+  "isIncomeRestricted": null,
+  "isListedByOwner": false,
+  "isListingClaimedByCurrentSignedInUser": false,
+  "isNonOwnerOccupied": false,
+  "isPaidMultiFamilyBrokerId": false,
+  "isPreforeclosureAuction": false,
+  "isPremierBuilder": false,
+  "isRecentStatusChange": false,
+  "isRentalListingOffMarket": false,
+  "isRentalsLeadCapMet": false,
+  "isUndisclosedAddress": false,
+  "isZillowOwned": false,
+  "keystoneHomeStatus": "NotForSale",
+  "lastSoldPrice": null,
+  "latitude": 42.37673,
+  "listingAccountUserId": null,
+  "listingDataSource": "Legacy",
+  "listingFeedID": null,
+  "listingMetadata": {
+    "canCommingleComparables": true,
+    "canShowAutomatedValuationDisplay": true,
+    "canShowComparables": true,
+    "canShowCroppedPhotos": true,
+    "canShowNonIDXMedia": true,
+    "canShowOnMap": true,
+    "canShowPrequalifiedLinkInChip": true,
+    "canShowPriceHistory": true,
+    "canShowTaxHistory": true,
+    "canShowUserGeneratedContent": true,
+    "canShowZillowLogoInHeader": true,
+    "comminglingCategory": true,
+    "comminglingCategoryIsRulesApplicable": false,
+    "FlexibleLayoutAA": true,
+    "FlexibleLayoutAB": true,
+    "FlexibleLayoutB": true,
+    "FlexibleLayoutC": true,
+    "FlexibleLayoutD": true,
+    "FlexibleLayoutE": true,
+    "FlexibleLayoutF": false,
+    "FlexibleLayoutG": false,
+    "FlexibleLayoutH": true,
+    "FlexibleLayoutI": true,
+    "FlexibleLayoutJ": false,
+    "FlexibleLayoutK": false,
+    "FlexibleLayoutL": false,
+    "FlexibleLayoutM": true,
+    "FlexibleLayoutN": true,
+    "FlexibleLayoutO": true,
+    "FlexibleLayoutP": false,
+    "FlexibleLayoutQ": false,
+    "FlexibleLayoutR": false,
+    "FlexibleLayoutS": false,
+    "FlexibleLayoutT": false,
+    "FlexibleLayoutU": false,
+    "FlexibleLayoutV": false,
+    "FlexibleLayoutW": false,
+    "FlexibleLayoutX": false,
+    "FlexibleLayoutY": false,
+    "FlexibleLayoutZ": false,
+    "hidePriceAdjustmentFlexField": false,
+    "isAdsRestricted": false,
+    "isSuperTrafficOptimized": false,
+    "mustAttributeOfficeNameBeforeAgentName": false,
+    "mustDisplayAttributionListAgentEmail": false,
+    "mustDisplayAttributionListAgentPhone": false,
+    "mustDisplayAttributionListingOfficePhone": false,
+    "mustDisplayDisclaimerBelowAttribution": false,
+    "mustDisplayFeedLogoInContactBox": false,
+    "mustHighlightAgentName": null,
+    "mustHighlightListOfficeName": false,
+    "mustHighlightMarketingType": false,
+    "mustHighlightMlsId": null,
+    "mustHighlightMlsStatus": false,
+    "mustMakeListingAgentContactable": false,
+    "passwordRequiredForZestimateMarketAnalysis": false
+  },
+  "listingProvider": {
+    "agentLicenseNumber": null,
+    "agentName": null,
+    "disclaimerText": null,
+    "enhancedDescriptionText": null,
+    "enhancedVideoURL": null,
+    "isZRMSourceText": null,
+    "logos": [],
+    "postingGroupName": null,
+    "postingWebsiteLinkText": "See listing website",
+    "postingWebsiteURL": null,
+    "showLogos": null,
+    "showNoContactInfoMessage": false,
+    "sourceText": null,
+    "title": "Listing Provided by"
+  },
+  "listingSubType": {
+    "isBankOwned": false,
+    "isComingSoon": false,
+    "isForAuction": false,
+    "isForeclosure": false,
+    "isFSBA": false,
+    "isFSBO": false,
+    "isNewHome": false,
+    "isOpenHouse": false,
+    "isPending": false
+  },
+  "listingTypeDimension": "Unknown Listed By",
+  "listing_agent": null,
+  "listing_sub_type": {
+    "is_bankOwned": false,
+    "is_comingSoon": false,
+    "is_forAuction": false,
+    "is_foreclosure": false,
+    "is_FSBA": false,
+    "is_FSBO": false,
+    "is_newHome": false,
+    "is_openHouse": false,
+    "is_pending": false
+  },
+  "listPriceLow": null,
+  "livingArea": 500,
+  "livingAreaUnits": "Square Feet",
+  "livingAreaUnitsShort": "sqft",
+  "livingAreaValue": 500,
+  "longitude": -83.14522,
+  "lotAreaUnits": "sqft",
+  "lotAreaValue": null,
+  "lotSize": null,
+  "mapTileGoogleMapUrlFullWidthLightbox": "https://maps.googleapis.com/maps/api/staticmap?center=42.37673,-83.14522&zoom=16&size=1024x234&maptype=roadmap&key=AIzaSyARFMLB1na-BBWf7_R3-5YOQQaHqEJf6RQ&scale=2&signature=VXrwj_8_5HPbjeP9B0bzt5xEFNM=",
+  "mapTileGoogleMapUrlFullWidthLightboxWholeZipcode": "https://maps.googleapis.com/maps/api/staticmap?center=42.37673,-83.14522&zoom=12&size=1024x234&maptype=roadmap&key=AIzaSyARFMLB1na-BBWf7_R3-5YOQQaHqEJf6RQ&scale=2&signature=VwHyRMF6zc-bHvGzRxBZS87iYaQ=",
+  "mapTileGoogleMapUrlFullWidthMax": "https://maps.googleapis.com/maps/api/staticmap?center=42.37673,-83.14522&zoom=16&size=1920x234&maptype=roadmap&key=AIzaSyARFMLB1na-BBWf7_R3-5YOQQaHqEJf6RQ&scale=1&signature=L45LB3Gm8CvOwEzuaRN-C9Qi6WU=",
+  "mapTileGoogleMapUrlFullWidthMaxWholeZipcode": "https://maps.googleapis.com/maps/api/staticmap?center=42.37673,-83.14522&zoom=12&size=1920x234&maptype=roadmap&key=AIzaSyARFMLB1na-BBWf7_R3-5YOQQaHqEJf6RQ&scale=1&signature=o0054C2S_nDALRfxCAME_9qGWxU=",
+  "mapTileGoogleMapUrlSmall": "https://maps.googleapis.com/maps/api/staticmap?center=42.37673,-83.14522&zoom=14&size=280x208&maptype=roadmap&key=AIzaSyARFMLB1na-BBWf7_R3-5YOQQaHqEJf6RQ&scale=2&signature=m7dy-uYLC125YW68eOgtoMkwnM0=",
+  "mapTileGoogleMapUrlSmallWholeZipcode": "https://maps.googleapis.com/maps/api/staticmap?center=42.37673,-83.14522&zoom=12&size=280x208&maptype=roadmap&key=AIzaSyARFMLB1na-BBWf7_R3-5YOQQaHqEJf6RQ&scale=2&signature=bkKzM9EfKso9UoHsZPdEfPb8rLk=",
+  "marketingName": null,
+  "mediumImageLink": "https://maps.googleapis.com/maps/api/streetview?location=12050+Bryden+St%2C+Detroit%2C+MI+48204&size=400x300&key=AIzaSyARFMLB1na-BBWf7_R3-5YOQQaHqEJf6RQ&source=outdoor&&signature=vsJA6qjbSa8UZjHos4wrlaxhaJs=",
+  "mlsid": null,
+  "monthlyHoaFee": null,
+  "mortgageRates": null,
+  "moveHomeMapLocationLink": null,
+  "moveInCompletionDate": null,
+  "moveInReady": false,
+  "nearbyCities": [
+    {
+      "body": null,
+      "name": "Canton",
+      "regionUrl": {
+        "path": "/canton-mi/"
+      }
+    },
+    {
+      "body": null,
+      "name": "Dearborn",
+      "regionUrl": {
+        "path": "/dearborn-mi/"
+      }
+    },
+    {
+      "body": null,
+      "name": "Dearborn Heights",
+      "regionUrl": {
+        "path": "/dearborn-heights-mi/"
+      }
+    },
+    {
+      "body": null,
+      "name": "Detroit",
+      "regionUrl": {
+        "path": "/detroit-mi/"
+      }
+    },
+    {
+      "body": null,
+      "name": "Lincoln Park",
+      "regionUrl": {
+        "path": "/lincoln-park-mi/"
+      }
+    },
+    {
+      "body": null,
+      "name": "Livonia",
+      "regionUrl": {
+        "path": "/livonia-mi/"
+      }
+    },
+    {
+      "body": null,
+      "name": "Northville",
+      "regionUrl": {
+        "path": "/northville-mi/"
+      }
+    },
+    {
+      "body": null,
+      "name": "Redford",
+      "regionUrl": {
+        "path": "/redford-mi/"
+      }
+    },
+    {
+      "body": null,
+      "name": "Taylor",
+      "regionUrl": {
+        "path": "/taylor-mi/"
+      }
+    },
+    {
+      "body": null,
+      "name": "Westland",
+      "regionUrl": {
+        "path": "/westland-mi/"
+      }
+    }
+  ],
+  "nearbyHomes": [
+    {
+      "address": {
+        "city": "Detroit",
+        "state": "MI",
+        "streetAddress": "12050 Bryden St APT 6",
+        "zipcode": "48204"
+      },
+      "attributionInfo": {
+        "agentName": null,
+        "agentPhoneNumber": null,
+        "brokerName": null,
+        "brokerPhoneNumber": null,
+        "mlsId": null,
+        "mlsName": null,
+        "providerLogo": null,
+        "trueStatus": null
+      },
+      "bathrooms": 1,
+      "bedrooms": 1,
+      "currency": "USD",
+      "hdpUrl": "/homedetails/12050-Bryden-St-APT-6-Detroit-MI-48204/2083189029_zpid/",
+      "homeStatus": "OTHER",
+      "homeType": "APARTMENT",
+      "isPremierBuilder": false,
+      "isZillowOwned": false,
+      "latitude": 42.37673,
+      "listing_sub_type": {
+        "is_bankOwned": false,
+        "is_comingSoon": false,
+        "is_forAuction": false,
+        "is_foreclosure": false,
+        "is_FSBA": false,
+        "is_FSBO": false,
+        "is_newHome": false
+      },
+      "livingArea": 500,
+      "livingAreaUnits": "Square Feet",
+      "livingAreaUnitsShort": "sqft",
+      "livingAreaValue": 500,
+      "longitude": -83.14522,
+      "lotAreaUnits": "sqft",
+      "lotAreaValue": null,
+      "lotSize": null,
+      "miniCardPhotos": [
+        {
+          "url": "https://photos.zillowstatic.com/fp/8de96bdb00bd7daaf3c59c59bd4e89c6-p_c.jpg"
+        }
+      ],
+      "newConstructionType": null,
+      "price": 0,
+      "providerListingID": null,
+      "state": "MI",
+      "zpid": 2083189029
+    },
+    {
+      "address": {
+        "city": "Detroit",
+        "state": "MI",
+        "streetAddress": "12026 Bryden St",
+        "zipcode": "48204"
+      },
+      "attributionInfo": {
+        "agentName": null,
+        "agentPhoneNumber": null,
+        "brokerName": null,
+        "brokerPhoneNumber": null,
+        "mlsId": null,
+        "mlsName": null,
+        "providerLogo": null,
+        "trueStatus": null
+      },
+      "bathrooms": 1,
+      "bedrooms": null,
+      "currency": "USD",
+      "hdpUrl": "/homedetails/12026-Bryden-St-Detroit-MI-48204/88265858_zpid/",
+      "homeStatus": "OTHER",
+      "homeType": "SINGLE_FAMILY",
+      "isPremierBuilder": false,
+      "isZillowOwned": false,
+      "latitude": 42.376476,
+      "listing_sub_type": {
+        "is_bankOwned": false,
+        "is_comingSoon": false,
+        "is_forAuction": false,
+        "is_foreclosure": false,
+        "is_FSBA": false,
+        "is_FSBO": false,
+        "is_newHome": false
+      },
+      "livingArea": 828,
+      "livingAreaUnits": "Square Feet",
+      "livingAreaUnitsShort": "sqft",
+      "livingAreaValue": 828,
+      "longitude": -83.14521,
+      "lotAreaUnits": "Square Feet",
+      "lotAreaValue": 3789,
+      "lotSize": 3789,
+      "miniCardPhotos": [
+        {
+          "url": "https://maps.googleapis.com/maps/api/staticmap?mobile=false&sensor=true&maptype=satellite&size=316x234&zoom=17&center=42.3764762878418,-83.14521026611328&key=AIzaSyBJsNQO5ZeG-XAbqqWLKwG08fWITSxg33w&&signature=S8NxzbLQnzxGUQsOz53aRV0xY-o="
+        }
+      ],
+      "newConstructionType": null,
+      "price": 5900,
+      "providerListingID": null,
+      "state": "MI",
+      "zpid": 88265858
+    },
+    {
+      "address": {
+        "city": "Detroit",
+        "state": "MI",
+        "streetAddress": "12039 American St",
+        "zipcode": "48204"
+      },
+      "attributionInfo": {
+        "agentName": null,
+        "agentPhoneNumber": null,
+        "brokerName": null,
+        "brokerPhoneNumber": null,
+        "mlsId": null,
+        "mlsName": null,
+        "providerLogo": null,
+        "trueStatus": null
+      },
+      "bathrooms": 1,
+      "bedrooms": null,
+      "currency": "USD",
+      "hdpUrl": "/homedetails/12039-American-St-Detroit-MI-48204/88203428_zpid/",
+      "homeStatus": "OTHER",
+      "homeType": "SINGLE_FAMILY",
+      "isPremierBuilder": false,
+      "isZillowOwned": false,
+      "latitude": 42.37669,
+      "listing_sub_type": {
+        "is_bankOwned": false,
+        "is_comingSoon": false,
+        "is_forAuction": false,
+        "is_foreclosure": false,
+        "is_FSBA": false,
+        "is_FSBO": false,
+        "is_newHome": false
+      },
+      "livingArea": 934,
+      "livingAreaUnits": "Square Feet",
+      "livingAreaUnitsShort": "sqft",
+      "livingAreaValue": 934,
+      "longitude": -83.14474,
+      "lotAreaUnits": "Square Feet",
+      "lotAreaValue": 3789,
+      "lotSize": 3789,
+      "miniCardPhotos": [
+        {
+          "url": "https://maps.googleapis.com/maps/api/streetview?location=12039+American+St%2C+Detroit%2C+MI+48204&size=316x234&key=AIzaSyARFMLB1na-BBWf7_R3-5YOQQaHqEJf6RQ&source=outdoor&&signature=Jn_cmN674fDHLnLD0orPK3IEvSY="
+        }
+      ],
+      "newConstructionType": null,
+      "price": 7400,
+      "providerListingID": null,
+      "state": "MI",
+      "zpid": 88203428
+    },
+    {
+      "address": {
+        "city": "Detroit",
+        "state": "MI",
+        "streetAddress": "12047 American St",
+        "zipcode": "48204"
+      },
+      "attributionInfo": {
+        "agentName": null,
+        "agentPhoneNumber": null,
+        "brokerName": null,
+        "brokerPhoneNumber": null,
+        "mlsId": null,
+        "mlsName": null,
+        "providerLogo": null,
+        "trueStatus": null
+      },
+      "bathrooms": 1,
+      "bedrooms": null,
+      "currency": "USD",
+      "hdpUrl": "/homedetails/12047-American-St-Detroit-MI-48204/88462859_zpid/",
+      "homeStatus": "OTHER",
+      "homeType": "SINGLE_FAMILY",
+      "isPremierBuilder": false,
+      "isZillowOwned": false,
+      "latitude": 42.376785,
+      "listing_sub_type": {
+        "is_bankOwned": false,
+        "is_comingSoon": false,
+        "is_forAuction": false,
+        "is_foreclosure": false,
+        "is_FSBA": false,
+        "is_FSBO": false,
+        "is_newHome": false
+      },
+      "livingArea": 1398,
+      "livingAreaUnits": "Square Feet",
+      "livingAreaUnitsShort": "sqft",
+      "livingAreaValue": 1398,
+      "longitude": -83.14474,
+      "lotAreaUnits": "Square Feet",
+      "lotAreaValue": 3789,
+      "lotSize": 3789,
+      "miniCardPhotos": [
+        {
+          "url": "https://maps.googleapis.com/maps/api/streetview?location=12047+American+St%2C+Detroit%2C+MI+48204&size=316x234&key=AIzaSyARFMLB1na-BBWf7_R3-5YOQQaHqEJf6RQ&source=outdoor&&signature=6GOGK9mYNgkNmlDwgWtUf42XEGs="
+        }
+      ],
+      "newConstructionType": null,
+      "price": 62700,
+      "providerListingID": null,
+      "state": "MI",
+      "zpid": 88462859
+    },
+    {
+      "address": {
+        "city": "Detroit",
+        "state": "MI",
+        "streetAddress": "12020 Bryden St",
+        "zipcode": "48204"
+      },
+      "attributionInfo": {
+        "agentName": null,
+        "agentPhoneNumber": null,
+        "brokerName": null,
+        "brokerPhoneNumber": null,
+        "mlsId": null,
+        "mlsName": null,
+        "providerLogo": null,
+        "trueStatus": null
+      },
+      "bathrooms": null,
+      "bedrooms": null,
+      "currency": "USD",
+      "hdpUrl": "/homedetails/12020-Bryden-St-Detroit-MI-48204/245791130_zpid/",
+      "homeStatus": "OTHER",
+      "homeType": "SINGLE_FAMILY",
+      "isPremierBuilder": false,
+      "isZillowOwned": false,
+      "latitude": 42.376373,
+      "listing_sub_type": {
+        "is_bankOwned": false,
+        "is_comingSoon": false,
+        "is_forAuction": false,
+        "is_foreclosure": false,
+        "is_FSBA": false,
+        "is_FSBO": false,
+        "is_newHome": false
+      },
+      "livingArea": null,
+      "livingAreaUnits": null,
+      "livingAreaUnitsShort": null,
+      "livingAreaValue": null,
+      "longitude": -83.1453,
+      "lotAreaUnits": "Square Feet",
+      "lotAreaValue": 3789,
+      "lotSize": 3789,
+      "miniCardPhotos": [
+        {
+          "url": "https://maps.googleapis.com/maps/api/streetview?location=12020+Bryden+St%2C+Detroit%2C+MI+48204&size=316x234&key=AIzaSyARFMLB1na-BBWf7_R3-5YOQQaHqEJf6RQ&source=outdoor&&signature=KXC7wi59SlRD7tIJYQGqNZNbKiw="
+        }
+      ],
+      "newConstructionType": null,
+      "price": 0,
+      "providerListingID": null,
+      "state": "MI",
+      "zpid": 245791130
+    },
+    {
+      "address": {
+        "city": "Detroit",
+        "state": "MI",
+        "streetAddress": "12027 American St",
+        "zipcode": "48204"
+      },
+      "attributionInfo": {
+        "agentName": null,
+        "agentPhoneNumber": null,
+        "brokerName": null,
+        "brokerPhoneNumber": null,
+        "mlsId": null,
+        "mlsName": null,
+        "providerLogo": null,
+        "trueStatus": null
+      },
+      "bathrooms": null,
+      "bedrooms": null,
+      "currency": "USD",
+      "hdpUrl": "/homedetails/12027-American-St-Detroit-MI-48204/88585204_zpid/",
+      "homeStatus": "OTHER",
+      "homeType": "SINGLE_FAMILY",
+      "isPremierBuilder": false,
+      "isZillowOwned": false,
+      "latitude": 42.37649,
+      "listing_sub_type": {
+        "is_bankOwned": false,
+        "is_comingSoon": false,
+        "is_forAuction": false,
+        "is_foreclosure": false,
+        "is_FSBA": false,
+        "is_FSBO": false,
+        "is_newHome": false
+      },
+      "livingArea": null,
+      "livingAreaUnits": null,
+      "livingAreaUnitsShort": null,
+      "livingAreaValue": null,
+      "longitude": -83.14483,
+      "lotAreaUnits": "Square Feet",
+      "lotAreaValue": 3789,
+      "lotSize": 3789,
+      "miniCardPhotos": [
+        {
+          "url": "https://maps.googleapis.com/maps/api/streetview?location=12027+American+St%2C+Detroit%2C+MI+48204&size=316x234&key=AIzaSyARFMLB1na-BBWf7_R3-5YOQQaHqEJf6RQ&source=outdoor&&signature=4RhgBwkgwfmIGja7JG2qg8kXCj0="
+        }
+      ],
+      "newConstructionType": null,
+      "price": 400,
+      "providerListingID": null,
+      "state": "MI",
+      "zpid": 88585204
+    },
+    {
+      "address": {
+        "city": "Detroit",
+        "state": "MI",
+        "streetAddress": "12035 American St",
+        "zipcode": "48204"
+      },
+      "attributionInfo": {
+        "agentName": null,
+        "agentPhoneNumber": null,
+        "brokerName": null,
+        "brokerPhoneNumber": null,
+        "mlsId": null,
+        "mlsName": null,
+        "providerLogo": null,
+        "trueStatus": null
+      },
+      "bathrooms": 2,
+      "bedrooms": null,
+      "currency": "USD",
+      "hdpUrl": "/homedetails/12035-American-St-Detroit-MI-48204/88586955_zpid/",
+      "homeStatus": "OTHER",
+      "homeType": "SINGLE_FAMILY",
+      "isPremierBuilder": false,
+      "isZillowOwned": false,
+      "latitude": 42.376595,
+      "listing_sub_type": {
+        "is_bankOwned": false,
+        "is_comingSoon": false,
+        "is_forAuction": false,
+        "is_foreclosure": false,
+        "is_FSBA": false,
+        "is_FSBO": false,
+        "is_newHome": false
+      },
+      "livingArea": 2096,
+      "livingAreaUnits": "Square Feet",
+      "livingAreaUnitsShort": "sqft",
+      "livingAreaValue": 2096,
+      "longitude": -83.14474,
+      "lotAreaUnits": "Square Feet",
+      "lotAreaValue": 3789,
+      "lotSize": 3789,
+      "miniCardPhotos": [
+        {
+          "url": "https://maps.googleapis.com/maps/api/streetview?location=12035+American+St%2C+Detroit%2C+MI+48204&size=316x234&key=AIzaSyARFMLB1na-BBWf7_R3-5YOQQaHqEJf6RQ&source=outdoor&&signature=_OflGUtKr_TmSrO6iWzxufyk0KQ="
+        }
+      ],
+      "newConstructionType": null,
+      "price": 1400,
+      "providerListingID": null,
+      "state": "MI",
+      "zpid": 88586955
+    },
+    {
+      "address": {
+        "city": "Detroit",
+        "state": "MI",
+        "streetAddress": "12055 American St",
+        "zipcode": "48204"
+      },
+      "attributionInfo": {
+        "agentName": null,
+        "agentPhoneNumber": null,
+        "brokerName": null,
+        "brokerPhoneNumber": null,
+        "mlsId": null,
+        "mlsName": null,
+        "providerLogo": null,
+        "trueStatus": null
+      },
+      "bathrooms": 1,
+      "bedrooms": null,
+      "currency": "USD",
+      "hdpUrl": "/homedetails/12055-American-St-Detroit-MI-48204/88255478_zpid/",
+      "homeStatus": "OTHER",
+      "homeType": "SINGLE_FAMILY",
+      "isPremierBuilder": false,
+      "isZillowOwned": false,
+      "latitude": 42.376896,
+      "listing_sub_type": {
+        "is_bankOwned": false,
+        "is_comingSoon": false,
+        "is_forAuction": false,
+        "is_foreclosure": false,
+        "is_FSBA": false,
+        "is_FSBO": false,
+        "is_newHome": false
+      },
+      "livingArea": 1408,
+      "livingAreaUnits": "Square Feet",
+      "livingAreaUnitsShort": "sqft",
+      "livingAreaValue": 1408,
+      "longitude": -83.144745,
+      "lotAreaUnits": "Square Feet",
+      "lotAreaValue": 4922,
+      "lotSize": 4922,
+      "miniCardPhotos": [
+        {
+          "url": "https://maps.googleapis.com/maps/api/streetview?location=12055+American+St%2C+Detroit%2C+MI+48204&size=316x234&key=AIzaSyARFMLB1na-BBWf7_R3-5YOQQaHqEJf6RQ&source=outdoor&&signature=V1fgVdCSFhHma7moWCHhkOltVUw="
+        }
+      ],
+      "newConstructionType": null,
+      "price": 9600,
+      "providerListingID": null,
+      "state": "MI",
+      "zpid": 88255478
+    }
+  ],
+  "nearbyNeighborhoods": [
+    {
+      "body": null,
+      "name": "Bagley",
+      "regionUrl": {
+        "path": "/bagley-detroit-mi/"
+      }
+    },
+    {
+      "body": null,
+      "name": "Barton-McFarland",
+      "regionUrl": {
+        "path": "/barton-mcfarland-detroit-mi/"
+      }
+    },
+    {
+      "body": null,
+      "name": "Brightmoor",
+      "regionUrl": {
+        "path": "/brightmoor-detroit-mi/"
+      }
+    },
+    {
+      "body": null,
+      "name": "Claytown",
+      "regionUrl": {
+        "path": "/claytown-detroit-mi/"
+      }
+    },
+    {
+      "body": null,
+      "name": "Franklin Park",
+      "regionUrl": {
+        "path": "/franklin-park-detroit-mi/"
+      }
+    },
+    {
+      "body": null,
+      "name": "Herman Gardens",
+      "regionUrl": {
+        "path": "/herman-gardens-detroit-mi/"
+      }
+    },
+    {
+      "body": null,
+      "name": "Morningside",
+      "regionUrl": {
+        "path": "/morningside-detroit-mi/"
+      }
+    },
+    {
+      "body": null,
+      "name": "Southwest Detroit",
+      "regionUrl": {
+        "path": "/southwest-detroit-detroit-mi/"
+      }
+    },
+    {
+      "body": null,
+      "name": "Springwells",
+      "regionUrl": {
+        "path": "/springwells-detroit-mi/"
+      }
+    },
+    {
+      "body": null,
+      "name": "Warrendale",
+      "regionUrl": {
+        "path": "/warrendale-detroit-mi/"
+      }
+    }
+  ],
+  "nearbyZipcodes": [
+    {
+      "body": null,
+      "name": "48205",
+      "regionUrl": {
+        "path": "/detroit-mi-48205/"
+      }
+    },
+    {
+      "body": null,
+      "name": "48212",
+      "regionUrl": {
+        "path": "/detroit-mi-48212/"
+      }
+    },
+    {
+      "body": null,
+      "name": "48219",
+      "regionUrl": {
+        "path": "/detroit-mi-48219/"
+      }
+    },
+    {
+      "body": null,
+      "name": "48221",
+      "regionUrl": {
+        "path": "/detroit-mi-48221/"
+      }
+    },
+    {
+      "body": null,
+      "name": "48224",
+      "regionUrl": {
+        "path": "/detroit-mi-48224/"
+      }
+    },
+    {
+      "body": null,
+      "name": "48227",
+      "regionUrl": {
+        "path": "/detroit-mi-48227/"
+      }
+    },
+    {
+      "body": null,
+      "name": "48228",
+      "regionUrl": {
+        "path": "/detroit-mi-48228/"
+      }
+    },
+    {
+      "body": null,
+      "name": "48234",
+      "regionUrl": {
+        "path": "/detroit-mi-48234/"
+      }
+    },
+    {
+      "body": null,
+      "name": "48235",
+      "regionUrl": {
+        "path": "/detroit-mi-48235/"
+      }
+    },
+    {
+      "body": null,
+      "name": "48239",
+      "regionUrl": {
+        "path": "/detroit-mi-48239/"
+      }
+    }
+  ],
+  "neighborhoodRegion": {
+    "name": "Oakman"
+  },
+  "neighborhoodSearchUrl": {
+    "path": "/oakman-detroit-mi/"
+  },
+  "newConstructionType": null,
+  "onsiteMessage": {
+    "decisionContext": {},
+    "eventId": "56056155-071f-40d0-b155-7beb95590a76",
+    "messages": [
+      {
+        "bucket": "BASELINE_TREATMENT",
+        "decisionContext": {
+          "city": "Detroit",
+          "countyId": "791",
+          "displayCategory": "none",
+          "guid": "7650b8a4-7657-44b1-8ce3-f7c4ff941e2d",
+          "hasUserClaimedHome": false,
+          "homeStatus": "zestimate",
+          "homeType": "MULTI_FAMILY",
+          "isAdsRestricted": false,
+          "isZillowOwned": false,
+          "leadType": "PARTNER_LEADS_INTEREST_LIST",
+          "leadTypes": ["PARTNER_LEADS_INTEREST_LIST"],
+          "placementId": "wow-top",
+          "shouldDisplayUpsell": false,
+          "state": "MI",
+          "stateId": "30",
+          "streetAddress": "12050 Bryden St #8",
+          "surfaceId": "fshdp",
+          "zipcode": "48204",
+          "zoMarketCode": "OZM"
+        },
+        "eventId": "b582d190-a22f-444c-90a3-cc81bdbd86f7",
+        "isGlobalHoldout": false,
+        "lastModified": "1679495268",
+        "passThrottle": true,
+        "placementId": 399,
+        "placementName": "HDPTopSlot",
+        "qualifiedTreatments": [
+          {
+            "id": 2239,
+            "lastModified": "1668425760",
+            "name": "ZGM_Purchase_FSHDP_Pre_Qual",
+            "status": "PORTFOLIO"
+          }
+        ],
+        "selectedTreatment": {
+          "component": "UpsellWrapper",
+          "id": 2239,
+          "lastModified": "1668425760",
+          "name": "ZGM_Purchase_FSHDP_Pre_Qual",
+          "renderingProps": "{\"actionLink\":\"https://www.zillow.com/pre-qualify/#/landing&zipCode=48204&propertyValue=&propertyType=CondoFourOrFewerStories&source=Z_ForSaleHDP_Inline&hdpSource=FS_HDP\",\"actionText\":\"Start now\",\"actionType\":\"url_link\",\"background\":\"backgroundBlue\",\"bodyMarkdownText\":\"Talking to a lender early to get pre-qualified for a mortgage can give you an advantage in a competitive market. <p class=\\\"zg-mls-note\\\">Zillow Group Marketplace, Inc. NMLS #1303160 </p><style> div[class*=Upsell-] .zg-mls-note{ font-size: 10px; font-weight: 400; position: absolute; right: 4px; bottom: 0; margin-bottom: -4px; color: grey; } </style>\",\"headingMarkdownText\":\"Get pre-qualified for a loan\",\"icon\":\"houseWithDollarSign\",\"overrideMargin\":\"16px\",\"hasBorder\":false,\"gaImpressionCategory\":\"Homes\",\"gaImpressionAction\":\"ZGM Purchase Upsell\",\"gaImpressionLabel\":\"Display|fshdp|wow-top|zgm-purchase|get-pre-qualified|omp\",\"gaEngagementCategory\":\"Homes\",\"gaEngagementAction\":\"ZGM Purchase Upsell\",\"gaEngagementLabel\":\"Click|fshdp|wow-top|zgm-purchase|get-pre-qualified|omp\",\"gaHoverCategory\":\"Homes\",\"gaHoverAction\":\"ZGM Purchase Upsell\",\"gaHoverLabel\":\"Hover|fshdp|wow-top|zgm-purchase|get-pre-qualified|omp\"}",
+          "status": "PORTFOLIO"
+        },
+        "shouldDisplay": true,
+        "skipDisplayReason": null,
+        "testPhase": "BASELINE"
+      }
+    ]
+  },
+  "openHouseSchedule": [],
+  "pageUrlFragment": "NoZestimate",
+  "pageViewCount": 0,
+  "pals": [],
+  "parcelId": null,
+  "parentRegion": {
+    "name": "Oakman"
+  },
+  "photoCount": 1,
+  "photos": [
+    {
+      "caption": null,
+      "mixedSources": {
+        "webp": [
+          {
+            "url": "https://maps.googleapis.com/maps/api/streetview?location=12050+Bryden+St%2C+Detroit%2C+MI+48204&size=192x144&key=AIzaSyARFMLB1na-BBWf7_R3-5YOQQaHqEJf6RQ&source=outdoor&&signature=SF454GJ4ddmSuFBfeveakOkCz8Y=",
+            "width": 192
+          },
+          {
+            "url": "https://maps.googleapis.com/maps/api/streetview?location=12050+Bryden+St%2C+Detroit%2C+MI+48204&size=384x288&key=AIzaSyARFMLB1na-BBWf7_R3-5YOQQaHqEJf6RQ&source=outdoor&&signature=L37FC8Wv0scD02G4yRf65KXllxI=",
+            "width": 384
+          },
+          {
+            "url": "https://maps.googleapis.com/maps/api/streetview?location=12050+Bryden+St%2C+Detroit%2C+MI+48204&size=576x432&key=AIzaSyARFMLB1na-BBWf7_R3-5YOQQaHqEJf6RQ&source=outdoor&&signature=--8n-r_8PCTqNQta7ZEGyZk6wsk=",
+            "width": 576
+          },
+          {
+            "url": "https://maps.googleapis.com/maps/api/streetview?location=12050+Bryden+St%2C+Detroit%2C+MI+48204&size=768x576&key=AIzaSyARFMLB1na-BBWf7_R3-5YOQQaHqEJf6RQ&source=outdoor&&signature=5BIDCjPacg1y5p3sBWwmXBKPeig=",
+            "width": 768
+          },
+          {
+            "url": "https://maps.googleapis.com/maps/api/streetview?location=12050+Bryden+St%2C+Detroit%2C+MI+48204&size=960x720&key=AIzaSyARFMLB1na-BBWf7_R3-5YOQQaHqEJf6RQ&source=outdoor&&signature=b1RTO79bBnrEK-MmtIoZ5t1rYVk=",
+            "width": 960
+          },
+          {
+            "url": "https://maps.googleapis.com/maps/api/streetview?location=12050+Bryden+St%2C+Detroit%2C+MI+48204&size=1152x864&key=AIzaSyARFMLB1na-BBWf7_R3-5YOQQaHqEJf6RQ&source=outdoor&&signature=_LGOsMNAl9U07-RFYXIBYbRI8Fw=",
+            "width": 1152
+          },
+          {
+            "url": "https://maps.googleapis.com/maps/api/streetview?location=12050+Bryden+St%2C+Detroit%2C+MI+48204&size=1344x1008&key=AIzaSyARFMLB1na-BBWf7_R3-5YOQQaHqEJf6RQ&source=outdoor&&signature=ZUTQTuG9OFiozZXEliet2VBQo7M=",
+            "width": 1344
+          },
+          {
+            "url": "https://maps.googleapis.com/maps/api/streetview?location=12050+Bryden+St%2C+Detroit%2C+MI+48204&size=1536x1152&key=AIzaSyARFMLB1na-BBWf7_R3-5YOQQaHqEJf6RQ&source=outdoor&&signature=tpNW525Cs6cek0ELPUGX9SH1nmE=",
+            "width": 1536
+          }
+        ]
+      }
+    }
+  ],
+  "postingContact": {
+    "name": null,
+    "photo": null
+  },
+  "postingProductType": "Standard",
+  "postingUrl": null,
+  "price": 0,
+  "priceChange": null,
+  "priceChangeDate": null,
+  "priceChangeDateString": null,
+  "priceHistory": [
+    {
+      "attributeSource": {
+        "infoString1": null,
+        "infoString2": "Elite Real Estate & Professional Management",
+        "infoString3": null
+      },
+      "buyerAgent": null,
+      "date": "2020-06-25",
+      "event": "Listing removed",
+      "postingIsRental": true,
+      "price": 475,
+      "priceChangeRate": 0,
+      "pricePerSquareFoot": 1,
+      "sellerAgent": null,
+      "showCountyLink": false,
+      "source": "Elite Real Estate & Professional Management",
+      "time": 1593043200000
+    },
+    {
+      "attributeSource": {
+        "infoString1": null,
+        "infoString2": "Elite Real Estate & Professional Management",
+        "infoString3": null
+      },
+      "buyerAgent": null,
+      "date": "2020-06-23",
+      "event": "Listed for rent",
+      "postingIsRental": true,
+      "price": 475,
+      "priceChangeRate": 0,
+      "pricePerSquareFoot": 1,
+      "sellerAgent": null,
+      "showCountyLink": false,
+      "source": "Elite Real Estate & Professional Management",
+      "time": 1592870400000
+    }
+  ],
+  "primaryPublicVideo": null,
+  "propertyEventLogLink": null,
+  "propertyTaxRate": 1.67,
+  "propertyTypeDimension": "Multi Family",
+  "propertyUpdatePageLink": null,
+  "providerListingID": null,
+  "regionString": "Detroit MI 48204",
+  "rentalApplicationsAcceptedType": "REQUEST_TO_APPLY",
+  "rentZestimate": 698,
+  "resoFacts": {
+    "aboveGradeFinishedArea": null,
+    "accessibilityFeatures": null,
+    "additionalParcelsDescription": null,
+    "allowedPets": null,
+    "appliances": [],
+    "architecturalStyle": null,
+    "associationAmenities": null,
+    "associationFee": null,
+    "associationFee2": null,
+    "associationFeeIncludes": null,
+    "associationName": null,
+    "associationName2": null,
+    "associationPhone": null,
+    "associationPhone2": null,
+    "atAGlanceFacts": [
+      {
+        "factLabel": "Type",
+        "factValue": "MultiFamily"
+      },
+      {
+        "factLabel": "Year Built",
+        "factValue": null
+      },
+      {
+        "factLabel": "Heating",
+        "factValue": null
+      },
+      {
+        "factLabel": "Cooling",
+        "factValue": null
+      },
+      {
+        "factLabel": "Parking",
+        "factValue": "0 spaces"
+      },
+      {
+        "factLabel": "Offer Review Date",
+        "factValue": null
+      }
+    ],
+    "attic": null,
+    "availabilityDate": null,
+    "basement": null,
+    "basementYN": false,
+    "bathrooms": 1,
+    "bathroomsFull": 1,
+    "bathroomsHalf": 0,
+    "bathroomsOneQuarter": 0,
+    "bathroomsPartial": null,
+    "bathroomsThreeQuarter": 0,
+    "bedrooms": 1,
+    "belowGradeFinishedArea": null,
+    "bodyType": null,
+    "builderModel": null,
+    "builderName": null,
+    "buildingArea": null,
+    "buildingAreaSource": null,
+    "buildingFeatures": null,
+    "buildingName": null,
+    "buyerAgencyCompensation": null,
+    "buyerAgencyCompensationType": null,
+    "canRaiseHorses": false,
+    "carportSpaces": null,
+    "cityRegion": "Detroit",
+    "commonWalls": null,
+    "communityFeatures": [],
+    "constructionMaterials": [],
+    "cooling": [],
+    "coveredSpaces": null,
+    "cropsIncludedYN": null,
+    "daysOnZillow": null,
+    "depositsAndFees": null,
+    "developmentStatus": null,
+    "doorFeatures": null,
+    "electric": null,
+    "elementarySchool": null,
+    "elementarySchoolDistrict": null,
+    "elevation": null,
+    "elevationUnits": null,
+    "entryLevel": null,
+    "entryLocation": null,
+    "exclusions": null,
+    "exteriorFeatures": [],
+    "fencing": null,
+    "fireplaceFeatures": null,
+    "fireplaces": null,
+    "flooring": [],
+    "foundationArea": null,
+    "foundationDetails": [],
+    "frontageLength": null,
+    "frontageType": null,
+    "furnished": false,
+    "garageSpaces": null,
+    "gas": null,
+    "greenBuildingVerificationType": null,
+    "greenEnergyEfficient": null,
+    "greenIndoorAirQuality": null,
+    "greenSustainability": null,
+    "greenWaterConservation": null,
+    "hasAdditionalParcels": false,
+    "hasAssociation": null,
+    "hasAttachedGarage": null,
+    "hasAttachedProperty": false,
+    "hasCarport": null,
+    "hasCooling": false,
+    "hasElectricOnProperty": null,
+    "hasFireplace": null,
+    "hasGarage": false,
+    "hasHeating": false,
+    "hasHomeWarranty": false,
+    "hasLandLease": false,
+    "hasOpenParking": null,
+    "hasPetsAllowed": null,
+    "hasPrivatePool": null,
+    "hasRentControl": null,
+    "hasSpa": false,
+    "hasView": false,
+    "hasWaterfrontView": null,
+    "heating": [],
+    "highSchool": null,
+    "highSchoolDistrict": null,
+    "hoaFee": null,
+    "homeType": "MultiFamily",
+    "horseAmenities": null,
+    "horseYN": null,
+    "inclusions": null,
+    "incomeIncludes": null,
+    "interiorFeatures": null,
+    "irrigationWaterRightsAcres": null,
+    "irrigationWaterRightsYN": null,
+    "isNewConstruction": null,
+    "isSeniorCommunity": null,
+    "landLeaseAmount": null,
+    "landLeaseExpirationDate": null,
+    "laundryFeatures": null,
+    "leaseTerm": null,
+    "levels": null,
+    "listAOR": null,
+    "listingId": null,
+    "listingTerms": null,
+    "livingArea": "500 sqft",
+    "livingAreaRange": null,
+    "livingAreaRangeUnits": null,
+    "lotFeatures": null,
+    "lotSize": null,
+    "lotSizeDimensions": null,
+    "mainLevelBathrooms": null,
+    "mainLevelBedrooms": null,
+    "marketingType": null,
+    "middleOrJuniorSchool": null,
+    "middleOrJuniorSchoolDistrict": null,
+    "municipality": null,
+    "numberOfUnitsInCommunity": null,
+    "numberOfUnitsVacant": null,
+    "offerReviewDate": null,
+    "onMarketDate": null,
+    "openParkingSpaces": null,
+    "otherEquipment": null,
+    "otherFacts": [
+      {
+        "name": "FOUNDAtion",
+        "value": "Electricity not included in rent"
+      },
+      {
+        "name": "TYPE",
+        "value": "Water included in rent"
+      }
+    ],
+    "otherParking": null,
+    "otherStructures": null,
+    "ownership": null,
+    "ownershipType": null,
+    "parcelNumber": null,
+    "parking": 0,
+    "parkingFeatures": [],
+    "patioAndPorchFeatures": null,
+    "petsMaxWeight": null,
+    "poolFeatures": null,
+    "pricePerSquareFoot": null,
+    "propertyCondition": null,
+    "propertySubType": null,
+    "roadSurfaceType": null,
+    "roofType": null,
+    "rooms": [],
+    "securityFeatures": null,
+    "sewer": null,
+    "spaFeatures": null,
+    "specialListingConditions": null,
+    "stories": null,
+    "storiesTotal": null,
+    "structureType": null,
+    "subdivisionName": null,
+    "taxAnnualAmount": null,
+    "tenantPays": null,
+    "topography": null,
+    "totalActualRent": null,
+    "utilities": null,
+    "vegetation": null,
+    "view": [],
+    "virtualTour": null,
+    "virtualTourURLUnbranded": null,
+    "waterBodyName": null,
+    "waterfrontFeatures": null,
+    "waterSource": null,
+    "waterSources": null,
+    "waterView": null,
+    "waterViewYN": null,
+    "windowFeatures": null,
+    "woodedArea": null,
+    "yearBuilt": null,
+    "yearBuiltEffective": null,
+    "zoning": null,
+    "zoningDescription": null
+  },
+  "responsivePhotos": [
+    {
+      "caption": null,
+      "mixedSources": {
+        "jpeg": [
+          {
+            "url": "https://maps.googleapis.com/maps/api/streetview?location=12050+Bryden+St%2C+Detroit%2C+MI+48204&size=192x144&key=AIzaSyARFMLB1na-BBWf7_R3-5YOQQaHqEJf6RQ&source=outdoor&&signature=SF454GJ4ddmSuFBfeveakOkCz8Y=",
+            "width": 192
+          },
+          {
+            "url": "https://maps.googleapis.com/maps/api/streetview?location=12050+Bryden+St%2C+Detroit%2C+MI+48204&size=384x288&key=AIzaSyARFMLB1na-BBWf7_R3-5YOQQaHqEJf6RQ&source=outdoor&&signature=L37FC8Wv0scD02G4yRf65KXllxI=",
+            "width": 384
+          },
+          {
+            "url": "https://maps.googleapis.com/maps/api/streetview?location=12050+Bryden+St%2C+Detroit%2C+MI+48204&size=576x432&key=AIzaSyARFMLB1na-BBWf7_R3-5YOQQaHqEJf6RQ&source=outdoor&&signature=--8n-r_8PCTqNQta7ZEGyZk6wsk=",
+            "width": 576
+          },
+          {
+            "url": "https://maps.googleapis.com/maps/api/streetview?location=12050+Bryden+St%2C+Detroit%2C+MI+48204&size=768x576&key=AIzaSyARFMLB1na-BBWf7_R3-5YOQQaHqEJf6RQ&source=outdoor&&signature=5BIDCjPacg1y5p3sBWwmXBKPeig=",
+            "width": 768
+          },
+          {
+            "url": "https://maps.googleapis.com/maps/api/streetview?location=12050+Bryden+St%2C+Detroit%2C+MI+48204&size=960x720&key=AIzaSyARFMLB1na-BBWf7_R3-5YOQQaHqEJf6RQ&source=outdoor&&signature=b1RTO79bBnrEK-MmtIoZ5t1rYVk=",
+            "width": 960
+          },
+          {
+            "url": "https://maps.googleapis.com/maps/api/streetview?location=12050+Bryden+St%2C+Detroit%2C+MI+48204&size=1152x864&key=AIzaSyARFMLB1na-BBWf7_R3-5YOQQaHqEJf6RQ&source=outdoor&&signature=_LGOsMNAl9U07-RFYXIBYbRI8Fw=",
+            "width": 1152
+          },
+          {
+            "url": "https://maps.googleapis.com/maps/api/streetview?location=12050+Bryden+St%2C+Detroit%2C+MI+48204&size=1344x1008&key=AIzaSyARFMLB1na-BBWf7_R3-5YOQQaHqEJf6RQ&source=outdoor&&signature=ZUTQTuG9OFiozZXEliet2VBQo7M=",
+            "width": 1344
+          },
+          {
+            "url": "https://maps.googleapis.com/maps/api/streetview?location=12050+Bryden+St%2C+Detroit%2C+MI+48204&size=1536x1152&key=AIzaSyARFMLB1na-BBWf7_R3-5YOQQaHqEJf6RQ&source=outdoor&&signature=tpNW525Cs6cek0ELPUGX9SH1nmE=",
+            "width": 1536
+          }
+        ],
+        "webp": [
+          {
+            "url": "https://maps.googleapis.com/maps/api/streetview?location=12050+Bryden+St%2C+Detroit%2C+MI+48204&size=192x144&key=AIzaSyARFMLB1na-BBWf7_R3-5YOQQaHqEJf6RQ&source=outdoor&&signature=SF454GJ4ddmSuFBfeveakOkCz8Y=",
+            "width": 192
+          },
+          {
+            "url": "https://maps.googleapis.com/maps/api/streetview?location=12050+Bryden+St%2C+Detroit%2C+MI+48204&size=384x288&key=AIzaSyARFMLB1na-BBWf7_R3-5YOQQaHqEJf6RQ&source=outdoor&&signature=L37FC8Wv0scD02G4yRf65KXllxI=",
+            "width": 384
+          },
+          {
+            "url": "https://maps.googleapis.com/maps/api/streetview?location=12050+Bryden+St%2C+Detroit%2C+MI+48204&size=576x432&key=AIzaSyARFMLB1na-BBWf7_R3-5YOQQaHqEJf6RQ&source=outdoor&&signature=--8n-r_8PCTqNQta7ZEGyZk6wsk=",
+            "width": 576
+          },
+          {
+            "url": "https://maps.googleapis.com/maps/api/streetview?location=12050+Bryden+St%2C+Detroit%2C+MI+48204&size=768x576&key=AIzaSyARFMLB1na-BBWf7_R3-5YOQQaHqEJf6RQ&source=outdoor&&signature=5BIDCjPacg1y5p3sBWwmXBKPeig=",
+            "width": 768
+          },
+          {
+            "url": "https://maps.googleapis.com/maps/api/streetview?location=12050+Bryden+St%2C+Detroit%2C+MI+48204&size=960x720&key=AIzaSyARFMLB1na-BBWf7_R3-5YOQQaHqEJf6RQ&source=outdoor&&signature=b1RTO79bBnrEK-MmtIoZ5t1rYVk=",
+            "width": 960
+          },
+          {
+            "url": "https://maps.googleapis.com/maps/api/streetview?location=12050+Bryden+St%2C+Detroit%2C+MI+48204&size=1152x864&key=AIzaSyARFMLB1na-BBWf7_R3-5YOQQaHqEJf6RQ&source=outdoor&&signature=_LGOsMNAl9U07-RFYXIBYbRI8Fw=",
+            "width": 1152
+          },
+          {
+            "url": "https://maps.googleapis.com/maps/api/streetview?location=12050+Bryden+St%2C+Detroit%2C+MI+48204&size=1344x1008&key=AIzaSyARFMLB1na-BBWf7_R3-5YOQQaHqEJf6RQ&source=outdoor&&signature=ZUTQTuG9OFiozZXEliet2VBQo7M=",
+            "width": 1344
+          },
+          {
+            "url": "https://maps.googleapis.com/maps/api/streetview?location=12050+Bryden+St%2C+Detroit%2C+MI+48204&size=1536x1152&key=AIzaSyARFMLB1na-BBWf7_R3-5YOQQaHqEJf6RQ&source=outdoor&&signature=tpNW525Cs6cek0ELPUGX9SH1nmE=",
+            "width": 1536
+          }
+        ]
+      },
+      "subjectType": null,
+      "url": "https://maps.googleapis.com/maps/api/streetview?location=12050+Bryden+St%2C+Detroit%2C+MI+48204&size=400x300&key=AIzaSyARFMLB1na-BBWf7_R3-5YOQQaHqEJf6RQ&source=outdoor&&signature=vsJA6qjbSa8UZjHos4wrlaxhaJs="
+    }
+  ],
+  "responsivePhotosOriginalRatio": [
+    {
+      "caption": null,
+      "mixedSources": {
+        "jpeg": [
+          {
+            "url": "https://maps.googleapis.com/maps/api/streetview?location=12050+Bryden+St%2C+Detroit%2C+MI+48204&size=800x600&key=AIzaSyARFMLB1na-BBWf7_R3-5YOQQaHqEJf6RQ&source=outdoor&&signature=iwlrNGqokPLKAdZpk5MLLtSm5pQ=",
+            "width": 800
+          },
+          {
+            "url": "https://maps.googleapis.com/maps/api/streetview?location=12050+Bryden+St%2C+Detroit%2C+MI+48204&size=1024x768&key=AIzaSyARFMLB1na-BBWf7_R3-5YOQQaHqEJf6RQ&source=outdoor&&signature=-uYCrYEF6gXfQ-IbfGyquBMtQ0c=",
+            "width": 1024
+          },
+          {
+            "url": "https://maps.googleapis.com/maps/api/streetview?location=12050+Bryden+St%2C+Detroit%2C+MI+48204&size=1344x1008&key=AIzaSyARFMLB1na-BBWf7_R3-5YOQQaHqEJf6RQ&source=outdoor&&signature=ZUTQTuG9OFiozZXEliet2VBQo7M=",
+            "width": 1344
+          },
+          {
+            "url": "https://maps.googleapis.com/maps/api/streetview?location=12050+Bryden+St%2C+Detroit%2C+MI+48204&size=1536x1152&key=AIzaSyARFMLB1na-BBWf7_R3-5YOQQaHqEJf6RQ&source=outdoor&&signature=tpNW525Cs6cek0ELPUGX9SH1nmE=",
+            "width": 1536
+          }
+        ],
+        "webp": [
+          {
+            "url": "https://maps.googleapis.com/maps/api/streetview?location=12050+Bryden+St%2C+Detroit%2C+MI+48204&size=800x600&key=AIzaSyARFMLB1na-BBWf7_R3-5YOQQaHqEJf6RQ&source=outdoor&&signature=iwlrNGqokPLKAdZpk5MLLtSm5pQ=",
+            "width": 800
+          },
+          {
+            "url": "https://maps.googleapis.com/maps/api/streetview?location=12050+Bryden+St%2C+Detroit%2C+MI+48204&size=1024x768&key=AIzaSyARFMLB1na-BBWf7_R3-5YOQQaHqEJf6RQ&source=outdoor&&signature=-uYCrYEF6gXfQ-IbfGyquBMtQ0c=",
+            "width": 1024
+          },
+          {
+            "url": "https://maps.googleapis.com/maps/api/streetview?location=12050+Bryden+St%2C+Detroit%2C+MI+48204&size=1344x1008&key=AIzaSyARFMLB1na-BBWf7_R3-5YOQQaHqEJf6RQ&source=outdoor&&signature=ZUTQTuG9OFiozZXEliet2VBQo7M=",
+            "width": 1344
+          },
+          {
+            "url": "https://maps.googleapis.com/maps/api/streetview?location=12050+Bryden+St%2C+Detroit%2C+MI+48204&size=1536x1152&key=AIzaSyARFMLB1na-BBWf7_R3-5YOQQaHqEJf6RQ&source=outdoor&&signature=tpNW525Cs6cek0ELPUGX9SH1nmE=",
+            "width": 1536
+          }
+        ]
+      }
+    }
+  ],
+  "restimateHighPercent": "13",
+  "restimateLowPercent": "10",
+  "richMedia": null,
+  "richMediaVideos": null,
+  "schools": [
+    {
+      "assigned": null,
+      "distance": 4,
+      "grades": "PK-12",
+      "isAssigned": true,
+      "level": "Primary",
+      "link": "https://www.greatschools.org/school?id=08939&state=MI",
+      "name": "Detroit International Academy For Young Women",
+      "rating": 3,
+      "size": 263,
+      "studentsPerTeacher": 13,
+      "totalCount": 5,
+      "type": "Public"
+    }
+  ],
+  "sellingSoon": [],
+  "solarPotential": null,
+  "ssid": null,
+  "state": "MI",
+  "stateId": 30,
+  "stateSearchUrl": {
+    "path": "/mi/"
+  },
+  "staticMap": {
+    "sources": [
+      {
+        "url": "https://maps.googleapis.com/maps/api/staticmap?center=42.37673,-83.14522&zoom=15&size=192x144&maptype=roadmap&key=AIzaSyARFMLB1na-BBWf7_R3-5YOQQaHqEJf6RQ&signature=nh2VDzZgqVqFrq6XBx1JRWdeX7E=",
+        "width": 192
+      },
+      {
+        "url": "https://maps.googleapis.com/maps/api/staticmap?center=42.37673,-83.14522&zoom=16&size=384x288&maptype=roadmap&key=AIzaSyARFMLB1na-BBWf7_R3-5YOQQaHqEJf6RQ&signature=l4uHmk9Xm5JdOKSlvhKwPFwSUag=",
+        "width": 384
+      },
+      {
+        "url": "https://maps.googleapis.com/maps/api/staticmap?center=42.37673,-83.14522&zoom=17&size=768x576&maptype=roadmap&key=AIzaSyARFMLB1na-BBWf7_R3-5YOQQaHqEJf6RQ&signature=ojk6tMcrOpqPUnGs9-PBapv2x7Q=",
+        "width": 768
+      }
+    ]
+  },
+  "streetAddress": "12050 Bryden St #8",
+  "streetView": {
+    "addressSources": [
+      {
+        "url": "https://maps.googleapis.com/maps/api/streetview?location=12050%20Bryden%20St%2C%20Detroit%2C%20MI%2048204&size=192x72&key=AIzaSyARFMLB1na-BBWf7_R3-5YOQQaHqEJf6RQ&source=outdoor&signature=E89n5ZgrYJaCL7nB_NtZI3OQZuE=",
+        "width": 192
+      },
+      {
+        "url": "https://maps.googleapis.com/maps/api/streetview?location=12050%20Bryden%20St%2C%20Detroit%2C%20MI%2048204&size=384x144&key=AIzaSyARFMLB1na-BBWf7_R3-5YOQQaHqEJf6RQ&source=outdoor&signature=7h4Bcas3_AKlSR6GkOqQj_uThlA=",
+        "width": 384
+      },
+      {
+        "url": "https://maps.googleapis.com/maps/api/streetview?location=12050%20Bryden%20St%2C%20Detroit%2C%20MI%2048204&size=768x288&key=AIzaSyARFMLB1na-BBWf7_R3-5YOQQaHqEJf6RQ&source=outdoor&signature=U8FVEc0qtNf1vuwXZKXbIPDM884=",
+        "width": 768
+      }
+    ],
+    "latLongSources": [
+      {
+        "url": "https://maps.googleapis.com/maps/api/streetview?location=42.37673,-83.14522&size=192x72&key=AIzaSyARFMLB1na-BBWf7_R3-5YOQQaHqEJf6RQ&source=outdoor&signature=wdgbSMzwrhXT3-W4A6TEaqT8Es4=",
+        "width": 192
+      },
+      {
+        "url": "https://maps.googleapis.com/maps/api/streetview?location=42.37673,-83.14522&size=384x144&key=AIzaSyARFMLB1na-BBWf7_R3-5YOQQaHqEJf6RQ&source=outdoor&signature=palkrqBC9AjUw9S2M_2E-1xU1Zw=",
+        "width": 384
+      },
+      {
+        "url": "https://maps.googleapis.com/maps/api/streetview?location=42.37673,-83.14522&size=768x288&key=AIzaSyARFMLB1na-BBWf7_R3-5YOQQaHqEJf6RQ&source=outdoor&signature=bsK12mH8YaGUlCTgAqxXdEPdrPk=",
+        "width": 768
+      }
+    ]
+  },
+  "streetViewMetadataUrlMapLightboxAddress": "https://maps.googleapis.com/maps/api/streetview/metadata?location=12050%20Bryden%20St%2C%20Detroit%2C%20MI%2048204&key=AIzaSyBV4lXhV-qzQOegyA3m0_AvGy9F21HIyOQ&source=outdoor&signature=rnBbJ32h-q97gd6KYgtUHvOg95A=",
+  "streetViewMetadataUrlMediaWallAddress": "https://maps.googleapis.com/maps/api/streetview/metadata?location=12050%20Bryden%20St%2C%20Detroit%2C%20MI%2048204&key=AIzaSyARFMLB1na-BBWf7_R3-5YOQQaHqEJf6RQ&source=outdoor&signature=G7S1C5W4_B2Hn6o-aMevR3Q8VFM=",
+  "streetViewMetadataUrlMediaWallLatLong": "https://maps.googleapis.com/maps/api/streetview/metadata?location=42.37673,-83.14522&key=AIzaSyARFMLB1na-BBWf7_R3-5YOQQaHqEJf6RQ&source=outdoor&signature=R0d2osdFCoIXFRlyvc9ZZ1bDfDI=",
+  "streetViewServiceUrl": "https://proxy.zillowapi.com/street-view-url?zpid=2079002161&address=12050%20Bryden%20St%2C%20Detroit%2C%20MI%2048204&width=512&height=234&key=AIzaSyARFMLB1na-BBWf7_R3-5YOQQaHqEJf6RQ&maxdistance=5280&lat=42.37673&lon=-83.14522&ttloverrides=%7B%22yesAddressSeconds%22:604800%7D&signature=EapUrekQH-UKCiGsaBjNIfN1Z9c=",
+  "streetViewTileImageUrlMediumAddress": "https://maps.googleapis.com/maps/api/streetview?location=12050%20Bryden%20St%2C%20Detroit%2C%20MI%2048204&size=400x250&key=AIzaSyARFMLB1na-BBWf7_R3-5YOQQaHqEJf6RQ&source=outdoor&signature=WZ_tfs9bHh7BQPAWPz5cj1aBvWU=",
+  "streetViewTileImageUrlMediumLatLong": "https://maps.googleapis.com/maps/api/streetview?location=42.37673,-83.14522&size=400x250&key=AIzaSyARFMLB1na-BBWf7_R3-5YOQQaHqEJf6RQ&source=outdoor&signature=zRocsYH28XJHiU2MfP3HIMskmhc=",
+  "taxAssessedValue": null,
+  "taxAssessedYear": null,
+  "taxHistory": [],
+  "thirdPartyVirtualTour": {
+    "approved": false,
+    "externalUrl": null,
+    "lightboxUrl": null,
+    "providerKey": null,
+    "providerName": null,
+    "staticUrl": null
+  },
+  "thumb": [
+    {
+      "url": "https://maps.googleapis.com/maps/api/streetview?location=12050+Bryden+St%2C+Detroit%2C+MI+48204&size=46x46&key=AIzaSyARFMLB1na-BBWf7_R3-5YOQQaHqEJf6RQ&source=outdoor&&signature=9vwBl3gAQDRHpSENLqf_WjrgjcA="
+    }
+  ],
+  "timeOnZillow": null,
+  "timeZone": "America/New_York",
+  "topNavJson": {
+    "core": {
+      "js": "https://s.zillowstatic.com/s3/pfs/core-65757fe077bde0b28b91.js"
+    },
+    "topnav": {
+      "json": {
+        "agent": false,
+        "common": {
+          "advertise": {
+            "href": "/advertise/",
+            "text": "Advertise"
+          },
+          "home": {
+            "href": "/",
+            "text": "Zillow Real Estate"
+          },
+          "login": {
+            "href": "/user/acct/login/",
+            "text": "Sign in"
+          },
+          "register": {
+            "href": "/user/acct/register/",
+            "text": "Join"
+          }
+        },
+        "help": {
+          "sections": [
+            {
+              "link": {
+                "href": "https://zillow.zendesk.com/hc/en-us/",
+                "text": "Help"
+              }
+            }
+          ]
+        },
+        "logo": {
+          "href": "/",
+          "text": "Zillow Real Estate"
+        },
+        "main": {
+          "sections": [
+            {
+              "link": {
+                "classString": "noroute",
+                "href": "/homes/",
+                "text": "Buy"
+              },
+              "subsections": [
+                {
+                  "links": [
+                    [
+                      {
+                        "classString": "noroute",
+                        "href": "/detroit-mi/",
+                        "text": "Homes for sale"
+                      },
+                      {
+                        "classString": "noroute",
+                        "href": "/detroit-mi/foreclosures/",
+                        "text": "Foreclosures"
+                      },
+                      {
+                        "classString": "noroute",
+                        "href": "/detroit-mi/fsbo/",
+                        "text": "For sale by owner"
+                      },
+                      {
+                        "classString": "noroute",
+                        "href": "/detroit-mi/open-house/",
+                        "text": "Open houses"
+                      }
+                    ],
+                    [
+                      {
+                        "classString": "noroute",
+                        "href": "/detroit-mi/new-homes/",
+                        "text": "New construction"
+                      },
+                      {
+                        "classString": "noroute",
+                        "href": "/detroit-mi/coming-soon/",
+                        "text": "Coming soon"
+                      },
+                      {
+                        "classString": "noroute",
+                        "href": "/detroit-mi/sold/",
+                        "text": "Recent home sales"
+                      },
+                      {
+                        "href": "/browse/homes/",
+                        "text": "All homes"
+                      }
+                    ]
+                  ],
+                  "title": "Detroit homes for sale"
+                },
+                {
+                  "links": [
+                    [
+                      {
+                        "href": "/home-buying-guide/",
+                        "text": "Buyers Guide"
+                      },
+                      {
+                        "href": "/foreclosures/",
+                        "text": "Foreclosure center"
+                      },
+                      {
+                        "href": "/z/buying/app-download/",
+                        "text": "Real estate app"
+                      },
+                      {
+                        "gaClickEventObj": {
+                          "action": "Down Payment Assistance",
+                          "category": "TopNav"
+                        },
+                        "href": "/down-payment-assistance/",
+                        "text": "Down payment assistance"
+                      },
+                      {
+                        "href": "/professionals/real-estate-agent-reviews",
+                        "text": "Find a buyer's agent"
+                      }
+                    ]
+                  ],
+                  "title": "Resources"
+                }
+              ]
+            },
+            {
+              "gaExpandoClickObj": {
+                "action": "click_down",
+                "category": "nav_menu",
+                "label": "rent"
+              },
+              "gaHoverEventObj": {
+                "action": "mouseover",
+                "category": "nav_menu",
+                "label": "rent"
+              },
+              "link": {
+                "classString": "noroute",
+                "href": "/homes/for_rent/",
+                "text": "Rent"
+              },
+              "subsections": [
+                {
+                  "links": [
+                    {
+                      "classString": "noroute",
+                      "href": "/detroit-mi/rental-buildings/",
+                      "text": "Rental buildings"
+                    },
+                    {
+                      "classString": "noroute",
+                      "href": "/detroit-mi/apartments/",
+                      "text": "Apartments for rent"
+                    },
+                    {
+                      "classString": "noroute",
+                      "href": "/detroit-mi/rent-houses/",
+                      "text": "Houses for rent"
+                    },
+                    {
+                      "classString": "noroute",
+                      "href": "/detroit-mi/rentals/",
+                      "text": "All rental listings"
+                    },
+                    {
+                      "href": "/browse/b/",
+                      "text": "All rental buildings"
+                    }
+                  ],
+                  "title": "Detroit rentals"
+                },
+                {
+                  "links": [
+                    {
+                      "href": "/renting/",
+                      "text": "Contacted rentals"
+                    },
+                    {
+                      "href": "/renting/your-rental/",
+                      "text": "Your rental"
+                    },
+                    {
+                      "href": "/renter-hub/inbox/",
+                      "text": "Messages"
+                    }
+                  ],
+                  "title": "Renter Hub"
+                },
+                {
+                  "links": [
+                    {
+                      "gaClickEventObj": {
+                        "action": "click",
+                        "category": "renter_tools",
+                        "label": "affordability"
+                      },
+                      "href": "/rent-affordability-calculator/",
+                      "text": "Affordability calculator"
+                    },
+                    {
+                      "gaClickEventObj": {
+                        "action": "click",
+                        "category": "renter_tools",
+                        "label": "guide"
+                      },
+                      "href": "/rent/guide/",
+                      "text": "Renters guide"
+                    }
+                  ],
+                  "title": "Resources"
+                }
+              ]
+            },
+            {
+              "gaHoverEventObj": {
+                "action": "mouseover",
+                "category": "nav_menu",
+                "label": "sell"
+              },
+              "link": {
+                "href": "/sell/",
+                "text": "Sell"
+              },
+              "subsections": [
+                {
+                  "links": [
+                    {
+                      "href": "/sell/",
+                      "text": "Explore your options"
+                    },
+                    {
+                      "gaClickEventObj": false,
+                      "href": "/how-much-is-my-home-worth/",
+                      "text": "See your home's Zestimate"
+                    },
+                    {
+                      "href": "/home-values/17762/detroit-mi/",
+                      "text": "Detroit Home values"
+                    },
+                    {
+                      "href": "/sellers-guide/",
+                      "text": "Sellers guide"
+                    }
+                  ],
+                  "title": "Resources"
+                },
+                {
+                  "links": [
+                    {
+                      "href": "/professionals/real-estate-agent-reviews/detroit-mi/?service=Selling",
+                      "text": "Find a seller's agent"
+                    },
+                    {
+                      "href": "/for-sale-by-owner/",
+                      "text": "Post For Sale by Owner"
+                    }
+                  ],
+                  "title": "Selling options"
+                }
+              ]
+            },
+            {
+              "link": {
+                "href": "/home-loans/#source=Z_Mortgagestopnav",
+                "text": "Home Loans"
+              },
+              "subsections": [
+                {
+                  "links": [
+                    {
+                      "href": "/mortgages/#source=Z_Mortgageshovertopnav",
+                      "text": "Mortgage lenders"
+                    },
+                    {
+                      "href": "/mortgages/heloc/#source=Z_Mortgageshovertopnav",
+                      "text": "HELOC lenders"
+                    },
+                    {
+                      "href": "/mortgage-rates/mi/detroit/",
+                      "text": "Mortgage rates"
+                    },
+                    {
+                      "href": "/refinance/mi/detroit/",
+                      "text": "Refinance rates"
+                    },
+                    {
+                      "href": "/mortgage/browse/",
+                      "text": "All mortgage rates"
+                    }
+                  ],
+                  "title": "Shop mortgages"
+                },
+                {
+                  "links": [
+                    {
+                      "href": "/mortgage-calculator/",
+                      "text": "Mortgage calculator"
+                    },
+                    {
+                      "href": "/mortgage-calculator/refinance-calculator/",
+                      "text": "Refinance calculator"
+                    },
+                    {
+                      "href": "/mortgage-calculator/house-affordability/",
+                      "text": "Affordability calculator"
+                    },
+                    {
+                      "href": "/mortgage-calculator/amortization-schedule-calculator/",
+                      "text": "Amortization calculator"
+                    },
+                    {
+                      "href": "/mortgage-calculator/debt-to-income-calculator/",
+                      "text": "Debt-to-Income calculator"
+                    }
+                  ],
+                  "title": "Calculators"
+                },
+                {
+                  "links": [
+                    {
+                      "href": "/lender-directory/",
+                      "text": "Lender reviews"
+                    },
+                    {
+                      "href": "/mortgage-learning/",
+                      "text": "Mortgage learning center"
+                    },
+                    {
+                      "href": "/z/buying/app-download/",
+                      "text": "Mortgages app"
+                    },
+                    {
+                      "href": "/lender-resources/",
+                      "text": "Lender resource center"
+                    }
+                  ],
+                  "title": "Resources"
+                }
+              ]
+            },
+            {
+              "link": {
+                "href": "/professionals/real-estate-agent-reviews/detroit-mi/",
+                "text": "Agent finder"
+              },
+              "subsections": [
+                {
+                  "links": [
+                    [
+                      {
+                        "href": "/professionals/real-estate-agent-reviews/detroit-mi/",
+                        "text": "Real estate agents"
+                      },
+                      {
+                        "href": "/professionals/property-manager-reviews/detroit-mi/",
+                        "text": "Property managers"
+                      },
+                      {
+                        "href": "/professionals/home-inspector-reviews/detroit-mi/",
+                        "text": "Home inspectors"
+                      },
+                      {
+                        "href": "/professionals/real-estate-services-reviews/detroit-mi/",
+                        "text": "Other pros"
+                      }
+                    ],
+                    [
+                      {
+                        "href": "/professionals/home-improvement-reviews/detroit-mi/",
+                        "text": "Home improvement pros"
+                      },
+                      {
+                        "href": "/home-builders/detroit-mi/17762/",
+                        "text": "Home builders"
+                      },
+                      {
+                        "href": "/professionals/photographer-reviews/detroit-mi/",
+                        "text": "Real estate photographers"
+                      }
+                    ]
+                  ],
+                  "title": "Looking for pros?"
+                },
+                {
+                  "links": [
+                    [
+                      {
+                        "href": "https://premieragent.zillow.com/products/advertising/?itc=paw_z_sitewide-agentfinder_subnav-advertising_pa-ads_a_null",
+                        "text": "Agent advertising"
+                      },
+                      {
+                        "href": "/agent-resources/",
+                        "text": "Agent resource center"
+                      },
+                      {
+                        "href": "/premier-agent/agent-account/?itc=paw_z_sitewide-agentfinder_subnav-createagentaccount_pa-reg_a_null",
+                        "text": "Create a free agent account"
+                      }
+                    ],
+                    [
+                      {
+                        "href": "/agent-resources/agent-toolkit/real-estate-business-plan-template/",
+                        "text": "Real estate business plan"
+                      },
+                      {
+                        "href": "/agent-resources/agent-toolkit/real-estate-follow-up-email-templates/",
+                        "text": "Real estate agent scripts"
+                      },
+                      {
+                        "href": "/agent-resources/agent-toolkit/real-estate-listing-flyer-templates/",
+                        "text": "Listing flyer templates"
+                      }
+                    ]
+                  ],
+                  "title": "I'm a pro"
+                }
+              ]
+            }
+          ]
+        },
+        "marketing": {
+          "sections": [
+            {
+              "classString": "znav-manage-rentals",
+              "gaExpandoClickObj": {
+                "action": "click_down",
+                "category": "nav_menu",
+                "label": "manage_rentals"
+              },
+              "gaHoverEventObj": {
+                "action": "mouseover",
+                "category": "nav_menu",
+                "label": "manage_rentals"
+              },
+              "id": "manage-rentals",
+              "link": {
+                "classString": "noroute",
+                "href": "/rental-manager/?source=topnav&itc=postbutton_sitenav",
+                "text": "Manage Rentals"
+              },
+              "subsections": [
+                {
+                  "links": [
+                    [
+                      {
+                        "classString": "noroute",
+                        "gaClickEventObj": {
+                          "action": "click",
+                          "category": "manage_rentals",
+                          "label": "list"
+                        },
+                        "href": "/rental-manager/post-a-listing?itc=ltr_zw_ltr_zrm-home_tpnv_post-a-listing",
+                        "id": "list_a_rental",
+                        "text": "List a rental"
+                      },
+                      {
+                        "classString": "noroute",
+                        "gaClickEventObj": {
+                          "action": "click",
+                          "category": "manage_rentals",
+                          "label": "listing"
+                        },
+                        "href": "/rental-manager/select-property?type=listings&source=topnav&itc=postbutton_topnav",
+                        "id": "my_listings",
+                        "text": "My Listings"
+                      },
+                      {
+                        "classString": "noroute",
+                        "gaClickEventObj": {
+                          "action": "click",
+                          "category": "manage_rentals",
+                          "label": "messages"
+                        },
+                        "href": "/rental-manager/inbox/",
+                        "id": "messages",
+                        "text": "Messages"
+                      },
+                      {
+                        "classString": "noroute",
+                        "gaClickEventObj": {
+                          "action": "click",
+                          "category": "manage_rentals",
+                          "label": "applications"
+                        },
+                        "href": "/rental-manager/select-property?type=applications&source=topnav&itc=postbutton_topnav",
+                        "id": "applications",
+                        "text": "Applications"
+                      },
+                      {
+                        "classString": "noroute",
+                        "gaClickEventObj": {
+                          "action": "click",
+                          "category": "manage_rentals",
+                          "label": "leases"
+                        },
+                        "href": "/rental-manager/select-property?type=leases&source=topnav&itc=postbutton_topnav",
+                        "id": "leases",
+                        "text": "Leases"
+                      },
+                      {
+                        "classString": "noroute",
+                        "gaClickEventObj": {
+                          "action": "click",
+                          "category": "manage_rentals",
+                          "label": "payments"
+                        },
+                        "href": "/rental-manager/select-property?type=payments&source=topnav&itc=postbutton_topnav",
+                        "id": "payments",
+                        "text": "Payments"
+                      }
+                    ]
+                  ],
+                  "title": "Rental Management Tools"
+                },
+                {
+                  "links": [
+                    [
+                      {
+                        "classString": "noroute",
+                        "gaClickEventObj": {
+                          "action": "click",
+                          "category": "manage_rentals",
+                          "label": "about"
+                        },
+                        "href": "/rental-manager/?source=topnav&itc=list_zrm_topnav",
+                        "id": "zrm",
+                        "text": "Zillow Rental Manager"
+                      },
+                      {
+                        "classString": "noroute",
+                        "gaClickEventObj": {
+                          "action": "click",
+                          "category": "manage_rentals",
+                          "label": "price"
+                        },
+                        "href": "/rental-manager/price-my-rental/?itc=ltr_zw_ltr_zrm-home_tpnv_price-my-rental",
+                        "id": "price_my_rental",
+                        "text": "Price My Rental"
+                      },
+                      {
+                        "classString": "noroute",
+                        "gaClickEventObj": {
+                          "action": "click",
+                          "category": "manage_rentals",
+                          "label": "resource"
+                        },
+                        "href": "/rental-manager/resources/",
+                        "id": "resource_center",
+                        "text": "Resource Center"
+                      },
+                      {
+                        "classString": "noroute",
+                        "gaClickEventObj": {
+                          "action": "click",
+                          "category": "manage_rentals",
+                          "label": "help"
+                        },
+                        "href": "https://help.zillowrentalmanager.com/hc/en-us/",
+                        "id": "help_center",
+                        "text": "Help Center"
+                      }
+                    ]
+                  ],
+                  "title": "Learn More"
+                }
+              ]
+            },
+            {
+              "link": {
+                "href": "/z/partners/advertise/",
+                "text": "Advertise"
+              }
+            }
+          ]
+        },
+        "regLogin": {
+          "sections": [
+            {
+              "link": {
+                "href": "/user/acct/login/?cid=pf",
+                "text": "Sign in"
+              }
+            },
+            {
+              "link": {
+                "href": "/user/acct/register/?cid=pf",
+                "text": "Join"
+              }
+            }
+          ]
+        }
+      }
+    }
+  },
+  "tourEligibility": {
+    "isPropertyTourEligible": false
+  },
+  "tourPhotos": [
+    {
+      "url": "https://maps.googleapis.com/maps/api/streetview?location=12050+Bryden+St%2C+Detroit%2C+MI+48204&size=400x300&key=AIzaSyARFMLB1na-BBWf7_R3-5YOQQaHqEJf6RQ&source=outdoor&&signature=vsJA6qjbSa8UZjHos4wrlaxhaJs="
+    }
+  ],
+  "tourViewCount": 0,
+  "unassistedShowing": null,
+  "virtualTourUrl": null,
+  "vrModel": {
+    "cdnHost": null,
+    "revisionId": null,
+    "vrModelGuid": null
+  },
+  "whatILove": null,
+  "yearBuilt": null,
+  "zestimate": null,
+  "zestimateDeepDiveData": {
+    "zmaModel": null
+  },
+  "zestimateHighPercent": null,
+  "zestimateLowPercent": null,
+  "zillowOfferMarket": {
+    "code": null
+  },
+  "zipcode": "48204",
+  "zipcodeSearchUrl": {
+    "path": "/detroit-mi-48204/"
+  },
+  "zipPlusFour": null,
+  "zoContactSubtitle": null,
+  "zoMarketName": null,
+  "zoResaleStartAnOfferEnabled": false,
+  "zpid": 2079002161
+}

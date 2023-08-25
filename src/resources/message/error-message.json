@@ -1,0 +1,7 @@
+{
+  "USER-E1": "Polygon Blockchain Wallet Address is already created, connect admin to update.",
+  "USER-S3": "User is already register with {email}, try login with email and password, instead of Google",
+  "USER-S4": "User is already register with Google domain, try login in which google social login instead of email",
+  "USER-S5": "Given {address} is sanction, try with another address.",
+  "USER-S6": "Provided Polygon Blockchain Wallet Address is not correct, please enter the correct Address."
+}

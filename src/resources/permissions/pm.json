@@ -1,0 +1,19 @@
+{
+  "home": true,
+  "marketplace": true,
+  "upload_re": false,
+  "review_re": false,
+  "learn": true,
+  "sell_tokens": false,
+  "profile": true,
+  "buyer_stats": false,
+  "kyc": true,
+  "documents": true,
+  "re_statistics": true,
+  "faq": true,
+  "jobs": true,
+  "users": true,
+  "search_engine": true,
+  "checkout": true,
+  "orders": true
+}

@@ -1,0 +1,12 @@
+{
+  "home": true,
+  "marketplace": true,
+  "re_listing": false,
+  "profile": true,
+  "kyc_status": false,
+  "blockchain_address": false,
+  "firstname": true,
+  "lastname": true,
+  "password_reset": true,
+  "re_detail": false
+}

@@ -1,0 +1,3199 @@
+# ------------------------------------------------------
+# THIS FILE WAS AUTOMATICALLY GENERATED (DO NOT MODIFY)
+# ------------------------------------------------------
+
+input AddressRequest {
+  """The building name of the applicant"""
+  buildingName: String
+
+  """The building number of the applicant"""
+  buildingNumber: String
+
+  """
+  The 3 character ISO country code of this address. For example, GBR is the country code for the United Kingdom.
+  """
+  country: String
+
+  """The applicants flat number"""
+  flatNumber: String
+
+  """Line 1 of the address."""
+  line1: String
+
+  """Line 2 of the address."""
+  line2: String
+
+  """Line 3 of the address."""
+  line3: String
+
+  """
+  The postcode (ZIP code) of the applicants address. For UK postcodes,specify the value in the following format: SW4 6EH
+  """
+  postcode: String
+
+  """The address state. US states must use the USPS abbreviation. """
+  state: String
+
+  """The street of the applicants address. """
+  street: String
+
+  """The sub-street of applicant address"""
+  subStreet: String
+
+  """The town of the applicant"""
+  town: String
+}
+
+type AddressSanctionedType {
+  """return address is sanctioned or not."""
+  identifications: [SanctionedFieldType!]
+}
+
+type AddressType {
+  """Carrier code of the property"""
+  carrier_code: String
+
+  """census track of the property"""
+  census_tract: String
+
+  """city of the property"""
+  city: String
+
+  """formatted street address of the property"""
+  formatted_street_address: String
+
+  """geocoding accuracy of property"""
+  geocoding_accuracy: String
+
+  """Latitude of the geographical location of the property"""
+  latitude: Float
+
+  """Longitude of the geographical location of the property"""
+  longitude: Float
+
+  """state of property"""
+  state: String
+
+  """Street Name of the property"""
+  street_name: String
+
+  """Street number of the property."""
+  street_number: String
+
+  """Street post direction of the property"""
+  street_post_direction: String
+
+  """pre direction of the street of the property"""
+  street_pre_direction: String
+
+  """Street suffix of property"""
+  street_suffix: String
+
+  """Unit number of property"""
+  unit_number: String
+
+  """Unit type of property"""
+  unit_type: String
+
+  """Zipcode(for USA) of the location of the property """
+  zip_code: String
+
+  """zip plus four code of the property"""
+  zip_plus_four_code: String
+}
+
+type AgreementDocumentLinkType {
+  """operating agreement document link."""
+  operatingLink: String!
+
+  """ppm document link."""
+  ppmLink: String!
+
+  """subscription agreement document link."""
+  subscriptionLink: String!
+}
+
+type ApplicantType {
+  """The address of the applicant - Onfido integration """
+  address: ApplicatanAddress
+
+  """
+  The date and time when this applicant was created. - Onfido Integration
+  """
+  createdAt: String
+
+  """
+  The date and time when this applicant is scheduled to be deleted, or null if the applicant is not scheduled to be deleted. - Onfido integration
+  """
+  deleteAt: String
+
+  """
+  date of birth of the applicant in YYYY-MM-DD date format- Onfido integration 
+  """
+  dob: String
+
+  """The applicants email adress - Onfido integration """
+  email: String
+
+  """Forename of the applicant - Onfido integration """
+  firstName: String
+
+  """The URI of this resource. - Onfido integration"""
+  href: String
+
+  """The unique identifier for the applicant - Onfido Integration """
+  id: String
+
+  """
+  A collection of identification numbers belonging to this applicant. - Onfido integration 
+  """
+  idNumbers: [IdNumber!]
+
+  """Last name of the applicant - Onfido integration """
+  lastName: String
+}
+
+type ApplicatanAddress {
+  """Building name of the applicant - Onfido Integration"""
+  buildingName: String
+
+  """Building number of the applicant - Onfido Integration"""
+  buildingNumber: String
+
+  """Country of the applicant"""
+  country: String
+
+  """Flat number of the applicant - Onfido Integration"""
+  flatNumber: String
+
+  """line1 of the address - Onfido Integration"""
+  line1: String
+
+  """line2 of the address - Onfido Integration"""
+  line2: String
+
+  """line3 of the address - Onfido Integration"""
+  line3: String
+
+  """
+  The postcode (ZIP code) of the applicants address. For UK postcodes,specify the value in the following format: SW4 6EH
+  """
+  postcode: String
+
+  """state of the applicant - Onfido Integration"""
+  state: String
+
+  """street of the applicant address - Onfido Integration"""
+  street: String
+
+  """Sub street of the applicant address - Onfido Integration"""
+  subStreet: String
+
+  """Town of the applicant - Onfido Integration """
+  town: String
+}
+
+type ApplyReffralCode {
+  """referrer code."""
+  referrerCode: String
+
+  """referrer userId."""
+  referrerUserId: String
+
+  """user id."""
+  user_id: String!
+}
+
+input AssessmentInput {
+  """
+  The current assessed improvement value before any exemptions in dollars.
+  """
+  improvement_value: Int
+
+  """The current assessed land value before any exemptions in dollars."""
+  land_value: Int
+
+  """
+  The total current assessed value of both land and improvements before any exemptions in dollars.
+  """
+  total_value: Int
+
+  """The year the assessment was performed."""
+  year: Int
+}
+
+type AssessmentType {
+  """
+  The current assessed improvement value before any exemptions in dollars.
+  """
+  improvement_value: Int
+
+  """The current assessed land value before any exemptions in dollars."""
+  land_value: Int
+
+  """
+  The total current assessed value of both land and improvements before any exemptions in dollars.
+  """
+  total_value: Int
+
+  """The year the assessment was performed."""
+  year: Int
+}
+
+type BitCoinType {
+  """address"""
+  address: String
+
+  """amount"""
+  amount: Float
+
+  """amount_due"""
+  amount_due: Float
+
+  """amount_paid"""
+  amount_paid: Float
+
+  """payment_uri"""
+  payment_uri: String
+}
+
+input BoundaryInput {
+  """For a parsed representation of the boundary."""
+  geojson: GeojsonInput
+
+  """
+  The Well-Known Text representation of the boundary as a multipolygon. For use with GIS software.
+  """
+  wkt: String
+}
+
+type BoundaryType {
+  """For a parsed representation of the boundary."""
+  geojson: GeojsonType
+
+  """
+  The Well-Known Text representation of the boundary as a multipolygon. For use with GIS software.
+  """
+  wkt: String
+}
+
+type ChangeRoleType {
+  """return user`s permission"""
+  rolePermission: UserRolePermission
+
+  """user id of user"""
+  user_id: String
+}
+
+type ChartDataType {
+  """price"""
+  prices: JSONObject!
+}
+
+type ChecksType {
+  """The ID for the applicant associated with the check."""
+  applicantId: String
+
+  """applicant provides data check or not. Default is false."""
+  applicantProvidesData: Boolean
+
+  """The date and time at which the check was initiated."""
+  createdAt: String
+
+  """The API endpoint to download the check"""
+  downloadHref: String
+
+  """File name for the check"""
+  fileName: String
+
+  """File size for the check"""
+  fileSize: Int
+
+  """File type for the check"""
+  fileType: String
+
+  """A link to the applicant form, if applicant provides data is true."""
+  formUri: String
+
+  """The API endpoint to retrieve the check."""
+  href: String
+
+  """The unique identifier for the check. """
+  id: String
+
+  """
+  Indicates that the privacy notices and terms of service have been read and, where specific laws require, that consent has been given for Onfido. This will be true if specified during check creation, otherwise it will be null.
+  """
+  privacyNoticesReadConsentGiven: Boolean
+
+  """
+  For checks where applicant provides data is true, redirect to this URI when the applicant has submitted their data.
+  """
+  redirectUri: String
+
+  """The list of report object IDs associated with the check."""
+  reportIds: [String!]
+
+  """
+  The overall result of the check, based on the results of the reports used.
+  """
+  result: String
+
+  """A link to the corresponding results page on the Onfido Dashboard"""
+  resultsUri: String
+
+  """The current state of the check in the checking process."""
+  status: String
+
+  """A list of tags associated with this check."""
+  tags: [String!]
+
+  """
+  The list of registered webhook IDs to notify as part of this check. Unless the value is included during check creation, this parameter will be null.
+  """
+  webhookIds: [String!]
+}
+
+type CompanyContractData {
+  contractAddr: String!
+}
+
+input CompanyInput {
+  explorers: String!
+  reCompany: String!
+  reCompanyUrl: String!
+  socials: SocialsInput
+}
+
+input CreateApplicantRequest {
+  """The applicants address request"""
+  address: AddressRequest
+
+  """The applicants date of birth in YYYY-MM-DD format."""
+  dob: String
+
+  """The applicants email address"""
+  email: String
+
+  """The applicants first name"""
+  firstName: String
+
+  """A collection of identification numbers belonging to this applicant."""
+  idNumbers: [IdNumberRequest!]
+
+  """The applicants last name"""
+  lastName: String
+
+  """user id of user"""
+  user_id: String
+}
+
+input CreateChecksRequest {
+  """The unique identifier for the applicant."""
+  applicantId: String!
+
+  """Run an applicant provides data check or not. Default is false """
+  applicantProvidesData: Boolean
+
+  """
+  the request to create a check will only return a response when all the reports in the check complete the automatic part of the review, or the request times out after 29 seconds if all reports are completed automatically, the check response is returned with a status of complete
+  """
+  asynchronous: Boolean
+
+  """
+  Array of names of particular reports to return consider as their results.
+  """
+  consider: [String!]
+
+  """The ID of the applicant document"""
+  documentIds: [String!]
+
+  """privacy notices read consent given"""
+  privacyNoticesReadConsentGiven: Boolean
+
+  """
+  For checks where applicant provides data is true, redirect to this URI when the applicant has submitted their data.
+  """
+  redirectUri: String
+
+  """The name of the reports"""
+  reportNames: [String!]!
+
+  """
+  The sub result of the report. It gives a more detailed result for Document reports only, and will be null otherwise.
+  """
+  subResult: String
+
+  """suppress form emails"""
+  suppressFormEmails: Boolean
+
+  """A list of tags associated with the check."""
+  tags: [String!]
+
+  """
+  Array of strings describing which webhooks to trigger for this check. By default, all webhooks registered in the account will be triggered and this value will be null in the responses.
+  """
+  webhookIds: String
+}
+
+type CreateCognitoUserType {
+  """return user`s permission"""
+  rolePermission: UserRolePermission
+
+  """user attribute"""
+  user: UserAttr
+
+  """user id of user"""
+  user_id: String
+}
+
+type CreateDigitalDebt01 {
+  """debt inputs"""
+  data: JSONObject!
+}
+
+input CreateInvoiceInput {
+  """The email of the customer"""
+  buyer_email: String!
+
+  """The number of tokens"""
+  number_of_tokens: Int!
+
+  """The real estate id"""
+  re_id: String!
+
+  """The price of each token"""
+  token_price: Float!
+
+  """The userId of the customer"""
+  user_id: String!
+}
+
+input CreatePaymentInput {
+  """The real estate id"""
+  re_id: String!
+
+  """return or failure url for coinify or stripe"""
+  returnUrl: String!
+
+  """success url for coinify or stripe"""
+  successUrl: String
+
+  """The price of per token in USD"""
+  tokenPrice: Float!
+
+  """selected token for this order."""
+  tokensInThisOrder: Float!
+
+  """The user id of the customer"""
+  user_id: String!
+}
+
+type CreateReCompanyType {
+  """company id."""
+  companyId: String!
+}
+
+input CreateWhiteListAddressInput {
+  """id of user"""
+  user_id: String
+
+  """whitelist address"""
+  whitelist_address: String
+}
+
+type CustomType {
+  """order_id"""
+  order_id: String
+
+  """re_id"""
+  re_id: String
+
+  """user_id"""
+  user_id: String
+}
+
+"""Date custom scalar type"""
+scalar Date
+
+type DebtObjectType {
+  """<No Description, Override manually>"""
+  debtName: String
+
+  """<No Description, Override manually>"""
+  debtSize: String
+
+  """<No Description, Override manually>"""
+  debtTenure: String
+
+  """<No Description, Override manually>"""
+  debtType: String
+
+  """<No Description, Override manually>"""
+  endDate: String
+
+  """<No Description, Override manually>"""
+  estRoi: String
+
+  """<No Description, Override manually>"""
+  startDate: String
+
+  """<No Description, Override manually>"""
+  status: String
+}
+
+input DeedInput {
+  """Second buyer first name, or null if corporate owner."""
+  buyer2_first_name: String
+
+  """Second buyer last name, or corporate name."""
+  buyer2_last_name: String
+
+  """Buyer mailing address."""
+  buyer_address: String
+
+  """Buyer mailing city."""
+  buyer_city: String
+
+  """Buyer first name, or null if corporate owner."""
+  buyer_first_name: String
+
+  """Buyer last name, or corporate name."""
+  buyer_last_name: String
+
+  """Buyer mailing state."""
+  buyer_state: String
+
+  """Buyer unit number."""
+  buyer_unit_number: String
+
+  """Buyer unit type."""
+  buyer_unit_type: String
+
+  """Buyer mailing zip code."""
+  buyer_zip_code: String
+
+  """Buyer four digit postal zip extension."""
+  buyer_zip_plus_four_code: String
+
+  """The physical book where the deed was recorded."""
+  deed_book: String
+
+  """The physical page where the deed was recorded."""
+  deed_page: String
+
+  """An indicator to determine if the sale was deemed to be distressed."""
+  distressed_sale: Boolean
+
+  """Identifier assigned to document at the recording date."""
+  document_id: String
+
+  """Type of deed document."""
+  document_type: String
+
+  """Mortgage lender."""
+  lender_name: String
+
+  """The type of lender."""
+  lender_type: String
+
+  """Mortgage recorded in dollars."""
+  loan_amount: Int
+
+  """The date the mortgage will be paid in full."""
+  loan_due_date: String
+
+  """The interest rate type on the loan."""
+  loan_finance_type: String
+
+  """The interest rate of the loan."""
+  loan_interest_rate: Float
+
+  """Type of loan security."""
+  loan_type: String
+
+  """
+  The date the original contract was signed by the relevant parties. In some scenarios this may be the date of notarization.
+  """
+  original_contract_date: String
+
+  """An indicator used to determine the status of the transfer."""
+  real_estate_owned: String
+
+  """The official date the document was recorded."""
+  recording_date: String
+
+  """The total sale price in dollars."""
+  sale_price: Int
+
+  """A description of the sale."""
+  sale_price_description: String
+
+  """The second seller first name, or null if corporate owner."""
+  seller2_first_name: String
+
+  """The second seller last name, or corporate name."""
+  seller2_last_name: String
+
+  """The seller mailing address."""
+  seller_address: String
+
+  """The seller city."""
+  seller_city: String
+
+  """Seller first name, or null if corporate owner."""
+  seller_first_name: String
+
+  """Seller last name, or corporate name."""
+  seller_last_name: String
+
+  """The seller mailing state."""
+  seller_state: String
+
+  """The seller unit number."""
+  seller_unit_number: String
+
+  """Seller zip code."""
+  seller_zip_code: String
+
+  """Seller four digit postal zip extension."""
+  seller_zip_plus_four_code: String
+
+  """The tax amount levied by the city, county, or a combination thereof."""
+  transfer_tax: Float
+}
+
+type DeedType {
+  """Second buyer first name, or null if corporate owner."""
+  buyer2_first_name: String
+
+  """Second buyer last name, or corporate name."""
+  buyer2_last_name: String
+
+  """Buyer mailing address."""
+  buyer_address: String
+
+  """Buyer mailing city."""
+  buyer_city: String
+
+  """Buyer first name, or null if corporate owner."""
+  buyer_first_name: String
+
+  """Buyer last name, or corporate name."""
+  buyer_last_name: String
+
+  """Buyer mailing state."""
+  buyer_state: String
+
+  """Buyer unit number."""
+  buyer_unit_number: String
+
+  """Buyer unit type."""
+  buyer_unit_type: String
+
+  """Buyer mailing zip code."""
+  buyer_zip_code: String
+
+  """Buyer four digit postal zip extension."""
+  buyer_zip_plus_four_code: String
+
+  """The physical book where the deed was recorded."""
+  deed_book: String
+
+  """The physical page where the deed was recorded."""
+  deed_page: String
+
+  """An indicator to determine if the sale was deemed to be distressed."""
+  distressed_sale: Boolean
+
+  """Identifier assigned to document at the recording date."""
+  document_id: String
+
+  """Type of deed document."""
+  document_type: String
+
+  """Mortgage lender."""
+  lender_name: String
+
+  """The type of lender."""
+  lender_type: String
+
+  """Mortgage recorded in dollars."""
+  loan_amount: Int
+
+  """The date the mortgage will be paid in full."""
+  loan_due_date: String
+
+  """The interest rate type on the loan."""
+  loan_finance_type: String
+
+  """The interest rate of the loan."""
+  loan_interest_rate: Float
+
+  """Type of loan security."""
+  loan_type: String
+
+  """
+  The date the original contract was signed by the relevant parties. In some scenarios this may be the date of notarization.
+  """
+  original_contract_date: String
+
+  """An indicator used to determine the status of the transfer."""
+  real_estate_owned: String
+
+  """The official date the document was recorded."""
+  recording_date: String
+
+  """The total sale price in dollars."""
+  sale_price: Int
+
+  """A description of the sale."""
+  sale_price_description: String
+
+  """The second seller first name, or null if corporate owner."""
+  seller2_first_name: String
+
+  """The second seller last name, or corporate name."""
+  seller2_last_name: String
+
+  """The seller mailing address."""
+  seller_address: String
+
+  """The seller city."""
+  seller_city: String
+
+  """Seller first name, or null if corporate owner."""
+  seller_first_name: String
+
+  """Seller last name, or corporate name."""
+  seller_last_name: String
+
+  """The seller mailing state."""
+  seller_state: String
+
+  """The seller unit number."""
+  seller_unit_number: String
+
+  """Seller zip code."""
+  seller_zip_code: String
+
+  """Seller four digit postal zip extension."""
+  seller_zip_plus_four_code: String
+
+  """The tax amount levied by the city, county, or a combination thereof."""
+  transfer_tax: Float
+}
+
+type DeleteFileError {
+  """Code for the error"""
+  Code: String
+
+  """The error keys"""
+  Key: String
+
+  """Message due to error"""
+  Message: String
+
+  """The version Id of the error"""
+  VersionId: String
+}
+
+type DeleteFileObject {
+  """ It specifies wheather the versioned object is permanently deleted(ture) or not(false) a delete marker was created 
+  """
+  DeleteMarker: Boolean
+
+  """
+  It is the result of Delete operation. If a specific object version is deleted then the returned value by the header is the version Id of the version deleted
+  """
+  DeleteMarkerVersionId: String
+
+  """object keys"""
+  Key: String
+
+  """version id"""
+  VersionId: String
+}
+
+type DeleteFilesType {
+  """return deleted object in array"""
+  Deleted: [DeleteFileObject!]
+
+  """The unexpected condition occured"""
+  Errors: [DeleteFileError!]
+
+  """request charged due to error"""
+  RequestCharged: String
+}
+
+input DeleteKeysInput {
+  """
+  Deletes a single applicant. If successful, returns a 204 No Content response. Once deleted, Onfido will not be able to carry out any troubleshooting or investigate any queries raised by the client. 
+  """
+  keys: [String!]
+}
+
+input GenerateTokenInput {
+  """The id of the applicant to whom the document belongs."""
+  applicantId: String!
+
+  """The unique identifier for the applicants application"""
+  applicationId: String
+
+  """
+  Introductory screen is seen when SDK client is loaded on Mobile browser
+  """
+  crossDeviceUrl: String
+
+  """
+  referrer argument specifies the URL of the web page,where web SDK will be used. It garuntees that other malicious website cannot result the SDK token in case it is lost
+  """
+  referrer: String
+}
+
+input GeojsonInput {
+  """Co-ordinates"""
+  coordinates: [[[Float!]!]!]
+
+  """Geojson Input type"""
+  type: String
+}
+
+type GeojsonType {
+  """coordinates"""
+  coordinates: [[[Float!]!]!]
+
+  """type"""
+  type: String
+}
+
+type GetCognitoUserType {
+  """user kyc status"""
+  kyc_completed: String
+
+  """return user`s permission"""
+  rolePermission: UserRolePermission
+
+  """user attribute"""
+  user: UserAttr
+
+  """user id of user"""
+  user_id: String
+
+  """user whitelist address"""
+  whitelist_address: String
+}
+
+type GetDigitalReCompanyType {
+  """created at date"""
+  created_at: String
+
+  """<No Description, Override manually>"""
+  explorers: String
+
+  """<No Description, Override manually>"""
+  reCompany: String
+
+  """<No Description, Override manually>"""
+  reCompanyUrl: String
+
+  """<No Description, Override manually>"""
+  socials: SocialType
+
+  """updated at date"""
+  updated_at: String
+}
+
+type GetMarketCapitalisation {
+  """get market capitialaztion.."""
+  data: JSONObject!
+}
+
+type HistoricalDataType {
+  """historical"""
+  historicalData: JSONObject!
+}
+
+type HostListingsType {
+  """list hotlistings."""
+  data: JSONObject!
+}
+
+type IdNumber {
+  """State code of the issuing state - Onfido integration"""
+  stateCode: String
+
+  """Type of the Id number - Onfido integration"""
+  type: String
+
+  """Value of the Id number - Onfido integration"""
+  value: String
+}
+
+input IdNumberRequest {
+  """Two letter code of issuing state. """
+  stateCode: String
+
+  """Type of ID number. """
+  type: String!
+
+  """
+  Value of ID number .ssn supports both the full SSN or the last 4 digits. If the full SSN is provided then it must be in the format xxx-xx-xxxx.
+  """
+  value: String!
+}
+
+"""JSONObject custom scalar type"""
+scalar JSONObject
+
+type JwtAccessTokenRefresh {
+  """accessToken."""
+  accessToken: String
+
+  """idToken."""
+  idToken: String
+}
+
+type JwtTokenType {
+  """accessToken."""
+  accessToken: String
+
+  """idToken."""
+  idToken: String
+
+  """refreshToken"""
+  refreshToken: String
+}
+
+type ListFileCommonPrefix {
+  """Container for the specified common prefix."""
+  Prefix: String
+}
+
+type ListFileObject {
+  """
+  The entity tag is a hash of the object. The ETag reflects changes only to the contents of an object, not its metadata. The ETag may or may not be an MD5 digest of the object data. Whether or not it is depends on how the object was created and how it is encrypted as described below:   Objects created by the PUT Object, POST Object, or Copy operation, or through the Amazon Web Services Management Console, and are encrypted by SSE-S3 or plaintext, have ETags that are an MD5 digest of their object data.   Objects created by the PUT Object, POST Object, or Copy operation, or through the Amazon Web Services Management Console, and are encrypted by SSE-C or SSE-KMS, have ETags that are not an MD5 digest of their object data.   If an object is created by either the Multipart Upload or Part Copy operation, the ETag is not an MD5 digest, regardless of the method of encryption
+  """
+  ETag: String
+
+  """
+  The name that you assign to an object. You use the object key to retrieve the object.
+  """
+  Key: String
+
+  """Creation date of the object."""
+  LastModified: Date
+
+  """The owner of the object"""
+  Owner: ListFileOwner
+
+  """Size in bytes of the object"""
+  Size: Float
+
+  """The class of storage used to store the object."""
+  StorageClass: String
+}
+
+type ListFileOwner {
+  """Container for the display name of the owner."""
+  DisplayName: String
+
+  """Container for the ID of the owner."""
+  ID: String
+}
+
+type ListObjectsOutputType {
+  """
+  All of the keys (up to 1,000) rolled up in a common prefix count as a single return when calculating the number of returns.  A response can contain CommonPrefixes only if you specify a delimiter. CommonPrefixes contains all (if there are any) keys between Prefix and the next occurrence of the string specified by the delimiter.  CommonPrefixes lists keys that act like subdirectories in the directory specified by Prefix. For example, if the prefix is notes/ and the delimiter is a slash (/) as in notes/summer/july, the common prefix is notes/summer/. All of the keys that roll up into a common prefix count as a single return when calculating the number of returns
+  """
+  CommonPrefixes: [ListFileCommonPrefix!]
+
+  """Metadata about each object returned."""
+  Contents: ListFileObject
+
+  """
+  Causes keys that contain the same string between the prefix and the first occurrence of the delimiter to be rolled up into a single result element in the CommonPrefixes collection. These rolled-up keys are not returned elsewhere in the response. Each rolled-up result counts as only one return against the MaxKeys value.
+  """
+  Delimiter: String
+
+  """Encoding type used by Amazon S3 to encode object keys in the response."""
+  EncodingType: String
+
+  """
+  A flag that indicates whether Amazon S3 returned all of the results that satisfied the search criteria.
+  """
+  IsTruncated: Boolean
+
+  """
+  Indicates where in the bucket listing begins. Marker is included in the response if it was sent with the request.
+  """
+  Marker: String
+
+  """The maximum number of keys returned in the response body."""
+  MaxKeys: Float
+
+  """The bucket name."""
+  Name: String
+
+  """
+  When response is truncated (the IsTruncated element value in the response is true), you can use the key name in this field as marker in the subsequent request to get next set of objects. Amazon S3 lists objects in alphabetical order Note: This element is returned only if you have delimiter request parameter specified. If response does not include the NextMarker and it is truncated, you can use the value of the last Key in the response as the marker in the subsequent request to get the next set of object keys.
+  """
+  NextMarker: String
+
+  """Keys that begin with the indicated prefix."""
+  Prefix: String
+
+  """Encoding type used by Amazon S3 to encode object keys in the response."""
+  imageUrl: String
+}
+
+type LivePhotoType {
+  """The date and time at which the live photo was uploaded."""
+  createdAt: String
+
+  """The URI that can be used to download the live photo."""
+  downloadHref: String
+
+  """The name of the uploaded file."""
+  fileName: String
+
+  """The size of the uploaded file in bytes."""
+  fileSize: Int
+
+  """The file type of the uploaded file."""
+  fileType: String
+
+  """The URI of this resource."""
+  href: String
+
+  """The unique identifier of the live photo."""
+  id: String
+}
+
+input MarketAssessmentInput {
+  """Improvement value of Land"""
+  improvement_value: Int
+
+  """Land Value of Assessment"""
+  land_value: Int
+
+  """Total Market assessment of Land """
+  total_value: Int
+
+  """Year of assessment"""
+  year: Int
+}
+
+type MarketAssessmentType {
+  """The market improvement value as determined by the assessor."""
+  improvement_value: Int
+
+  """The market land value as determined by the assessor."""
+  land_value: Int
+
+  """The total market value as determined by the assessor."""
+  total_value: Int
+
+  """The year the market assessment was performed."""
+  year: Int
+}
+
+type MemoryHealthIndicator {
+  """
+  Error object contains information of each Health Indicator - memory Health Indicator
+  """
+  error: String
+
+  """It contains information of memory Health Indicator"""
+  info: MemoryHealthIndicatorTypeDetails
+
+  """status of the memory  Health Indicator"""
+  status: String!
+}
+
+type MemoryHealthIndicatorTypeDetails {
+  """disk - memory Health Indicator"""
+  disk: Status
+
+  """memory rss - memory Health Indicator"""
+  memory_rss: Status
+
+  """nestjs Application - memory Health Indicator"""
+  nestjsApplication: Status
+}
+
+input MetadataInput {
+  """Metadata related to the request."""
+  publishing_date: String
+}
+
+type MetadataType {
+  """
+  The date on which assessor roll data is published or received from the county assessor for the propertys county.
+  """
+  publishing_date: String
+}
+
+type Mutation {
+  """apply refferal code."""
+  applyReferralCode(refferalCode: String!, user_id: String!): ApplyReffralCode!
+
+  """cancel payment intent - stripe integration"""
+  cancelStripePaymentIntent(
+    """stripe id from the url"""
+    id: String!
+  ): String!
+
+  """ changing the role"""
+  changeRole(role: RoleEnum!, token_id: String!, user_id: String!): ChangeRoleType! @deprecated(reason: "deprecated API.")
+  compressImages(
+    """realestate Id with s3 path"""
+    reId: String!
+  ): String!
+  createAkruHistoricalData: String!
+
+  """create applicant based on inputs - onfido integration"""
+  createApplicant(
+    """input for creating applicant"""
+    inputs: CreateApplicantRequest!
+  ): ApplicantType!
+
+  """create checks - onfido integration"""
+  createChecks(
+    """input for creating checks"""
+    inputs: CreateChecksRequest!
+  ): ChecksType!
+
+  """create payment - coinify integration"""
+  createCoinifyPayment(
+    """input for creating coinify payment"""
+    input: CreatePaymentInput!
+  ): PaymentType!
+
+  """create arts for the digital arts"""
+  createDigitalArts: createDigitalArtsType!
+
+  """create bonds for the digital assest."""
+  createDigitalBonds: createDigitalBondsType!
+
+  """create debt for the digital assest"""
+  createDigitalDebt(
+    """from where you want to start"""
+    input: Float!
+  ): CreateDigitalDebt01!
+
+  """create invoice - bitpay integration"""
+  createInvoice(
+    """input for creating payment intent"""
+    input: CreateInvoiceInput!
+  ): String!
+
+  """create the company details from the inputs"""
+  createReCompany(input: CompanyInput!): CreateReCompanyType!
+
+  """create real-estate basic info, take the input from UI"""
+  createRealEstateBasicInfo(input: RealEstateListingInput!): RealEstateBasicInfoType!
+
+  """create real-estate finance, passing reid and finance data."""
+  createRealEstateFinance(
+    """buying fees"""
+    assetPrice: Int!
+    closingCost: Int!
+    expectedGrossRentPerProperty: Int!
+    expectedReserveFunds: Int!
+    insurance: Int!
+
+    """maintenanceExpense -percentage field"""
+    maintenanceExpenseInPercentage: Int!
+
+    """platformListFees- percentage field"""
+    platformListFeesInPercentage: Int!
+
+    """propertyMgtFees- percentage field"""
+    propertyMgmtFees: Int!
+    propertyTaxes: Int!
+
+    """id of already created property"""
+    re_id: String!
+    renovationCosts: Int!
+
+    """platformFees- percentage field"""
+    rentProcessingFees: Int!
+    utilities: Int!
+  ): RealEstateFinanceType!
+  createRealTHistoricalData: String!
+  createRoofStockHistoricalData: String!
+
+  """create payment intent - stripe integration"""
+  createStripePaymentIntent(
+    """inputs for creating payment intent"""
+    input: CreatePaymentInput!
+  ): PaymentIntentType!
+
+  """create subscription agreement """
+  createSubscriptionAgreement(re_id: String!, subscriptionAccepted: Boolean!, tokenPrice: Float!, tokensInThisOrder: Float!, totalNumberOfTokens: Float!, user_id: String!): UpdateAgreementType!
+
+  """create user from cognito."""
+  createUserInDynamo: CreateCognitoUserType!
+  deleteFiles(
+    """property id"""
+    id: String!
+
+    """the name of key that want to delete"""
+    keys: DeleteKeysInput!
+  ): DeleteFilesType!
+
+  """
+  search real-estate basic info, passing city,addr1,addr2 and zip. estate involved
+  """
+  fetchRealEstateBasicInfo(city: String, state: String, streetAddress: String, zipCode: Int): RealEstateBasicInfoType!
+
+  """generate Sdk token - onfido integration"""
+  generateSdkToken(
+    """input for generateSdkToken"""
+    inputs: GenerateTokenInput!
+  ): String!
+
+  """minting the uri and setting up uri"""
+  mintingAddressAndSetUri(re_id: String!, tokenId: Float!, tokenNumberOfTokens: Float!, uri: String!): String!
+
+  """ switching the role from and to. you need token id in order to access."""
+  switchRole(fromRole: RoleEnum!, toRole: RoleEnum!, token_id: String!, user_id: String!): String! @deprecated(reason: "deprecated API.")
+
+  """testing jsonobject - no need to test"""
+  testJson: ScalarObjectType!
+
+  """update applicant based on inputs - onfido integration"""
+  updateApplicant(
+    """applicant id onfido"""
+    applicantId: String!
+
+    """input for updating applicant"""
+    inputs: UpdateApplicantRequest!
+  ): ApplicantType!
+
+  """create user from cognito."""
+  updateCognitoUser(input: UpdateCognitoUserInput!): UpdateCognitoUserType!
+
+  """update ethereum address"""
+  updateEthereumAddress(input: CreateWhiteListAddressInput!): updateEthereumAddressType!
+
+  """update ppm doc agreement"""
+  updatePpmOrOperatingDocAgreement(operatingAccepted: Boolean, ppmAccepted: Boolean, re_id: String!, user_id: String!): PPMDocumentType!
+
+  """update smart contract and token based and additional info on reid"""
+  updateSmartContractAndAdditionalInfo(additionalPerks: String!, closingDate: String!, companyName: String!, offeringMemorandumDate: String!, propertyDescription: String!, re_id: String!, tokenId: String!, tokenSmartContractUrl: String!): UpdateSmartContractAndAdditionalInfoType!
+
+  """transfer tokens and add details in db"""
+  updateTokenTransfer(
+    """order ID of the purchase"""
+    orderId: String!
+
+    """real estate ID of the purchase"""
+    reId: String!
+
+    """number of tokens for token distribution"""
+    totalNumberOfTokens: Float!
+
+    """ID of buyer/user"""
+    userId: String!
+  ): TransferDataType!
+
+  """upload documents - onfido integration"""
+  uploadDocument(
+    applicantId: String!
+
+    """full path of file which you want to uplod."""
+    filePath: String!
+    side: String!
+
+    """type of applicant"""
+    type: String!
+  ): UploadDocumentType!
+
+  """upload documents(Live photos) - onfido integration"""
+  uploadLivePhoto(advancedValidation: Boolean = false, applicantId: String = "false", filePath: String = "false"): LivePhotoType!
+  uploadMany(files: [Upload!]!, id: String!): [UploadedType11!]! @deprecated(reason: "Not in used.")
+  uploadMultipleCsvs(files: [Upload!]!): [UploadedType11!]!
+  uploadSingle(file: Upload!, id: String!, isHomePhoto: Boolean): UploadedType11!
+}
+
+type NativeType {
+  """amount"""
+  amount: Float
+
+  """currency"""
+  currency: String
+}
+
+input OtherAreaInput {
+  """square feet"""
+  sq_ft: String
+
+  """Area"""
+  type: String
+}
+
+type OtherAreaType {
+  """square feet"""
+  sq_ft: String
+
+  """type"""
+  type: String
+}
+
+type OtherFeaturesType {
+  """<No Description, Override manually>"""
+  sq_ft: String
+
+  """<No Description, Override manually>"""
+  type: String
+}
+
+type OtherImprovementsType {
+  """square feet"""
+  sq_ft: String
+
+  """type"""
+  type: String
+}
+
+input OwnerInput {
+  """
+  The city where the current tax bill is mailed. In the case it is out of USA, the county will also be located here.
+  """
+  city: String
+
+  """The address where the current tax bill is mailed (not including unit)."""
+  formatted_street_address: String
+
+  """Assessed owner names."""
+  name: String
+
+  """
+  Description of the owner occupancy. Can be "YES" or "PROBABLE". Data not available if null.
+  """
+  owner_occupied: String
+
+  """
+  As of March 1, 2020, this field has been deprecated and will return null. Any additional owner names have been merged with the primary owner name.
+  """
+  second_name: String
+
+  """
+  The state abbreviation where the current tax bill is mailed; XX for out of country addresses.
+  """
+  state: String
+
+  """The unit number."""
+  unit_number: String
+
+  """The unit type."""
+  unit_type: String
+
+  """The zip code where the current tax bill is mailed."""
+  zip_code: String
+
+  """Four digit postal zip extension for where the tax bill is mailed."""
+  zip_plus_four_code: String
+}
+
+type OwnerType {
+  """
+  The city where the current tax bill is mailed. In the case it is out of USA, the county will also be located here.
+  """
+  city: String
+
+  """The address where the current tax bill is mailed (not including unit)."""
+  formatted_street_address: String
+
+  """Assessed owner names."""
+  name: String
+
+  """
+  Description of the owner occupancy. Can be "YES" or "PROBABLE". Data not available if null.
+  """
+  owner_occupied: String
+
+  """
+  As of March 1, 2020, this field has been deprecated and will return null. Any additional owner names have been merged with the primary owner name.
+  """
+  second_name: String
+
+  """
+  The state abbreviation where the current tax bill is mailed; XX for out of country addresses.
+  """
+  state: String
+
+  """The unit number."""
+  unit_number: String
+
+  """The unit type."""
+  unit_type: String
+
+  """The zip code where the current tax bill is mailed."""
+  zip_code: String
+
+  """Four digit postal zip extension for where the tax bill is mailed."""
+  zip_plus_four_code: String
+}
+
+type PPMDocumentType {
+  """operatingAgreement."""
+  operatingAgreement: Boolean
+
+  """operatingAgreement timestamp."""
+  operatingAgreementTimestamp: String
+
+  """ppmAgreement."""
+  ppmAgreement: Boolean
+
+  """ppmAgreement timestamp."""
+  ppmAgreementTimestamp: String
+
+  """re id"""
+  re_id: String
+
+  """user id."""
+  user_id: String
+}
+
+input ParcelInput {
+  """The formatted assessors parcel number."""
+  apn_original: String
+
+  """A previous assessors parcel number, formatted."""
+  apn_previous: String
+
+  """The unformatted assessors parcel number."""
+  apn_unformatted: String
+
+  """Total area of the parcel in acres."""
+  area_acres: Float
+
+  """Total area of the parcel in square feet."""
+  area_sq_ft: Int
+
+  """Count of all buildings on the property."""
+  building_count: Int
+
+  """
+  The land use code as provided directly from the county, without interpretation.
+  """
+  county_land_use_code: String
+
+  """
+  The land use description as provided by directly from the county, without interpretation.
+  """
+  county_land_use_description: String
+
+  """The name of the county."""
+  county_name: String
+
+  """Depth measurement of the parcel in feet."""
+  depth_ft: Float
+
+  """Unique County identifier, first 2 digits are state FIPS."""
+  fips_code: String
+
+  """Frontage measurement of the parcel in feet."""
+  frontage_ft: Int
+
+  """Legal description as provided by the assessor."""
+  legal_description: String
+
+  """List describing the location and surrounding area"""
+  location_descriptions: [String!]
+
+  """Indicates properties with multiple or partial lots."""
+  lot_code: String
+
+  """
+  Number(s) identifying individual lots making up a property, separated by a comma (,), or ampersand (&). Ranges are denoted by a hyphen (-).
+  """
+  lot_number: String
+
+  """The jurisdiction in which the property is located."""
+  municipality: String
+
+  """Section township range meridian identifier."""
+  section_township_range: String
+
+  """
+  The general land use category for the property, converted to a common set of values across all counties.
+  """
+  standardized_land_use_category: String
+
+  """
+  Describes further granularity into the land use type, converted to a common set of values across all counties.
+  """
+  standardized_land_use_type: String
+
+  """
+  The name of the subdivision, plat, or tract in which the property is located
+  """
+  subdivision: String
+
+  """Parcel identifier used by the tax assessor."""
+  tax_account_number: String
+
+  """City zoning designation, unique to each incorporated area."""
+  zoning: String
+}
+
+type ParcelType {
+  """The formatted assessors parcel number."""
+  apn_original: String
+
+  """A previous assessors parcel number, formatted."""
+  apn_previous: String
+
+  """The unformatted assessors parcel number."""
+  apn_unformatted: String
+
+  """Total area of the parcel in acres."""
+  area_acres: Float
+
+  """Total area of the parcel in square feet."""
+  area_sq_ft: Int
+
+  """Count of all buildings on the property."""
+  building_count: Int
+
+  """
+  The land use code as provided directly from the county, without interpretation.
+  """
+  county_land_use_code: String
+
+  """
+  The land use description as provided by directly from the county, without interpretation.
+  """
+  county_land_use_description: String
+
+  """The name of the county."""
+  county_name: String
+
+  """Depth measurement of the parcel in feet."""
+  depth_ft: Float
+
+  """Unique County identifier, first 2 digits are state FIPS."""
+  fips_code: String
+
+  """Frontage measurement of the parcel in feet."""
+  frontage_ft: Int
+
+  """Legal description as provided by the assessor."""
+  legal_description: String
+
+  """List describing the location and surrounding area."""
+  location_descriptions: [String!]
+
+  """Indicates properties with multiple or partial lots."""
+  lot_code: String
+
+  """
+  Number(s) identifying individual lots making up a property, separated by a comma (,), or ampersand (&). Ranges are denoted by a hyphen (-).
+  """
+  lot_number: String
+
+  """The jurisdiction in which the property is located."""
+  municipality: String
+
+  """Section township range meridian identifier."""
+  section_township_range: String
+
+  """
+  The general land use category for the property, converted to a common set of values across all counties.
+  """
+  standardized_land_use_category: String
+
+  """
+  Describes further granularity into the land use type, converted to a common set of values across all counties.
+  """
+  standardized_land_use_type: String
+
+  """
+  The name of the subdivision, plat, or tract in which the property is located
+  """
+  subdivision: String
+
+  """Parcel identifier used by the tax assessor."""
+  tax_account_number: String
+
+  """City zoning designation, unique to each incorporated area."""
+  zoning: String
+}
+
+type PaymentDataType {
+  """bitcoin"""
+  bitcoin: BitCoinType
+
+  """native"""
+  callback_email: String
+
+  """native"""
+  callback_url: String
+
+  """native"""
+  cancel_url: String
+
+  """create_time"""
+  create_time: String
+
+  """custom"""
+  custom: CustomType
+
+  """native"""
+  description: String
+
+  """expire_time"""
+  expire_time: String
+
+  """id"""
+  id: Float
+
+  """native"""
+  native: NativeType
+
+  """native"""
+  payment_url: String
+
+  """native"""
+  return_url: String
+
+  """state"""
+  state: String
+
+  """native"""
+  transfer: TransferType
+
+  """type"""
+  type: String
+
+  """uuid"""
+  uuid: String
+}
+
+type PaymentIntentType {
+  """The client secret from stripe to complete payment."""
+  checkoutUrl: String!
+
+  """order_id"""
+  order_id: String
+
+  """re_id"""
+  re_id: String
+
+  """user_id"""
+  user_id: String
+}
+
+type PaymentType {
+  """data object return by payment process."""
+  data: PaymentDataType
+
+  """success or failure."""
+  success: Boolean
+}
+
+type PreSignedUrlType {
+  """key or file name"""
+  key: String
+
+  """generated pre signed url for s3 upload"""
+  url: String
+}
+
+type Query {
+  """get the address is sanctioned or not."""
+  addressSanctioned(
+    """applicant id onfido"""
+    address: String!
+  ): AddressSanctionedType!
+
+  """check user's kyc and etherium is done or not."""
+  checkKycAndEtheriumAddress(user_id: String!): Boolean!
+
+  """check user in dynamodb"""
+  checkUserInCognito(user_id: String!): Boolean!
+
+  """
+  Mapping or association between a company and its corresponding URL or website address
+  """
+  companyUrlMapping: JSONObject!
+
+  """local testing - not using direct api."""
+  deleteFile(
+    """bucketName"""
+    bucketName: String!
+
+    """key."""
+    key: String!
+  ): String!
+
+  """download image from url to s3 bucket."""
+  downloadImageToS3(re_id: String!, url: String!): String!
+  fetchHistoricalData(
+    """provide name of company"""
+    companyName: String!
+
+    """provide the real estate id."""
+    reId: String!
+  ): HistoricalDataType!
+
+  """fectch or list hotlisting"""
+  fetchHotListings(
+    """provide the qStr ex: (realestate or debt in lowercase)."""
+    qStr: String!
+  ): HostListingsType!
+
+  """get access token, id token and refresh token"""
+  getAccessToken(password: String!, username: String!): JwtTokenType!
+
+  """get agreement document link from s3 bucket."""
+  getAgreementDocLink(
+    """real estate id"""
+    re_id: String!
+  ): AgreementDocumentLinkType!
+
+  """get applicant by id"""
+  getApplicantById(
+    """applicant id onfido"""
+    applicantId: String!
+  ): ApplicantType!
+
+  """get chart data by address"""
+  getChartDataByAddress(
+    """address or contract addres"""
+    address: String!
+
+    """provide days in string"""
+    days: String!
+  ): ChartDataType!
+  getDigitalDebt(
+    """provide name of company"""
+    companyName: String!
+
+    """provide the real estate id."""
+    reId: String!
+  ): JSONObject!
+
+  """get RealEsate company details by company name"""
+  getDigitalReCompany(companyName: String!): GetDigitalReCompanyType!
+
+  """get digital (phase2)real estate by company name and reid"""
+  getDigitalRealEstate(
+    """provide name of company"""
+    companyName: String!
+
+    """provide the real estate id."""
+    reId: String!
+  ): ZilloDigitalREDataType!
+
+  """get market capitalisation"""
+  getMarketCapitalisation: GetMarketCapitalisation!
+
+  """get ppm document agreement"""
+  getPpmOrOperatingDocAgreement(re_id: String!, user_id: String!): PPMDocumentType!
+
+  """get real estate basic data by passing unique re_id"""
+  getRealEstateBasicInfoById(re_id: String!): RealEstateBasicInfoType!
+
+  """get real estate finance data by passing unique re_id"""
+  getRealEstateFinanceByReId(input: ReIdInput!): RealEstateFinanceType!
+
+  """get all real estate."""
+  getRealEstateInfoById(
+    """realestate Id"""
+    reId: String!
+  ): RealEstateAndFinanceType!
+
+  """get all real estate - all"""
+  getRealEstateInfoList: [RealEstateAndFinanceType1!]!
+
+  """get all real estate."""
+  getRealEstateInfoListByIds(
+    """realestate Ids"""
+    reIds: [String!]!
+  ): [RealEstateAndFinanceType!]!
+
+  """get subscription agreement by reid and userid"""
+  getSubscriptionAgreement(re_id: String!, user_id: String!): [UpdateAgreementType!]!
+  getTraditionalInfo(
+    """provide name of company"""
+    companyName: String!
+
+    """provide the real estate id."""
+    reId: String!
+  ): JSONObject!
+
+  """get user access details."""
+  getUserAccess(user_id: String!): GetCognitoUserType!
+
+  """get user's refral details."""
+  getUserReferralInfo(user_id: String!): UserReferralType!
+
+  """get workflow run id from onfido orchastration."""
+  getWorkFlowRunId(applicant_id: String!, user_id: String!, workflow_id: String!): WorkFlowRunType!
+
+  """get digital real estate zillow by address"""
+  getZillowDataByAddress(
+    """physical address."""
+    address: String!
+  ): ZillowDataByAddressType!
+  harness: ScalarObjectType!
+
+  """Check health of application"""
+  healthzCheck: MemoryHealthIndicator!
+
+  """Is address whitelisted"""
+  isAddressWhitelisted(
+    """is address whitelisted"""
+    addresses: String!
+  ): isAddressWhitelistedReturnType!
+
+  """list applicants"""
+  listApplicants: [ApplicantType!]!
+
+  """listChecks- onfido integration"""
+  listChecks(applicantId: String!): [ChecksType!]!
+
+  """List contract address by the company"""
+  listContractAddrByCompany(
+    """provide name of function in string"""
+    functionName: String!
+
+    """provide deploy contract address in string"""
+    realTDeployer: String!
+  ): [CompanyContractData!]!
+  listDigitalArts: JSONObject!
+  listDigitalBonds: JSONObject!
+  listDigitalDebt: JSONObject!
+
+  """fetch all digital real estate"""
+  listDigitalRealEstate(limit: Float): ZilloDigitalREDataType!
+
+  """listDocuments - onfido integration"""
+  listDocuments(applicantId: String!): [UploadDocumentType!]!
+
+  """list files."""
+  listFiles(
+    """property id"""
+    id: String!
+  ): [ListObjectsOutputType!]!
+  listLastUpdatedUserCognito: ScalarObjectType!
+
+  """listLivePhotoes- onfido integration"""
+  listLivePhotoes(applicantId: String!): [LivePhotoType!]!
+
+  """listReports- onfido integration"""
+  listReports(checkId: String!): [ReportsType!]!
+
+  """get logged in user detail."""
+  loggedInUserAccess: GetCognitoUserType!
+  preSignedUrl(
+    """key or filename"""
+    keys: [String!]!
+
+    """real estate id"""
+    re_id: String!
+  ): [PreSignedUrlType!]! @deprecated(reason: "Not in use.")
+
+  """refreshing the session."""
+  refreshSession(refreshToken: String!): JwtAccessTokenRefresh!
+
+  """retrieveChecks- onfido integration"""
+  retrieveChecks(checkId: String!): ChecksType!
+
+  """retrieveDocument - onfido integration"""
+  retrieveDocument(documentId: String!): UploadDocumentType!
+
+  """retrieveLivePhoto- onfido integration"""
+  retrieveLivePhoto(livePhotoId: String!): LivePhotoType!
+
+  """retrieveReports- onfido integration"""
+  retrieveReports(reportId: String!): ReportsType!
+
+  """Whitelist a list of addresses"""
+  whitelistAddresses(
+    """addresses to be whitelisted"""
+    addresses: String!
+  ): WhitelistAddressesType!
+}
+
+input ReAddressInput {
+  """USPS code for mail delivery services."""
+  carrier_code: String
+
+  """The census tract as designated by the Census Bureau."""
+  census_tract: String
+
+  """ City name."""
+  city: String!
+
+  """Describes the level of geocoding match."""
+  geocoding_accuracy: String
+
+  """Measured latitude for the property."""
+  latitude: Float
+
+  """Measured longitude for the property."""
+  longitude: Float
+
+  """State abbreviation."""
+  state: String!
+
+  """ Combined street address (including unit)."""
+  streetAddress: String!
+
+  """ Parsed street name. Numeric street names will include ordinal suffixes (st, nd, rd, th)
+  """
+  street_name: String
+
+  """ Parsed street number."""
+  street_number: String
+
+  """ Directional appearing after street suffix denoting quadrant."""
+  street_post_direction: String
+
+  """ Directional appearing before the street name."""
+  street_pre_direction: String
+
+  """ Standardized and parsed street suffix abbreviation."""
+  street_suffix: String
+
+  """ Unit number (may be alphanumeric)."""
+  unit_number: String
+
+  """Unit type abbreviation."""
+  unit_type: String
+
+  """Zip code."""
+  zipCode: String!
+
+  """Four digit postal zip extension."""
+  zip_plus_four_code: String
+}
+
+input ReIdInput {
+  """real estate id."""
+  re_id: String!
+}
+
+type RealEstateAndFinanceType {
+  """additional perks"""
+  additionalPerks: String
+
+  """Address details as provided by the assessor."""
+  address: AddressType
+
+  """
+  Tax assessment information as provided by the county assessor. These assessments are used exclusively for taxation purposes.
+  """
+  assessments: [AssessmentType!]
+
+  """Asset price of the property."""
+  assetPrice: Float
+
+  """Coordinates along a parcels boundary."""
+  boundary: BoundaryType
+
+  """Closing cost of property"""
+  closingCost: Float
+
+  """closing date"""
+  closingDate: String
+
+  """company name"""
+  companyName: String
+
+  """created at date"""
+  created_at: String
+
+  """
+  Up to 40 years of sale and mortgage data which constitute a deed record.
+  """
+  deeds: [DeedType!]
+
+  """Expected Gross Rent per property."""
+  expectedGrossRentPerProperty: Float
+
+  """Expected gross Roi per property"""
+  expectedGrossRoi: Float
+
+  """Expected net rent per property"""
+  expectedNetRentPerProperty: Float
+
+  """Expected Net Roi per property"""
+  expectedNetRoi: Float
+
+  """Expected reserve funds"""
+  expectedReserveFunds: Float
+
+  """Expenses"""
+  expenses: Float
+
+  """Property Insurance"""
+  insurance: Float
+
+  """Listing price of the property"""
+  listingPrice: Float
+
+  """Maintenance Expense"""
+  maintenanceExpense: Float
+
+  """
+  Market assessment data as determined by the assessor. These assessments indicate an approximate market value of a property.
+  """
+  market_assessments: [MarketAssessmentType!]
+
+  """meta link revenue field"""
+  metaLandRevenueStream: String
+
+  """meta link"""
+  metaLink: String
+
+  """Metadata related to the request."""
+  metadata: MetadataType
+
+  """Net rent per Token"""
+  netRentPerToken: Float
+
+  """offering memorandum date"""
+  offeringMemorandumDate: String
+
+  """Current owner details taken from the assessment."""
+  owner: OwnerType
+
+  """Parcel details as provided by the assessor."""
+  parcel: ParcelType
+
+  """Platform fees"""
+  platformFees: Float
+
+  """Platform Listing fees """
+  platformListingFees: Float
+
+  """property description"""
+  propertyDescription: String
+
+  """Property Mgt Fees."""
+  propertyMgtFees: Float
+
+  """Property Taxes."""
+  propertyTaxes: Float
+
+  """registration id"""
+  re_id: String
+
+  """Renovation cost for the property"""
+  renovationCosts: Float
+
+  """Information about the building(s) on the parcel."""
+  structure: StructureType
+
+  """Tax records as provided by the county."""
+  taxes: [TaxType!]
+
+  """token id"""
+  tokenId: String
+
+  """Token price"""
+  tokenPrice: Float
+
+  """token smart contract url"""
+  tokenSmartContractUrl: String
+
+  """tokens remaining"""
+  tokensRemaining: Float
+
+  """Total Investments."""
+  totalInvestments: Float
+
+  """Number of tokens."""
+  totalNumberOfTokens: Float
+
+  """updated at date"""
+  updated_at: String
+
+  """Real estate id"""
+  user_id: String
+
+  """Utilities"""
+  utilities: Float
+
+  """Valuation details as provided by a proprietary valuation algorithm."""
+  valuation: ValuationType
+
+  """youtube link"""
+  youtubeLink: String
+}
+
+type RealEstateAndFinanceType1 {
+  """address"""
+  address: String
+
+  """created at date"""
+  created_at: String
+
+  """Expected Net Roi per property"""
+  expectedNetRoi: Float
+
+  """Listing price of the property"""
+  listingPrice: Float
+
+  """registration id"""
+  re_id: String
+
+  """Token price"""
+  tokenPrice: Float
+
+  """available tokens."""
+  tokensRemaining: Int
+
+  """Number of tokens."""
+  totalNumberOfTokens: Float
+
+  """updated at date"""
+  updated_at: String
+}
+
+type RealEstateBasicInfoType {
+  """additional perks"""
+  additionalPerks: String
+
+  """Address details as provided by the assessor."""
+  address: AddressType
+
+  """
+  Tax assessment information as provided by the county assessor. These assessments are used exclusively for taxation purposes.
+  """
+  assessments: [AssessmentType!]
+
+  """Coordinates along a parcels boundary."""
+  boundary: BoundaryType
+
+  """closing date"""
+  closingDate: String
+
+  """company name"""
+  companyName: String
+
+  """created at date"""
+  created_at: String
+
+  """
+  Up to 40 years of sale and mortgage data which constitute a deed record.
+  """
+  deeds: [DeedType!]
+
+  """
+  Market assessment data as determined by the assessor. These assessments indicate an approximate market value of a property.
+  """
+  market_assessments: [MarketAssessmentType!]
+
+  """ If there is no property data found an error is occured"""
+  message: String
+
+  """meta link revenue field"""
+  metaLandRevenueStream: String
+
+  """meta link"""
+  metaLink: String
+
+  """Metadata related to the request."""
+  metadata: MetadataType
+
+  """offering memorandum date"""
+  offeringMemorandumDate: String
+
+  """Current owner details taken from the assessment."""
+  owner: OwnerType
+
+  """Parcel details as provided by the assessor."""
+  parcel: ParcelType
+
+  """property description"""
+  propertyDescription: String
+
+  """registration id"""
+  re_id: String
+
+  """Information about the building(s) on the parcel."""
+  structure: StructureType
+
+  """Tax records as provided by the county."""
+  taxes: [TaxType!]
+
+  """token id"""
+  tokenId: String
+
+  """token smart contract url"""
+  tokenSmartContractUrl: String
+
+  """updated at date"""
+  updated_at: String
+
+  """Valuation details as provided by a proprietary valuation algorithm."""
+  valuation: ValuationType
+
+  """youtube link"""
+  youtubeLink: String
+}
+
+type RealEstateFinanceType {
+  """Asset price of the property."""
+  assetPrice: Float
+
+  """Closing cost of property"""
+  closingCost: Float
+
+  """created at date"""
+  created_at: String
+
+  """Expected Gross Rent per property."""
+  expectedGrossRentPerProperty: Float
+
+  """Expected gross Roi per property"""
+  expectedGrossRoi: Float
+
+  """Expected net rent per property"""
+  expectedNetRentPerProperty: Float
+
+  """Expected Net Roi per property"""
+  expectedNetRoi: Float
+
+  """Expected reserve funds"""
+  expectedReserveFunds: Float
+
+  """Expenses"""
+  expenses: Float
+
+  """Property Insurance"""
+  insurance: Float
+
+  """Listing price of the property"""
+  listingPrice: Float
+
+  """Maintenance Expense"""
+  maintenanceExpense: Float
+
+  """Net rent per Token"""
+  netRentPerToken: Float
+
+  """Platform fees"""
+  platformFees: Float
+
+  """Platform Listing fees """
+  platformListingFees: Float
+
+  """Property Mgt Fees."""
+  propertyMgtFees: Float
+
+  """Property Taxes."""
+  propertyTaxes: Float
+
+  """<No Description, Override manually>"""
+  re_id: String
+
+  """Renovation cost for the property"""
+  renovationCosts: Float
+
+  """Token price"""
+  tokenPrice: Float
+
+  """tokens remaining"""
+  tokensRemaining: Float
+
+  """Total Investments."""
+  totalInvestments: Float
+
+  """Number of tokens."""
+  totalNumberOfTokens: Float
+
+  """updated at date"""
+  updated_at: String
+
+  """<No Description, Override manually>"""
+  user_id: String
+
+  """Utilities"""
+  utilities: Float
+}
+
+input RealEstateListingInput {
+  """Address details as provided by the assessor."""
+  address: ReAddressInput!
+
+  """
+  Tax assessment information as provided by the county assessor. These assessments are used exclusively for taxation purposes.
+  """
+  assessments: [AssessmentInput!]
+
+  """Coordinates along a parcels boundary."""
+  boundary: BoundaryInput
+
+  """ Property created at"""
+  createdAt: String
+
+  """
+  Up to 40 years of sale and mortgage data which constitute a deed record.
+  """
+  deeds: [DeedInput!]
+
+  """
+  Market assessment data as determined by the assessor. These assessments indicate an approximate market value of a property.
+  """
+  market_assessments: [MarketAssessmentInput!]
+
+  """meta link revenue field"""
+  metaLandRevenueStream: String!
+
+  """meta link"""
+  metaLink: String
+
+  """Metadata related to the request."""
+  metadata: MetadataInput
+
+  """Current owner details taken from the assessment."""
+  owner: OwnerInput
+
+  """Parcel details as provided by the assessor."""
+  parcel: ParcelInput
+
+  """Information about the building(s) on the parcel."""
+  structure: StructureInput
+
+  """Tax records as provided by the county."""
+  taxes: [TaxInput!]
+
+  """Property updated at"""
+  updatedAt: String
+
+  """user id"""
+  user_id: String
+
+  """Valuation details as provided by a proprietary valuation algorithm."""
+  valuation: ValuationInput
+
+  """youtube link"""
+  youtubeLink: String
+}
+
+type ReportsType {
+  """The details of the report. This is specific to each type of report."""
+  breakdown: String
+
+  """The ID of the check to which the report belongs."""
+  checkId: String
+
+  """The date and time at which the report was first initiated."""
+  createdAt: String
+
+  """
+  The document IDs that were processed. Populated for Document and Facial Similarity reports, otherwise an empty array.
+  """
+  documents: String
+
+  """The API endpoint to retrieve the report."""
+  href: String
+
+  """The unique identifier for the report."""
+  id: String
+
+  """The type of the report"""
+  name: String
+
+  """The properties associated with the report, if any. """
+  properties: String
+
+  """The result of the report (null if report is incomplete)."""
+  result: String
+
+  """The current state of the report in the checking process."""
+  status: String
+
+  """
+  The sub_result of the report. It gives a more detailed result for Document reports only, and will be null otherwise.
+  """
+  subResult: String
+}
+
+"""Role of the user"""
+enum RoleEnum {
+  Admin
+  Buyer
+  PropertyManager
+  Seller
+  Visitor
+}
+
+type SanctionedFieldType {
+  """
+  The Chainalysis Entity category. For sanctioned addresses, the value will be sanctions
+  """
+  category: String
+
+  """The OFAC description of the sanctioned address."""
+  description: String
+
+  """The OFAC name associated with the sanctioned address."""
+  name: String
+
+  """The OFAC URL for more information about the sanctioned address"""
+  url: String
+}
+
+type ScalarObjectType {
+  """testing the scalar type"""
+  payload: JSONObject
+}
+
+type SocialType {
+  """discord"""
+  discord: String
+
+  """facebook"""
+  facebook: String
+
+  """gitbook"""
+  gitbook: String
+
+  """github"""
+  github: String
+
+  """instagram"""
+  instagram: String
+
+  """reddit"""
+  reddit: String
+
+  """telgram"""
+  telegram: String
+
+  """twitter"""
+  twitter: String
+}
+
+type SocialsData {
+  """<No Description, Override manually>"""
+  discord: String
+
+  """<No Description, Override manually>"""
+  instagram: String
+
+  """<No Description, Override manually>"""
+  telegram: String
+
+  """<No Description, Override manually>"""
+  twitter: String
+}
+
+input SocialsInput {
+  """discord"""
+  discord: String
+
+  """facebook"""
+  facebook: String
+
+  """gitbook"""
+  gitbook: String
+
+  """github"""
+  github: String
+
+  """instagram"""
+  instagram: String
+
+  """reddit"""
+  reddit: String
+
+  """telgram"""
+  telegram: String
+
+  """twitter"""
+  twitter: String
+}
+
+type Status {
+  status: String!
+}
+
+input StructureInput {
+  """Air conditioning type for the building."""
+  air_conditioning_type: String
+
+  """List of amenities included in the property."""
+  amenities: [String!]
+
+  """Style or historical period of the primary structure."""
+  architecture_type: String
+
+  """Basement type for the building."""
+  basement_type: String
+
+  """
+  Fractional number of bathrooms in the building, except when partial_baths_count is nonnull.
+  """
+  baths: Float
+
+  """The number of bedrooms in the building."""
+  beds_count: Int
+
+  """
+  Current condition of the structure provided by the county. This relates to things like whether or not there is visible wear on the structure (e.g. chipped paint, siding falling off). The method for determining this varies across counties.
+  """
+  condition: String
+
+  """Type of material used in construction of the building."""
+  construction_type: String
+
+  """The year a structure was substantially updated or improved."""
+  effective_year_built: Int
+
+  """Material used for the exterior walls of the building."""
+  exterior_wall_type: String
+
+  """Total number of fireplaces in the building (can also be "YES")"""
+  fireplaces: String
+
+  """Type of flooring used in improvements in the building."""
+  flooring_types: [String!]
+
+  """The type of material used in the foundation."""
+  foundation_type: String
+
+  """Type of fuel used to heat the building."""
+  heating_fuel_type: String
+
+  """Primary heating type for the building."""
+  heating_type: String
+
+  """The type of material used for the interior walls."""
+  interior_wall_type: String
+
+  """
+  List of objects describing areas within the building, and their corresponding size in sq ft. Size is a string holding an integer.
+  """
+  other_areas: [OtherAreaInput!]
+
+  """
+  List of objects describing features in or around the building, and their corresponding size in sq ft. Size is a string holding an integer, float, or rectangle (e.g. "24X16").
+  """
+  other_features: [OtherAreaInput!]
+
+  """
+  List of objects describing improvements to the property or building, and their corresponding size in sq ft. Size is a string holding an integer, float, or rectangle (e.g. "24X16").
+  """
+  other_improvements: [OtherAreaInput!]
+
+  """List of other rooms within the building."""
+  other_rooms: [String!]
+
+  """
+  The total number of available parking spaces; including garage, carport, driveway.
+  """
+  parking_spaces_count: Int
+
+  """The type of parking available."""
+  parking_type: String
+
+  """
+  The whole number of partial bathrooms. When this is nonnull, baths above will be a whole number indicating the number of full bathrooms.
+  """
+  partial_baths_count: Int
+
+  """Total number of all plumbing fixtures in the building."""
+  plumbing_fixtures_count: Int
+
+  """Type of pool located on the property - shared or private."""
+  pool_type: String
+
+  """
+  The quality of the structure rated from A+ to E+. This grade is determined by the county and is based on numerous, non-standard factors. For example, a mobile home would likely have a lower score than a mansion as the mobile home uses cheaper, lower quality materials and has less features.
+  """
+  quality: String
+
+  """The material used for the roof of the building."""
+  roof_material_type: String
+
+  """The architectural style for the roof of the building."""
+  roof_style_type: String
+
+  """The total number of rooms in the building (not just bedrooms)."""
+  rooms_count: Int
+
+  """The waste disposal/sewage system for the property."""
+  sewer_type: String
+
+  """
+  The number of stories comprising the structure (may include fractional stories and alphabetic codes).
+  """
+  stories: String
+
+  """Total livable square footage of the structure."""
+  total_area_sq_ft: Int
+
+  """Total number of units reported to the county."""
+  units_count: Int
+
+  """The water system for the property."""
+  water_type: String
+
+  """The year the structure was built."""
+  year_built: Int
+}
+
+type StructureType {
+  """Air conditioning type for the building."""
+  air_conditioning_type: String
+
+  """List of amenities included in the property."""
+  amenities: [String!]
+
+  """Style or historical period of the primary structure."""
+  architecture_type: String
+
+  """Basement type for the building."""
+  basement_type: String
+
+  """
+  Fractional number of bathrooms in the building, except when partial_baths_count is nonnull, see below.
+  """
+  baths: Float
+
+  """The number of bedrooms in the building."""
+  beds_count: Int
+
+  """
+  Current condition of the structure provided by the county. This relates to things like whether or not there is visible wear on the structure (e.g. chipped paint, siding falling off). The method for determining this varies across counties.
+  """
+  condition: String
+
+  """Type of material used in construction of the building."""
+  construction_type: String
+
+  """The year a structure was substantially updated or improved."""
+  effective_year_built: Int
+
+  """Material used for the exterior walls of the building."""
+  exterior_wall_type: String
+
+  """Total number of fireplaces in the building (can also be "YES")"""
+  fireplaces: String
+
+  """Type of flooring used in improvements in the building."""
+  flooring_types: [String!]
+
+  """The type of material used in the foundation."""
+  foundation_type: String
+
+  """Type of fuel used to heat the building."""
+  heating_fuel_type: String
+
+  """Primary heating type for the building."""
+  heating_type: String
+
+  """The type of material used for the interior walls."""
+  interior_wall_type: String
+
+  """
+  List of objects describing areas within the building, and their corresponding size in sq ft. Size is a string holding an integer.
+  """
+  other_areas: [OtherAreaType!]
+
+  """
+  List of objects describing features in or around the building, and their corresponding size in sq ft. Size is a string holding an integer, float, or rectangle (e.g. "24X16").
+  """
+  other_features: [OtherFeaturesType!]
+
+  """
+  List of objects describing improvements to the property or building, and their corresponding size in sq ft. Size is a string holding an integer, float, or rectangle (e.g. "24X16").
+  """
+  other_improvements: [OtherImprovementsType!]
+
+  """List of other rooms within the building."""
+  other_rooms: [String!]
+
+  """
+  The total number of available parking spaces; including garage, carport, driveway.
+  """
+  parking_spaces_count: Int
+
+  """The type of parking available."""
+  parking_type: String
+
+  """
+  The whole number of partial bathrooms. When this is nonnull, baths above will be a whole number indicating the number of full bathrooms.
+  """
+  partial_baths_count: Int
+
+  """Total number of all plumbing fixtures in the building."""
+  plumbing_fixtures_count: Int
+
+  """Type of pool located on the property - shared or private."""
+  pool_type: String
+
+  """
+  The quality of the structure rated from A+ to E+. This grade is determined by the county and is based on numerous, non-standard factors. For example, a mobile home would likely have a lower score than a mansion as the mobile home uses cheaper, lower quality materials and has less features.
+  """
+  quality: String
+
+  """The material used for the roof of the building."""
+  roof_material_type: String
+
+  """The architectural style for the roof of the building."""
+  roof_style_type: String
+
+  """The total number of rooms in the building (not just bedrooms)."""
+  rooms_count: Int
+
+  """The waste disposal/sewage system for the property."""
+  sewer_type: String
+
+  """
+  The number of stories comprising the structure (may include fractional stories and alphabetic codes).
+  """
+  stories: String
+
+  """Total livable square footage of the structure."""
+  total_area_sq_ft: Int
+
+  """Total number of units reported to the county."""
+  units_count: Int
+
+  """The water system for the property."""
+  water_type: String
+
+  """The year the structure was built."""
+  year_built: Int
+}
+
+input TaxInput {
+  """The amount of tax on the property in dollars."""
+  amount: Int
+
+  """List of exemptions."""
+  exemptions: [String!]
+
+  """
+  Represents separate tax jurisdictions within the county as provided on the county tax/assessment roll.
+  """
+  rate_code_area: String
+
+  """The year the tax was levied."""
+  year: Int
+}
+
+type TaxType {
+  """The amount of tax on the property in dollars."""
+  amount: Int
+
+  """List of exemptions."""
+  exemptions: [String!]
+
+  """
+  Represents separate tax jurisdictions within the county as provided on the county tax/assessment roll.
+  """
+  rate_code_area: String
+
+  """The year the tax was levied."""
+  year: Int
+}
+
+type TransferDataType {
+  """result"""
+  result: String
+}
+
+type TransferType {
+  """amount"""
+  amount: Float
+
+  """currency"""
+  currency: String
+}
+
+input UpdateAddressRequest {
+  """Building name of the applicant"""
+  buildingName: String
+
+  """Building number of the applicant"""
+  buildingNumber: String
+
+  """The country of the applicant"""
+  country: String
+
+  """The flat number of the applicant"""
+  flatNumber: String
+
+  """line1 of the address"""
+  line1: String
+
+  """line2 of the address"""
+  line2: String
+
+  """line3 of the address"""
+  line3: String
+
+  """
+  The postcode (ZIP code) of the applicants address. For UK postcodes,specify the value in the following format: SW4 6EH
+  """
+  postcode: String
+
+  """The address state. (US states must use the USPS abbreviation.)"""
+  state: String
+
+  """The street of the applicant address"""
+  street: String
+
+  """The sub-street of the applicant address"""
+  subStreet: String
+
+  """The town of the applicant"""
+  town: String
+}
+
+type UpdateAgreementType {
+  """total amount price * tokeninthis order."""
+  amount: Float
+
+  """The real estate id"""
+  re_id: String!
+
+  """subscription accepted or not"""
+  subscriptionAccepted: Boolean
+
+  """auto generated subscription id"""
+  subscriptionId: String
+
+  """operating document timestamp"""
+  subscriptionTimestamp: String
+
+  """token price"""
+  tokenPrice: Float
+
+  """tokens in this order"""
+  tokensInThisOrder: Float
+
+  """Number of tokens."""
+  totalNumberOfTokens: Float
+
+  """The user's id"""
+  user_id: String!
+}
+
+input UpdateApplicantRequest {
+  """The address of the applicant."""
+  address: UpdateAddressRequest
+
+  """Date of birth of the applicant in yyyy-mm-dd date format"""
+  dob: String
+
+  """The appllicants email address"""
+  email: String
+
+  """The applicants first name"""
+  firstName: String
+
+  """A collection of identification numbers belonging to this applicant."""
+  idNumbers: UpdateIdNumberRequest
+
+  """The applicants last name"""
+  lastName: String
+}
+
+input UpdateCognitoUserInput {
+  """role of user"""
+  role: RoleEnum
+
+  """user`s attribute"""
+  user: UserAttrInput
+
+  """id of user"""
+  user_id: String
+}
+
+type UpdateCognitoUserType {
+  """return user`s permission"""
+  rolePermission: UserRolePermission
+
+  """user attribute"""
+  user: UserAttr
+
+  """user id of user"""
+  user_id: String
+}
+
+input UpdateIdNumberRequest {
+  """Two letter code of issuing state."""
+  stateCode: String
+
+  """Type of the Id number"""
+  type: String!
+
+  """Value of the Id number"""
+  value: String!
+}
+
+type UpdateSmartContractAndAdditionalInfoType {
+  """additionalPerks"""
+  additionalPerks: String!
+
+  """closing date"""
+  closingDate: String!
+
+  """company name"""
+  companyName: String!
+
+  """offering memorandum date"""
+  offeringMemorandumDate: String!
+
+  """propertyDescription"""
+  propertyDescription: String!
+
+  """reid"""
+  re_id: String!
+
+  """tokenId"""
+  tokenId: String!
+
+  """tokenSmartContractUrl"""
+  tokenSmartContractUrl: String!
+}
+
+"""The `Upload` scalar type represents a file upload."""
+scalar Upload
+
+type UploadDocumentType {
+  """The applicant Id of the uploaded document"""
+  applicantId: String
+
+  """Date and time at which the document was uploaded"""
+  createdAt: String
+
+  """The URI that can be used to download the document."""
+  downloadHref: String
+
+  """The name of the uploaded file."""
+  fileName: String
+
+  """The size of the file uploaded in bytes."""
+  fileSize: Float
+
+  """The file type of the uploaded file."""
+  fileType: String
+
+  """The URI of this resource."""
+  href: String
+
+  """The unique identifier of the uploaded document."""
+  id: String
+
+  """
+  The issuing country of the document, in 3-letter ISO code, specified when uploading it.
+  """
+  issuingCountry: String
+
+  """
+  The side of the document, if applicable. The possible values are front and back.
+  """
+  side: String
+
+  """The type of the Document uploadec"""
+  type: String
+}
+
+type UploadedType11 {
+  """The bucket used to store the files of the property"""
+  Bucket: String!
+
+  """Etag of the property"""
+  ETag: String
+
+  """Key-It is a tag of the uploaded file"""
+  Key: String
+
+  """The geographical location of the property"""
+  Location: String
+
+  """Key-It is a tag of the uploaded file"""
+  key: String
+}
+
+type UserAttr {
+  """email of user"""
+  email: String
+
+  """user's firstname"""
+  firstname: String
+
+  """user's lastname"""
+  lastname: String
+}
+
+input UserAttrInput {
+  """email id of user"""
+  email: String
+}
+
+type UserPermission {
+  """blockchain_address"""
+  blockchain_address: Boolean
+
+  """firstname"""
+  firstname: Boolean
+
+  """home"""
+  home: Boolean
+
+  """kyc_status"""
+  kyc_status: Boolean
+
+  """lastname"""
+  lastname: Boolean
+
+  """marketplace"""
+  marketplace: Boolean
+
+  """password_reset"""
+  password_reset: Boolean
+
+  """profile"""
+  profile: Boolean
+
+  """re_detail"""
+  re_detail: Boolean
+
+  """re_listing"""
+  re_listing: Boolean
+}
+
+type UserReferralType {
+  """referre code."""
+  referralCode: String
+
+  """referral link."""
+  referralLink: String
+
+  """referrer code."""
+  referrerCode: String
+
+  """user id."""
+  user_id: String!
+}
+
+type UserRolePermission {
+  """markertplace permission"""
+  permission: UserPermission!
+
+  """markertplace permission"""
+  role: [RoleEnum!]!
+}
+
+input ValuationInput {
+  """The date the valuation was performed."""
+  date: String
+
+  """Forecast standard deviation."""
+  forecast_standard_deviation: Int
+
+  """The highest probable value."""
+  high: Int
+
+  """The lowest probable value."""
+  low: Int
+
+  """The current property value."""
+  value: Int
+}
+
+type ValuationType {
+  """The date the valuation was performed."""
+  date: String
+
+  """Forecast standard deviation."""
+  forecast_standard_deviation: Int
+
+  """The highest probable value."""
+  high: Int
+
+  """The lowest probable value."""
+  low: Int
+
+  """The current property value."""
+  value: Int
+}
+
+type WhitelistAddressesType {
+  """result"""
+  result: String
+}
+
+type WorkFlowRunType {
+  """applicant_id"""
+  applicant_id: String!
+
+  """created_at"""
+  created_at: String
+
+  """finished"""
+  finished: Boolean
+
+  """id"""
+  id: String!
+
+  """state"""
+  state: String
+
+  """status"""
+  status: String
+
+  """task_def_id"""
+  task_def_id: String
+
+  """task_id"""
+  task_id: String
+
+  """task_type"""
+  task_type: String
+
+  """updated_at"""
+  updated_at: String
+
+  """version_id"""
+  version_id: Int
+
+  """workflow_id"""
+  workflow_id: String
+}
+
+type ZilloDigitalREDataType {
+  """list zillow data."""
+  data: JSONObject!
+}
+
+type ZillowDataByAddressType {
+  """zillow data."""
+  data: JSONObject!
+}
+
+type createDigitalArtsType {
+  """arts object type."""
+  arts: JSONObject!
+}
+
+type createDigitalBondsType {
+  """debt inputs"""
+  bonds: JSONObject!
+}
+
+type isAddressWhitelistedReturnType {
+  """result"""
+  result: String
+}
+
+type updateEthereumAddressType {
+  """message success or failure."""
+  message: String
+}

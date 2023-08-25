@@ -1,0 +1,186 @@
+import { IRealEstateListing } from '@core/interfaces'
+import { RealEstateAndFinance, RealEstateSchema } from '@core/schemas'
+
+export const mapToObject = (objectToMap: any): IRealEstateListing => {
+  const resp: RealEstateSchema = objectToMap?.realEstateDb
+
+  const data = {
+    gsi1_pk: objectToMap?.user_id_gsi1_pk || objectToMap?.realEstateDb?.gsi1_pk,
+    gsi1_sk: objectToMap?.re_id_gsi1_sk || objectToMap?.realEstateDb?.gsi1_sk,
+    gsi2_pk: objectToMap?.address_gsi2_pk || objectToMap?.realEstateDb?.gsi2_pk,
+    pk: objectToMap?.re_id_pk || objectToMap?.realEstateDb?.pk,
+    sk: objectToMap?.prop_sk || objectToMap?.realEstateDb?.sk,
+    re_id: resp?.re_id,
+    address: {
+      carrier_code: resp?.address_carrier_code,
+      street_number: resp?.address_street_number,
+      street_pre_direction: resp?.address_street_pre_direction,
+      street_name: resp?.address_street_name,
+      street_suffix: resp?.address_street_suffix,
+      street_post_direction: resp?.address_street_post_direction,
+      unit_type: resp?.address_unit_type,
+      unit_number: resp?.address_unit_number,
+      formatted_street_address: resp?.add,
+      city: resp?.address_city,
+      state: resp?.address_state,
+      zip_code: resp?.zip,
+      zip_plus_four_code: resp?.address_zip_plus_four_code,
+      latitude: resp?.address_latitude,
+      longitude: resp?.address_longitude,
+      geocoding_accuracy: resp?.address_geocoding_accuracy,
+      census_tract: resp?.address_census_tract,
+    },
+    parcel: {
+      apn_original: resp?.parcel_apn_original,
+      apn_unformatted: resp?.parcel_apn_unformatted,
+      apn_previous: resp?.parcel_apn_previous,
+      fips_code: resp?.parcel_fips_code,
+      frontage_ft: resp?.parcel_frontage_ft,
+      depth_ft: resp?.parcel_depth_ft,
+      area_sq_ft: resp?.parcel_area_sq_ft,
+      area_acres: resp?.parcel_area_acres,
+      county_name: resp?.parcel_county_name,
+      county_land_use_code: resp?.parcel_county_land_use_code,
+      county_land_use_description: resp?.parcel_county_land_use_description,
+      standardized_land_use_category: resp?.parcel_standardized_land_use_category,
+      standardized_land_use_type: resp?.parcel_standardized_land_use_type,
+      location_descriptions: resp?.parcel_location_descriptions,
+      zoning: resp?.parcel_zoning,
+      building_count: resp?.parcel_building_count,
+      tax_account_number: resp?.parcel_tax_account_number,
+      lot_code: resp?.parcel_lot_code,
+      lot_number: resp?.parcel_lot_number,
+      subdivision: resp?.parcel_subdivision,
+      municipality: resp?.parcel_municipality,
+      section_township_range: resp?.parcel_section_township_range,
+    },
+    owner: {
+      name: resp?.owner_name,
+      second_name: resp?.owner_second_name,
+      unit_type: resp?.owner_unit_type,
+      unit_number: resp?.owner_unit_number,
+      formatted_street_address: resp?.owner_formatted_street_address,
+      city: resp?.owner_city,
+      state: resp?.owner_state,
+      zip_code: resp?.owner_zip_code,
+      zip_plus_four_code: resp?.owner_zip_plus_four_code,
+      owner_occupied: resp?.owner_occupied,
+    },
+    valuation: {
+      value: resp?.valuation_value,
+      high: resp?.valuation_high,
+      low: resp?.valuation_low,
+      forecast_standard_deviation: resp?.valuation_forecast_standard_deviation,
+      date: resp?.valuation_date,
+    },
+    structure: {
+      year_built: resp?.structure_year_built,
+      effective_year_built: resp?.structure_effective_year_built,
+      stories: resp?.structure_stories,
+      rooms_count: resp?.structure_rooms_count,
+      beds_count: resp?.structure_beds_count,
+      baths: resp?.structure_baths,
+      partial_baths_count: resp?.structure_partial_baths_count,
+      units_count: resp?.structure_units_count,
+      parking_type: resp?.structure_parking_type,
+      parking_spaces_count: resp?.structure_parking_spaces_count,
+      pool_type: resp?.structure_pool_type,
+      architecture_type: resp?.structure_architecture_type,
+      construction_type: resp?.structure_construction_type,
+      exterior_wall_type: resp?.structure_exterior_wall_type,
+      foundation_type: resp?.structure_foundation_type,
+      roof_material_type: resp?.structure_roof_material_type,
+      roof_style_type: resp?.structure_roof_style_type,
+      heating_type: resp?.structure_heating_type,
+      heating_fuel_type: resp?.structure_heating_fuel_type,
+      air_conditioning_type: resp?.structure_air_conditioning_type,
+      fireplaces: resp?.structure_fireplaces,
+      basement_type: resp?.structure_basement_type,
+      quality: resp?.structure_quality,
+      condition: resp?.structure_condition,
+      flooring_types: resp?.structure_flooring_types,
+      plumbing_fixtures_count: resp?.structure_plumbing_fixtures_count,
+      interior_wall_type: resp?.structure_interior_wall_type,
+      water_type: resp?.structure_water_type,
+      sewer_type: resp?.structure_sewer_type,
+      total_area_sq_ft: resp?.structure_total_area_sq_ft,
+      other_areas: resp?.structure_other_areas,
+      other_rooms: resp?.structure_other_rooms,
+      other_features: resp?.structure_other_features,
+      other_improvements: resp?.structure_other_improvements,
+      amenities: resp?.structure_amenities,
+    },
+    boundary: {
+      wkt: resp?.boundary_wkt,
+      geojson: resp?.boundary_geojson,
+    },
+    assessments: resp?.assessments,
+    deeds: resp?.deeds,
+    market_assessments: resp?.market_assessments,
+    metadata: resp?.metadata,
+    taxes: resp?.taxes,
+    created_at: resp?.created_at,
+    updated_at: resp?.updated_at,
+    youtubeLink: resp?.youtube_link,
+    metaLink: resp?.meta_link,
+    metaLandRevenueStream: resp?.meta_land_revenue_stream,
+    tokenId: resp?.token_id,
+    tokenSmartContractUrl: resp?.token_smart_contract_url,
+    propertyDescription: resp?.property_description,
+    additionalPerks: resp?.additional_perks,
+    companyName: resp?.company_name,
+    closingDate: resp?.closing_date,
+    offeringMemorandumDate: resp?.offering_memorandum_date,
+  }
+  return data
+}
+
+export const listObjectMapper = (objectToMap: any) => {
+  // RE Financial Data
+  const resp: RealEstateAndFinance = objectToMap?.realEstateDb
+
+  const newObjectReturn: RealEstateSchema = mapToObject(objectToMap)
+  let a = 0
+  if (resp?.tokens_remaining) {
+    a = resp?.tokens_remaining
+  } else {
+    if (resp?.tokens_remaining === undefined) {
+      a = resp?.total_number_of_tokens
+    }
+  }
+
+  const data = {
+    ...newObjectReturn,
+    assetPrice: resp?.asset_price,
+    closingCost: resp?.closing_cost,
+    expectedReserveFunds: resp?.expected_reserve_funds,
+    renovationCosts: resp?.renovation_costs,
+    propertyTaxes: resp?.property_taxes,
+    insurance: resp?.insurance,
+    utilities: resp?.utilities,
+    expectedGrossRentPerProperty: resp?.expected_gross_rent_per_property,
+    totalInvestments: resp?.total_investments,
+    listingPrice: resp?.listing_price,
+    expenses: resp?.expenses,
+    platformListingFees: resp?.platform_listing_fees,
+    platformFees: resp?.platform_fees,
+    propertyMgtFees: resp?.property_mgt_fees,
+    maintenanceExpense: resp?.maintenance_expense,
+    expectedNetRentPerProperty: resp?.expected_net_rent_per_property,
+    expectedGrossRoi: resp?.expected_gross_roi,
+    expectedNetRoi: resp?.expected_net_roi,
+    netRentPerToken: resp?.net_rent_per_token,
+    totalNumberOfTokens: resp?.total_number_of_tokens,
+    tokenPrice: resp?.token_price,
+    // TODO  platform_listing_fees
+    platformListFeesInPercentage: resp?.platform_list_fees_in_percentage,
+    rentProcessingFees: resp?.rent_processing_fees,
+    propertyMgmtFees: resp?.property_mgmt_fees,
+    maintenanceExpenseInPercentage: resp?.maintenance_expense_in_percentage,
+    tokensRemaining: a,
+    tokensOnHold: resp?.tokens_on_hold || 0,
+    tokensSold: resp?.tokens_sold || 0,
+    totalTokensOwnedByBuyer: resp?.total_tokens_owned_by_buyer,
+  }
+  return data
+}

@@ -1,0 +1,50 @@
+
+1. Create the Applicant first, in response you will get the applicant id, store into user table.
+2. Create the checks using applicant id, in response you will get the id(check id ), update in user table using applicant id.
+3. Create/Register webhoooks. must select only one reports.
+
+{
+    "url": "https://6193-117-99-107-247.ngrok.io/webhooks/onfido",
+    "enabled": true,
+    "events": [
+        "report.completed"
+    ]
+}
+
+
+report completed response
+{
+  "payload": {
+    "resource_type": "report",
+    "action": "report.completed",
+    "object": {
+      "id": "<REPORT_ID>",
+      "status": "complete",
+      "completed_at_iso8601": "2019-10-28T15:00:39Z",
+      "href": "https://api.onfido.com/v3/reports/<REPORT_ID>"
+    }
+  }
+}
+
+CREATE CHECK response
+{
+    "applicant_id": "2d960b99-2278-4cd2-9640-7e64f6107ab3",
+    "applicant_provides_data": false,
+    "created_at": "2022-05-12T06:19:40Z",
+    "form_uri": null,
+    "href": "/v3.2/checks/707b15d5-1511-42f8-a552-406fa76942c3",
+    "id": "707b15d5-1511-42f8-a552-406fa76942c3",
+    "paused": false,
+    "privacy_notices_read_consent_given": null,
+    "redirect_uri": null,
+    "report_ids": [
+        "8a62753a-3e22-4583-8a4a-c917d7e9cb1d"
+    ],
+    "result": null,
+    "results_uri": "https://dashboard.us.onfido.com/checks/707b15d5-1511-42f8-a552-406fa76942c3",
+    "sandbox": true,
+    "status": "in_progress",
+    "tags": [],
+    "version": "3.2",
+    "webhook_ids": null
+}
