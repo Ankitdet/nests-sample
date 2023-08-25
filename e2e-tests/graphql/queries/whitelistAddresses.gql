@@ -1,0 +1,5 @@
+query whitelistAddresses($addresses: String!){
+    whitelistAddresses(addresses: $addresses){
+        result
+    }
+}

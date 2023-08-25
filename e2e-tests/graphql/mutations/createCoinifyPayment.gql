@@ -1,0 +1,39 @@
+mutation createCoinifyPayment($input: CreatePaymentInput!){
+    createCoinifyPayment(input: $input){
+        data{
+            bitcoin{
+                address
+                amount
+                amount_due
+                amount_paid
+                payment_uri
+            }
+            callback_email
+            callback_url
+            cancel_url
+            create_time
+            custom{
+                order_id
+                re_id
+                user_id
+            }
+            description
+            expire_time
+            id
+            native{
+                amount
+                currency
+            }
+            payment_url
+            return_url
+            state
+            transfer{
+                amount
+                currency
+            }
+            type
+            uuid
+        }
+        success
+    }
+}

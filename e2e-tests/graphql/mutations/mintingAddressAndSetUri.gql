@@ -1,0 +1,3 @@
+mutation mintingAddressAndSetUri($re_id: String!, $tokenId: Float!, $tokenNumberOfTokens: Float!, $uri: String!){
+    mintingAddressAndSetUri(re_id: $re_id, tokenId: $tokenId, tokenNumberOfTokens: $tokenNumberOfTokens, uri: $uri)
+}

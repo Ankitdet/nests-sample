@@ -1,0 +1,3 @@
+mutation createReCompanySocials($companyInput: CompanyInput!){
+    createReCompanySocials(companyInput: $companyInput)
+}

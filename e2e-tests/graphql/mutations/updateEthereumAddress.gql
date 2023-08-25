@@ -1,0 +1,5 @@
+mutation updateEthereumAddress($input: CreateWhiteListAddressInput!){
+    updateEthereumAddress(input: $input){
+        message
+    }
+}

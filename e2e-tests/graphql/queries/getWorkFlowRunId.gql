@@ -1,0 +1,16 @@
+query getWorkFlowRunId($applicant_id: String!, $user_id: String!, $workflow_id: String!){
+    getWorkFlowRunId(applicant_id: $applicant_id, user_id: $user_id, workflow_id: $workflow_id){
+        applicant_id
+        created_at
+        finished
+        id
+        state
+        status
+        task_def_id
+        task_id
+        task_type
+        updated_at
+        version_id
+        workflow_id
+    }
+}

@@ -1,0 +1,13 @@
+query getRealEstateInfoList{
+    getRealEstateInfoList{
+        address
+        created_at
+        expectedNetRoi
+        listingPrice
+        re_id
+        tokenPrice
+        tokensRemaining
+        totalNumberOfTokens
+        updated_at
+    }
+}

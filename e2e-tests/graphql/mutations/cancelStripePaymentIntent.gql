@@ -1,0 +1,3 @@
+mutation cancelStripePaymentIntent($id: String!){
+    cancelStripePaymentIntent(id: $id)
+}

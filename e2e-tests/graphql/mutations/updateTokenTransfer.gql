@@ -1,0 +1,5 @@
+mutation updateTokenTransfer($orderId: String!, $reId: String!, $totalNumberOfTokens: Float!, $userId: String!){
+    updateTokenTransfer(orderId: $orderId, reId: $reId, totalNumberOfTokens: $totalNumberOfTokens, userId: $userId){
+        result
+    }
+}

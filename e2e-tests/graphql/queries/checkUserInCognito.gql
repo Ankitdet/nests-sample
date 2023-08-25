@@ -1,0 +1,3 @@
+query checkUserInCognito($user_id: String!){
+    checkUserInCognito(user_id: $user_id)
+}

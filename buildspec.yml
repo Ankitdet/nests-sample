@@ -1,0 +1,38 @@
+version: 0.2
+phases:
+  install:
+    runtime-versions:
+      nodejs: 14
+    commands:
+      - echo "--- Install Prequisites --- "
+      - docker --version
+      - lsb_release -a
+      # - echo $BUILD_ARTIFACT_BUCKET
+      - mkdir /build
+      - export NODE_OPTIONS="--max-old-space-size=5000"
+  build:
+    commands:
+      - echo "--- Build Started --- "
+      - zip -r /build/serverless.zip ./src/* -x "*.spec.ts" # source code
+      - zip /build/serverless.zip ./sls/serverless*.yml # serveless framework file
+      - zip /build/serverless.zip ./views/* # serveless framework file
+      - zip /build/serverless.zip ./package*.json # package.json and package-lock.json
+      - zip /build/serverless.zip ./webpack.config.js # bundler file used by serverless
+      - zip /build/serverless.zip ./tsconfig.* #tsconfig.json & tsconfig.build.json
+      - zip /build/serverless.zip ./env/.env.* # all env files.
+      - zip /build/serverless.zip ./docker-compose.yml # all env files.
+      - cp $CODEBUILD_SRC_DIR/buildspec-deploy.yml /build/buildspec-deploy.yml
+      - cp $CODEBUILD_SRC_DIR/aws-profile-setup.sh /build/aws-profile-setup.sh
+      # - ls $CODEBUILD_SRC_DIR_Source1 # copied src folder
+      # - ls $CODEBUILD_SRC_DIR_Source2 # infra repo folder
+      # - echo current  stage is `$STAGE` 
+      # - ls -al /build
+      # - echo Size of folder is `du -sh /build/serverless.zip`
+      - echo "--- Build completed --- "
+artifacts:
+  files:
+    - serverless.zip
+    - buildspec-deploy.yml
+    - aws-profile-setup.sh
+  discard-paths: no
+  base-directory: /build

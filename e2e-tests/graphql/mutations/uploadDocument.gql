@@ -1,0 +1,15 @@
+mutation uploadDocument($applicantId: String!, $filePath: String!, $side: String!, $type: String!){
+    uploadDocument(applicantId: $applicantId, filePath: $filePath, side: $side, type: $type){
+        applicantId
+        createdAt
+        downloadHref
+        fileName
+        fileSize
+        fileType
+        href
+        id
+        issuingCountry
+        side
+        type
+    }
+}

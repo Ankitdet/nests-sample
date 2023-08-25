@@ -1,0 +1,6 @@
+query refreshSession($refreshToken: String!){
+    refreshSession(refreshToken: $refreshToken){
+        accessToken
+        idToken
+    }
+}

@@ -1,0 +1,22 @@
+query retrieveChecks($checkId: String!){
+    retrieveChecks(checkId: $checkId){
+        applicantId
+        applicantProvidesData
+        createdAt
+        downloadHref
+        fileName
+        fileSize
+        fileType
+        formUri
+        href
+        id
+        privacyNoticesReadConsentGiven
+        redirectUri
+        reportIds
+        result
+        resultsUri
+        status
+        tags
+        webhookIds
+    }
+}

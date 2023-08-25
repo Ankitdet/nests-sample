@@ -1,0 +1,15 @@
+query listDocuments($applicantId: String!){
+    listDocuments(applicantId: $applicantId){
+        applicantId
+        createdAt
+        downloadHref
+        fileName
+        fileSize
+        fileType
+        href
+        id
+        issuingCountry
+        side
+        type
+    }
+}

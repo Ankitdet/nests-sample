@@ -1,0 +1,15 @@
+query getAllCompanySocialsList{
+    getAllCompanySocialsList{
+        created_at
+        explorers
+        reCompany
+        reCompanyUrl
+        socials{
+            discord
+            instagram
+            telegram
+            twitter
+        }
+        updated_at
+    }
+}

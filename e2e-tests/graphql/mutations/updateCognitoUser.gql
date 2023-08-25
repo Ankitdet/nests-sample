@@ -1,0 +1,25 @@
+mutation updateCognitoUser($input: UpdateCognitoUserInput!){
+    updateCognitoUser(input: $input){
+        rolePermission{
+            permission{
+                blockchain_address
+                firstname
+                home
+                kyc_status
+                lastname
+                marketplace
+                password_reset
+                profile
+                re_detail
+                re_listing
+            }
+            role
+        }
+        user{
+            email
+            firstname
+            lastname
+        }
+        user_id
+    }
+}

@@ -1,0 +1,8 @@
+mutation createStripePaymentIntent($input: CreatePaymentInput!){
+    createStripePaymentIntent(input: $input){
+        checkoutUrl
+        order_id
+        re_id
+        user_id
+    }
+}

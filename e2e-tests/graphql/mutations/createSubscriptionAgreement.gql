@@ -1,0 +1,13 @@
+mutation createSubscriptionAgreement($re_id: String!, $subscriptionAccepted: Boolean!, $tokenPrice: Float!, $tokensInThisOrder: Float!, $totalNumberOfTokens: Float!, $user_id: String!){
+    createSubscriptionAgreement(re_id: $re_id, subscriptionAccepted: $subscriptionAccepted, tokenPrice: $tokenPrice, tokensInThisOrder: $tokensInThisOrder, totalNumberOfTokens: $totalNumberOfTokens, user_id: $user_id){
+        amount
+        re_id
+        subscriptionAccepted
+        subscriptionId
+        subscriptionTimestamp
+        tokenPrice
+        tokensInThisOrder
+        totalNumberOfTokens
+        user_id
+    }
+}

@@ -1,0 +1,10 @@
+query addressSanctioned($address: String!){
+    addressSanctioned(address: $address){
+        identifications{
+            category
+            description
+            name
+            url
+        }
+    }
+}

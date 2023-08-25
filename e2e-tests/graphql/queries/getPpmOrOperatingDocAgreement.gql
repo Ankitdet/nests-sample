@@ -1,0 +1,10 @@
+query getPpmOrOperatingDocAgreement($re_id: String!, $user_id: String!){
+    getPpmOrOperatingDocAgreement(re_id: $re_id, user_id: $user_id){
+        operatingAgreement
+        operatingAgreementTimestamp
+        ppmAgreement
+        ppmAgreementTimestamp
+        re_id
+        user_id
+    }
+}

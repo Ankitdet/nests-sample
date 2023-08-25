@@ -1,0 +1,11 @@
+query retrieveLivePhoto($livePhotoId: String!){
+    retrieveLivePhoto(livePhotoId: $livePhotoId){
+        createdAt
+        downloadHref
+        fileName
+        fileSize
+        fileType
+        href
+        id
+    }
+}

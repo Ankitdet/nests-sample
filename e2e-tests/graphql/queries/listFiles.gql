@@ -1,0 +1,27 @@
+query listFiles($id: String!){
+    listFiles(id: $id){
+        CommonPrefixes{
+            Prefix
+        }
+        Contents{
+            ETag
+            Key
+            LastModified
+            Owner{
+                DisplayName
+                ID
+            }
+            Size
+            StorageClass
+        }
+        Delimiter
+        EncodingType
+        IsTruncated
+        Marker
+        MaxKeys
+        Name
+        NextMarker
+        Prefix
+        imageUrl
+    }
+}

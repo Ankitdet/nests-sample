@@ -1,0 +1,7 @@
+mutation applyReferralCode($refferalCode: String!, $user_id: String!){
+    applyReferralCode(refferalCode: $refferalCode, user_id: $user_id){
+        referrerCode
+        referrerUserId
+        user_id
+    }
+}

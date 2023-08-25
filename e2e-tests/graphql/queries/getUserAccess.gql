@@ -1,0 +1,27 @@
+query getUserAccess($user_id: String!){
+    getUserAccess(user_id: $user_id){
+        kyc_completed
+        rolePermission{
+            permission{
+                blockchain_address
+                firstname
+                home
+                kyc_status
+                lastname
+                marketplace
+                password_reset
+                profile
+                re_detail
+                re_listing
+            }
+            role
+        }
+        user{
+            email
+            firstname
+            lastname
+        }
+        user_id
+        whitelist_address
+    }
+}

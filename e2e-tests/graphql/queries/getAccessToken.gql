@@ -1,0 +1,7 @@
+query getAccessToken($password: String!, $username: String!){
+    getAccessToken(password: $password, username: $username){
+        accessToken
+        idToken
+        refreshToken
+    }
+}

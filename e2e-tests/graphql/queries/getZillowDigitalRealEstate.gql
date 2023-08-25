@@ -1,0 +1,9 @@
+query getZillowDigitalRealEstate{
+    getZillowDigitalRealEstate{
+        blockchain
+        companyName
+        csv
+        reId
+        zillow
+    }
+}

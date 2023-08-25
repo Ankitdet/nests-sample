@@ -1,0 +1,9 @@
+mutation uploadMultipleCsvs($files: [Upload!]!){
+    uploadMultipleCsvs(files: $files){
+        Bucket
+        ETag
+        Key
+        Location
+        key
+    }
+}

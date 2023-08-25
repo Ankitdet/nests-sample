@@ -1,0 +1,11 @@
+mutation uploadLivePhoto($advancedValidation: Boolean, $applicantId: String, $filePath: String){
+    uploadLivePhoto(advancedValidation: $advancedValidation, applicantId: $applicantId, filePath: $filePath){
+        createdAt
+        downloadHref
+        fileName
+        fileSize
+        fileType
+        href
+        id
+    }
+}

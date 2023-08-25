@@ -1,0 +1,5 @@
+query isAddressWhitelisted($addresses: String!){
+    isAddressWhitelisted(addresses: $addresses){
+        result
+    }
+}

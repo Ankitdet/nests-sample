@@ -1,0 +1,15 @@
+query retrieveReports($reportId: String!){
+    retrieveReports(reportId: $reportId){
+        breakdown
+        checkId
+        createdAt
+        documents
+        href
+        id
+        name
+        properties
+        result
+        status
+        subResult
+    }
+}

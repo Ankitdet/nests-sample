@@ -1,0 +1,7 @@
+query getAgreementDocLink($re_id: String!){
+    getAgreementDocLink(re_id: $re_id){
+        operatingLink
+        ppmLink
+        subscriptionLink
+    }
+}

@@ -1,0 +1,9 @@
+mutation uploadSingle($file: Upload!, $id: String!, $isHomePhoto: Boolean){
+    uploadSingle(file: $file, id: $id, isHomePhoto: $isHomePhoto){
+        Bucket
+        ETag
+        Key
+        Location
+        key
+    }
+}

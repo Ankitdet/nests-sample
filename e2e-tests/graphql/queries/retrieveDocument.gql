@@ -1,0 +1,15 @@
+query retrieveDocument($documentId: String!){
+    retrieveDocument(documentId: $documentId){
+        applicantId
+        createdAt
+        downloadHref
+        fileName
+        fileSize
+        fileType
+        href
+        id
+        issuingCountry
+        side
+        type
+    }
+}

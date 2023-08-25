@@ -1,0 +1,3 @@
+query deleteFile($bucketName: String!, $key: String!){
+    deleteFile(bucketName: $bucketName, key: $key)
+}

@@ -1,0 +1,10 @@
+mutation updatePpmOrOperatingDocAgreement($operatingAccepted: Boolean, $ppmAccepted: Boolean, $re_id: String!, $user_id: String!){
+    updatePpmOrOperatingDocAgreement(operatingAccepted: $operatingAccepted, ppmAccepted: $ppmAccepted, re_id: $re_id, user_id: $user_id){
+        operatingAgreement
+        operatingAgreementTimestamp
+        ppmAgreement
+        ppmAgreementTimestamp
+        re_id
+        user_id
+    }
+}

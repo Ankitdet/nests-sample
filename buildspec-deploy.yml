@@ -1,0 +1,67 @@
+version: 0.2
+
+phases:
+  install:
+    runtime-versions:
+      nodejs: 14
+    commands:
+      - echo "--- Install pre-Prequisites --- "
+      - curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | apt-key add - # ref https://dev.classmethod.jp/articles/codebuild-ubuntu-yarn-packaging-gpg-error/
+      - apt-get update
+      - echo $CROSS_ACCOUNT_ROLE
+      - echo $CF_EXECUTION_ROLE
+      - echo $STAGE
+      - echo $SERVERLESS_DEPLOY_BUCKET
+      - echo $SERVICE_NAME
+      - cd $CODEBUILD_SRC_DIR
+      - mkdir ./serverless-build
+      - chmod +x aws-profile-setup.sh
+      - unzip serverless.zip -d ./
+      - cp -r ./src/* ./
+      - npm install --silent --progress=false -g npm@8.5.5
+      - npm install --silent --progress=false
+      - npm install --silent --progress=false -g serverless@2.67.0
+  build:
+    commands:
+      - echo "--- Start Deploying ---"
+      - cd $CODEBUILD_SRC_DIR
+      - echo $CROSS_ACCOUNT_ROLE
+      - echo $CF_EXECUTION_ROLE
+      - echo $STAGE
+      - echo $SERVERLESS_DEPLOY_BUCKET
+      - echo $SERVICE_NAME
+      - aws sts get-caller-identity # before
+      - . ./aws-profile-setup.sh
+      - aws sts get-caller-identity # after assumming
+      # - rm -rf ~/.aws/cli/cache
+      # - echo $SERVICE_NAME
+      - serviceName=$SERVICE_NAME
+      #- Copy file to s3 bucket
+      - aws configure --profile default set region $AWS_REGION
+      - aws configure --profile deployment-profile set region $AWS_REGION
+      - aws configure --profile deployment-profile set credential_source EcsContainer
+      - aws configure --profile deployment-profile set role_session_name $(date '+%Y%m%d%H%M%S%3N')
+      - aws configure --profile deployment-profile set role_arn $CROSS_ACCOUNT_ROLE
+      # - echo $CROSS_ACCOUNT_ROLE
+      # - echo $CF_EXECUTION_ROLE
+      # - echo $STAGE
+      # - echo $SERVERLESS_DEPLOY_BUCKET
+      # - echo $SERVICE_NAME
+      # - sudo curl -L "https://github.com/docker/compose/releases/download/1.28.5/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
+      # - sudo chmod +x /usr/local/bin/docker-compose
+      # - docker-compose --version
+      # - sudo docker image prune --all
+      # - sudo update-alternatives --set iptables /usr/sbin/iptables-legacy
+      # - sudo update-alternatives --set ip6tables /usr/sbin/ip6tables-legacy
+      # - sudo !dockerd --iptables=false -D
+      # - sudo docker run dev
+      # - npm run test:e2e
+      - npm run sls:deploy:$STAGE
+      - echo "--- End Deploy --- "
+artifacts:
+  files:
+    - serverless.zip
+    - buildspec-deploy.yml
+    - aws-profile-setup.sh
+  discard-paths: no
+  base-directory: $CODEBUILD_SRC_DIR

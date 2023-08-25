@@ -1,0 +1,8 @@
+query getUserReferralInfo($user_id: String!){
+    getUserReferralInfo(user_id: $user_id){
+        referralCode
+        referralLink
+        referrerCode
+        user_id
+    }
+}

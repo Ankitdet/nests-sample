@@ -1,0 +1,12 @@
+mutation updateSmartContractAndAdditionalInfo($additionalPerks: String!, $closingDate: String!, $companyName: String!, $offeringMemorandumDate: String!, $propertyDescription: String!, $re_id: String!, $tokenId: String!, $tokenSmartContractUrl: String!){
+    updateSmartContractAndAdditionalInfo(additionalPerks: $additionalPerks, closingDate: $closingDate, companyName: $companyName, offeringMemorandumDate: $offeringMemorandumDate, propertyDescription: $propertyDescription, re_id: $re_id, tokenId: $tokenId, tokenSmartContractUrl: $tokenSmartContractUrl){
+        additionalPerks
+        closingDate
+        companyName
+        offeringMemorandumDate
+        propertyDescription
+        re_id
+        tokenId
+        tokenSmartContractUrl
+    }
+}

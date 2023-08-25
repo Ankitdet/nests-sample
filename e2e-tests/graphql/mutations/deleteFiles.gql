@@ -1,0 +1,17 @@
+mutation deleteFiles($id: String!, $keys: DeleteKeysInput!){
+    deleteFiles(id: $id, keys: $keys){
+        Deleted{
+            DeleteMarker
+            DeleteMarkerVersionId
+            Key
+            VersionId
+        }
+        Errors{
+            Code
+            Key
+            Message
+            VersionId
+        }
+        RequestCharged
+    }
+}

@@ -1,0 +1,30 @@
+mutation createRealEstateFinance($assetPrice: Int!, $closingCost: Int!, $expectedGrossRentPerProperty: Int!, $expectedReserveFunds: Int!, $insurance: Int!, $maintenanceExpenseInPercentage: Int!, $platformListFeesInPercentage: Int!, $propertyMgmtFees: Int!, $propertyTaxes: Int!, $re_id: String!, $renovationCosts: Int!, $rentProcessingFees: Int!, $utilities: Int!){
+    createRealEstateFinance(assetPrice: $assetPrice, closingCost: $closingCost, expectedGrossRentPerProperty: $expectedGrossRentPerProperty, expectedReserveFunds: $expectedReserveFunds, insurance: $insurance, maintenanceExpenseInPercentage: $maintenanceExpenseInPercentage, platformListFeesInPercentage: $platformListFeesInPercentage, propertyMgmtFees: $propertyMgmtFees, propertyTaxes: $propertyTaxes, re_id: $re_id, renovationCosts: $renovationCosts, rentProcessingFees: $rentProcessingFees, utilities: $utilities){
+        assetPrice
+        closingCost
+        created_at
+        expectedGrossRentPerProperty
+        expectedGrossRoi
+        expectedNetRentPerProperty
+        expectedNetRoi
+        expectedReserveFunds
+        expenses
+        insurance
+        listingPrice
+        maintenanceExpense
+        netRentPerToken
+        platformFees
+        platformListingFees
+        propertyMgtFees
+        propertyTaxes
+        re_id
+        renovationCosts
+        tokenPrice
+        tokensRemaining
+        totalInvestments
+        totalNumberOfTokens
+        updated_at
+        user_id
+        utilities
+    }
+}

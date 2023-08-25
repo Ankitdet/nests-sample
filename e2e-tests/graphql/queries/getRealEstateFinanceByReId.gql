@@ -1,0 +1,30 @@
+query getRealEstateFinanceByReId($input: ReIdInput!){
+    getRealEstateFinanceByReId(input: $input){
+        assetPrice
+        closingCost
+        created_at
+        expectedGrossRentPerProperty
+        expectedGrossRoi
+        expectedNetRentPerProperty
+        expectedNetRoi
+        expectedReserveFunds
+        expenses
+        insurance
+        listingPrice
+        maintenanceExpense
+        netRentPerToken
+        platformFees
+        platformListingFees
+        propertyMgtFees
+        propertyTaxes
+        re_id
+        renovationCosts
+        tokenPrice
+        tokensRemaining
+        totalInvestments
+        totalNumberOfTokens
+        updated_at
+        user_id
+        utilities
+    }
+}

@@ -1,0 +1,11 @@
+query listLivePhotoes($applicantId: String!){
+    listLivePhotoes(applicantId: $applicantId){
+        createdAt
+        downloadHref
+        fileName
+        fileSize
+        fileType
+        href
+        id
+    }
+}

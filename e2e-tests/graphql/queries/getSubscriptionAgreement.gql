@@ -1,0 +1,13 @@
+query getSubscriptionAgreement($re_id: String!, $user_id: String!){
+    getSubscriptionAgreement(re_id: $re_id, user_id: $user_id){
+        amount
+        re_id
+        subscriptionAccepted
+        subscriptionId
+        subscriptionTimestamp
+        tokenPrice
+        tokensInThisOrder
+        totalNumberOfTokens
+        user_id
+    }
+}

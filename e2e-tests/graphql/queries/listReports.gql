@@ -1,0 +1,15 @@
+query listReports($checkId: String!){
+    listReports(checkId: $checkId){
+        breakdown
+        checkId
+        createdAt
+        documents
+        href
+        id
+        name
+        properties
+        result
+        status
+        subResult
+    }
+}

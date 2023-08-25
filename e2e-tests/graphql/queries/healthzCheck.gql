@@ -1,0 +1,17 @@
+query healthzCheck{
+    healthzCheck{
+        error
+        info{
+            disk{
+                status
+            }
+            memory_rss{
+                status
+            }
+            nestjsApplication{
+                status
+            }
+        }
+        status
+    }
+}

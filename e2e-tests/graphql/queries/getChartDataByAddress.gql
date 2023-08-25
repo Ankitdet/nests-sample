@@ -1,0 +1,5 @@
+query getChartDataByAddress($address: String!, $days: String!){
+    getChartDataByAddress(address: $address, days: $days){
+        prices
+    }
+}

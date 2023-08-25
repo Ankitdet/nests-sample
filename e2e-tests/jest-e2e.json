@@ -1,0 +1,25 @@
+{
+  "globals": {
+    "ts-jest": {
+      "tsconfig": "./tsconfig.json"
+    }
+  },
+  "setupFiles": ["<rootDir>/../.jest/env.js"],
+  "moduleNameMapper": {
+    "^@utils(.*)$": "<rootDir>/../src/utils$1",
+    "^@const(.*)$": "<rootDir>/../src/constants$1",
+    "^@core(.*)$": "<rootDir>/../src/core$1",
+    "^@db(.*)$": "<rootDir>/../src/dynamodb$1",
+    "^@shared(.*)$": "<rootDir>/../src/shared$1",
+    "^@logger(.*)$": "<rootDir>/../src/logger$1",
+    "^@app(.*)$": "<rootDir>/../src/app$1",
+    "^@resources(.*)$": "<rootDir>/../src/resources$1"
+  },
+  "moduleFileExtensions": ["js", "json", "ts"],
+  "rootDir": ".",
+  "testEnvironment": "node",
+  "testRegex": ".e2e-spec.ts$",
+  "transform": {
+    "^.+\\.(t|j)s$": "ts-jest"
+  }
+}

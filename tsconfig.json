@@ -1,0 +1,58 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "declaration": false,
+    "removeComments": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "allowSyntheticDefaultImports": true,
+    "target": "es2019",
+    "sourceMap": true,
+    "outDir": "./dist",
+    "baseUrl": "./",
+    "lib": ["es2020"],
+    "allowJs": true,
+    "resolveJsonModule": true,
+    "esModuleInterop": true,
+    "strict": false,
+    "strictPropertyInitialization": false,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noFallthroughCasesInSwitch": true,
+    "skipLibCheck": true,
+    "noLib": false,
+    "moduleResolution": "node",
+    "noImplicitReturns": false,
+    "typeRoots": ["node_modules/@types", "types"],
+    "paths": {
+      "@app/*": ["src/app/*"],
+      "@core/*": ["src/core/*"],
+      "@const/*": ["src/constants/*"],
+      "@utils/*": ["src/utils/*"],
+      "@db/*": ["src/dynamodb/*"],
+      "@shared/*": ["src/shared/*"],
+      "@logger/*": ["src/logger/*"],
+      "@resources/*": ["src/resources/*"]
+    }
+  },
+  "include": [
+    "./src/**/*",
+    "./e2e-tests/**/*",
+    "./**/*.json",
+    "./src/.jest/**/*",
+    "resources/js/generateGraphqlnputs.js",
+    "resources/json/Tkn3blks.json"
+  ],
+  "compileOnSave": false,
+  "exclude": [
+    "node_modules",
+    "coverage",
+    "document",
+    "backup",
+    "doc",
+    "dist",
+    "**.json",
+    "**.spec.ts",
+    "src/generator/graphql.schema.ts"
+  ]
+}
